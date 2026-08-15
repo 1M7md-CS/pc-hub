@@ -46,6 +46,7 @@ app-navbar {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
   animation: fadeInDown 0.8s ease forwards;
 }
 
@@ -63,7 +64,6 @@ app-navbar {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,17 +159,5 @@ app-navbar {
 
   .hero-content .badge {
     transform: rotate(-0.5deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-content h1,
-  .hero-content p,
-  .hero-content .cta-btn,
-  app-navbar,
-  .hero {
-    opacity: 1;
-    animation: none;
-    transform: none;
   }
 }
