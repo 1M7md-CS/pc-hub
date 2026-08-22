@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +8,12 @@
 }
 
 :root {
-  --primary: #ff3b3f;
+  --primary: #a90003;
   --text: #d1d5db;
-  --background: #111823;
+  --background: #131516;
   --white: #ffffff;
+
+  --text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes fadeInUp {
@@ -49,5 +52,11 @@
 }
 
 body {
-  background-color: var(--background);
+  background: var(--background);
+  color: var(--text);
+  text-shadow: var(--text-shadow);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Orbitron', sans-serif;
 }
