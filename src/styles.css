@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;600;700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +9,45 @@
 :root {
   --primary: #ff3b3f;
   --text: #d1d5db;
-  --background: #0a0a0a;
+  --background: #111823;
   --white: #ffffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.9rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1.3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    box-shadow: 0 0 0.6rem rgba(255, 59, 63, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 1.3rem rgba(255, 59, 63, 0.8);
+  }
+}
+
+body {
+  background-color: var(--background);
 }
