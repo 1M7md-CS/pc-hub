@@ -78,5 +78,6 @@ body {
 }
 
 section {
-  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+  padding: 0 clamp(1rem, 5vw, 3rem);
+  padding-top: clamp(3rem, 8vw, 6rem);
 }
