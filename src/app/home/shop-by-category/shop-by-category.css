@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(clamp(9.5rem, 14vw, 13.5rem), 1fr));
   gap: clamp(0.8rem, 2vw, 1.4rem);
-  max-width: 85rem;
-  margin: 3rem auto 0;
+  margin-top: 3rem;
 }
 
 .category-card {
@@ -19,6 +18,7 @@
     box-shadow 0.3s ease,
     transform 0.3s ease,
     background-color 0.3s ease;
+  cursor: pointer;
 }
 
 .category-card:hover {
@@ -76,12 +76,4 @@
 .category-card:hover .category-arrow {
   opacity: 1;
   transform: translateX(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .category-card,
-  .category-card:hover {
-    transform: none;
-    transition: none;
-  }
 }
