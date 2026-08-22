@@ -1,0 +1,12 @@
+import { HttpClient } from '@angular/common/http';
+import { inject, Service } from '@angular/core';
+import { Category } from '../models/category.model';
+
+@Service()
+export class CategoryService {
+  private http = inject(HttpClient);
+
+  getCategories() {
+    return this.http.get<Category[]>('data/categories.json');
+  }
+}

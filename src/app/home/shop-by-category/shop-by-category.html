@@ -4,4 +4,47 @@
     title="Shop by Category"
     description="Everything you need to build, upgrade, or complete your ultimate setup."
   />
+
+  <div class="categories-grid">
+    @for (category of categories(); track category.title) {
+      <a class="category-card">
+        <svg
+          class="category-arrow"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 12h15m0 0-6.75-6.75M19.5 12l-6.75 6.75"
+          />
+        </svg>
+
+        <div class="category-icon" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            @for (path of category.iconPaths; track path) {
+              <path [attr.d]="path" />
+            }
+          </svg>
+        </div>
+
+        <div class="category-info">
+          <h3>{{ category.title }}</h3>
+          <p>{{ category.count }}+ products</p>
+        </div>
+      </a>
+    }
+  </div>
 </section>
