@@ -15,7 +15,7 @@ export class ShopByCategory implements OnInit {
   readonly categories = signal<Category[]>([]);
 
   ngOnInit(): void {
-    this.categoryService.getCategories().subscribe({
+    this.categoryService.categories.subscribe({
       next: (categories) => this.categories.set(categories),
     });
   }

@@ -6,7 +6,7 @@ import { Category } from './category-model';
 export class CategoryService {
   private http = inject(HttpClient);
 
-  getCategories() {
+  get categories() {
     return this.http.get<Category[]>('data/categories.json');
   }
 }
