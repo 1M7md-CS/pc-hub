@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --configuration production --base-href /pc-hub/ && npx angular-cli-ghpages --dir=dist/pc-hub/browser"
   },
   "private": true,
   "packageManager": "npm@11.17.0",
