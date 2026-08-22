@@ -1,0 +1,29 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-header span {
+  color: var(--secondary);
+  font-size: clamp(0.7rem, 0.8vw, 0.9rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.section-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  margin: clamp(0.7rem, 1.2vw, 1rem) 0;
+}
+
+.section-header p {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  font-weight: 400;
+}
+
+.align-normal {
+  align-items: normal;
+  text-align: start;
+}
