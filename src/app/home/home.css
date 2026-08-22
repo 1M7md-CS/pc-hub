@@ -13,3 +13,8 @@ app-navbar {
   z-index: 1;
   animation: fadeInDown 0.8s ease forwards;
 }
+
+main {
+  max-width: 90rem;
+  margin: 0 auto 0;
+}
