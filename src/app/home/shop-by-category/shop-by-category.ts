@@ -1,7 +1,7 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
-import { SectionHeader } from '../../section-header/section-header';
-import { Category } from '../../shared/models/category.model';
-import { CategoryService } from '../../shared/services/category.service';
+import { SectionHeader } from '../../shared/ui/section-header/section-header';
+import { Category } from './category-model';
+import { CategoryService } from './category-service';
 
 @Component({
   selector: 'app-shop-by-category',

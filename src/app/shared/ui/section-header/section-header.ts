@@ -7,8 +7,8 @@ import { Component, input } from '@angular/core';
   styleUrl: './section-header.css',
 })
 export class SectionHeader {
-  label = input.required<string>();
-  title = input.required<string>();
-  description = input.required<string>();
-  align = input<'normal'>();
+  readonly label = input.required<string>();
+  readonly title = input.required<string>();
+  readonly description = input.required<string>();
+  readonly align = input<'normal'>();
 }

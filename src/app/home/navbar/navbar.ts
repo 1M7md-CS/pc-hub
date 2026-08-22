@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.css',
 })
 export class Navbar {
-  isMenuOpen = signal(false);
+  readonly isMenuOpen = signal(false);
 
   toggleMenu() {
     this.isMenuOpen.update((val) => !val);
