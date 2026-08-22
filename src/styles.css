@@ -9,7 +9,8 @@
 
 :root {
   --primary: #a90003;
-  --text: #d1d5db;
+  --secondary: #ff4347;
+  --text: #e8e6e3;
   --background: #131516;
   --white: #ffffff;
 
@@ -59,4 +60,16 @@ body {
 
 :where(h1, h2, h3, h4, h5, h6) {
   font-family: 'Orbitron', sans-serif;
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+:where(p) {
+  color: var(--text);
+  line-height: 1.5;
+}
+
+section {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
 }
