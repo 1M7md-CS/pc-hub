@@ -29,7 +29,7 @@ button svg {
 .logo img {
   display: block;
   width: auto;
-  height: clamp(1.5rem, 4vw, 3rem);
+  height: clamp(2rem, 4vw, 3rem);
   transition:
     transform 0.2s ease,
     filter 0.2s ease;
