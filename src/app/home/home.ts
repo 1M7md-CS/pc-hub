@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero/hero';
 import { Navbar } from './navbar/navbar';
-import { ShopByCategory } from "./shop-by-category/shop-by-category";
+import { ShopByCategory } from './shop-by-category/shop-by-category';
 
 @Component({
   selector: 'app-home',
