@@ -115,7 +115,7 @@ ul li a.active::after {
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    background: rgba(10, 10, 10, 0.95);
+    background: var(--background);
     backdrop-filter: blur(0.6rem);
     border-bottom: 0.1rem solid rgb(50, 50, 50);
     transition:
