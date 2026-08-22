@@ -11,7 +11,7 @@
   flex-direction: column;
   gap: clamp(1rem, 2.5vw, 1.6rem);
   padding: clamp(1.2rem, 2.5vw, 1.8rem);
-  background: rgba(255, 255, 255, 0.02);
+  background-color: #121520;
   border: 0.1rem solid rgb(38, 38, 38);
   border-radius: 1rem;
   transition:
