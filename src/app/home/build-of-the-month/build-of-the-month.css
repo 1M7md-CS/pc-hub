@@ -1,0 +1,65 @@
+.build {
+  background-color: var(--background);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  max-width: 85rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+}
+
+.icon-box {
+  background: radial-gradient(circle at 50% 40%, var(--icon-bg), transparent 60%), var(--surface);
+  min-width: 100%;
+  min-height: clamp(16rem, 30vw, 24rem);
+}
+
+.icon-box svg {
+  width: clamp(4.5rem, 10vw, 7rem);
+  height: clamp(4.5rem, 10vw, 7rem);
+}
+
+.build-tag {
+  display: inline-block;
+  color: var(--primary);
+  font-size: clamp(0.75rem, 0.8vw, 0.9rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-bottom: clamp(0.6rem, 1.2vw, 0.9rem);
+}
+
+.build-content h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  margin: 0 0 clamp(0.7rem, 1.5vw, 1rem);
+}
+
+.build-content p {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  margin: 0 0 clamp(1.2rem, 2.5vw, 1.8rem);
+  max-width: 34rem;
+}
+
+.list-diamond li {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+}
+
+.build-bottom {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 3vw, 1.8rem);
+  flex-wrap: wrap;
+  margin-top: clamp(1.2rem, 2.5vw, 1.8rem);
+}
+
+.build-price {
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .build {
+    grid-template-columns: 1fr;
+  }
+}
