@@ -1,0 +1,70 @@
+.banner {
+  min-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: linear-gradient(180deg, var(--surface), var(--bg));
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+  border-block: 0.1rem solid var(--border);
+}
+
+.banner-content {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner-tag {
+  display: inline-block;
+  background: var(--primary);
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: clamp(0.3rem, 0.8vw, 0.5rem) clamp(0.8rem, 1.5vw, 1.2rem);
+  border-radius: 0.3rem;
+  box-shadow: 0 0 1.2rem rgba(255, 120, 73, 0.6);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+
+.banner-content h2 {
+  font-size: clamp(1.6rem, 4.5vw, 3rem);
+  margin: 0 0 clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.banner-content p {
+  font-size: clamp(0.9rem, 1.3vw, 1.15rem);
+  margin: 0 auto clamp(1.5rem, 3.5vw, 2.2rem);
+  max-width: 36rem;
+}
+
+.banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--primary);
+  font-weight: 600;
+  padding: clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.2rem, 2.5vw, 1.8rem);
+  border-radius: 0.5rem;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  cursor: pointer;
+}
+
+.banner-cta:hover {
+  box-shadow: 0 0 1.6rem rgba(255, 120, 73, 0.7);
+  transform: translateY(-0.15rem);
+}
+
+.banner-cta svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  transition: transform 0.2s ease;
+}
+
+.banner-cta:hover svg {
+  transform: translateX(0.2rem);
+}
+
+.banner-cta:hover svg {
+  transform: translateX(0.2rem);
+}
