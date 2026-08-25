@@ -61,6 +61,47 @@ html {
   margin-left: calc(50% - 50vw);
 }
 
+.list-circle,
+.list-diamond {
+  list-style: none;
+}
+
+.list-circle li,
+.list-diamond li {
+  position: relative;
+  padding-left: 1rem;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+.list-circle li::before,
+.list-diamond li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: var(--primary);
+  box-shadow: 0 0 0.3rem var(--primary);
+}
+
+.list-circle li::before {
+  top: clamp(0.3em, 1vw, 0.4em);
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+}
+
+.list-diamond li {
+  padding-left: 1.3rem;
+  font-size: clamp(0.85rem, 1.1vw, 0.95rem);
+}
+
+.list-diamond li::before {
+  top: 0.45em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 0.1rem;
+  transform: rotate(45deg);
+}
+
 body {
   background: var(--bg);
   color: var(--text);

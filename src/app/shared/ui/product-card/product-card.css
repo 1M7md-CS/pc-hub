@@ -76,31 +76,6 @@
   line-height: 1.3;
 }
 
-.product-specs {
-  display: grid;
-  list-style: none;
-  gap: 0.3rem;
-  padding-bottom: 1rem;
-}
-
-li {
-  position: relative;
-  padding-left: 1rem;
-  font-size: clamp(0.8rem, 1vw, 1rem);
-}
-
-li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: clamp(0.3em, 1vw, 0.4em);
-  width: 0.4rem;
-  height: 0.4rem;
-  background: var(--primary);
-  border-radius: 50%;
-  box-shadow: 0 0 0.3rem var(--primary);
-}
-
 .product-buttom {
   display: flex;
   justify-content: space-between;

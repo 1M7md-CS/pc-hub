@@ -41,7 +41,7 @@
 
     <h3 class="product-name">{{ product().name }}</h3>
 
-    <ul class="product-specs">
+    <ul class="list-circle">
       @for (spec of product().specs.slice(0, 3); track spec) {
         <li>{{ spec }}</li>
       }
