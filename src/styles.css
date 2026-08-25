@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -15,6 +16,7 @@ html {
   --primary: #ff7849;
   --accent: #ffc2ad;
   --bg: #202124;
+  --icon-bg: #b8ff3d1a;
   --surface: #2a2c30;
   --text: #fafafa;
   --text-muted: #b0b2b6;
