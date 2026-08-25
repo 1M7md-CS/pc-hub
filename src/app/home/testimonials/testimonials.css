@@ -1,0 +1,74 @@
+.testimonials {
+  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(13rem, 20vw, 17rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.8rem);
+  margin-top: clamp(1.5rem, 8vw, 3rem);
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: clamp(1.3rem, 2.5vw, 1.8rem);
+  background: var(--surface);
+  border-radius: 1rem;
+  transition: transform var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-0.25rem);
+}
+
+.testimonial-stars {
+  display: flex;
+  gap: 0.2rem;
+  color: var(--primary);
+}
+
+.testimonial-stars svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.testimonial-card blockquote {
+  line-height: 1.6;
+}
+
+.testimonial-card figcaption {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.testimonial-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: var(--icon-bg);
+  border: 0.05rem solid var(--icon-border);
+  border-radius: 50%;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04rem;
+}
+
+.testimonial-card figcaption strong {
+  display: block;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.testimonial-card figcaption p {
+  font-size: 0.8rem;
+  margin: 0.1rem 0 0;
+  color: var(--text-muted);
+}

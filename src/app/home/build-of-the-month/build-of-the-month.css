@@ -16,7 +16,7 @@
   align-items: center;
   max-width: 85rem;
   margin: 0 auto;
-  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+  padding: 3rem clamp(1rem, 5vw, 3rem);
 }
 
 .icon-box {

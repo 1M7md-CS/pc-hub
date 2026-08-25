@@ -7,10 +7,11 @@ import { ShopByCategory } from './shop-by-category/shop-by-category';
 import { WhyChooseUs } from "./why-choose-us/why-choose-us";
 import { PromoBanner } from "./promo-banner/promo-banner";
 import { BuildOfTheMonth } from "./build-of-the-month/build-of-the-month";
+import { Testimonials } from "./testimonials/testimonials";
 
 @Component({
   selector: 'app-home',
-  imports: [Hero, Navbar, ShopByCategory, FeaturedProducts, WhyChooseUs, PromoBanner, BuildOfTheMonth],
+  imports: [Hero, Navbar, ShopByCategory, FeaturedProducts, WhyChooseUs, PromoBanner, BuildOfTheMonth, Testimonials],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
