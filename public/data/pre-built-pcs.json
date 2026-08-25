@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "Vortex VX-1 Ultimate",
+    "category": "Pre-Built PCs",
+    "iconPaths": [
+      "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+    ],
+    "price": 2899,
+    "oldPrice": 3199,
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "stock": 12,
+    "description": "Our flagship rig, hand-tuned for 4K gaming, streaming, and heavy creative work.",
+    "specs": [
+      "RTX 5080 Graphics",
+      "Ryzen 9 9950X CPU",
+      "64GB DDR5 RAM",
+      "2TB Gen4 NVMe SSD",
+      "1000W Platinum PSU"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Phantom P-500",
+    "category": "Pre-Built PCs",
+    "iconPaths": [
+      "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+    ],
+    "price": 1899,
+    "rating": 4.7,
+    "stock": 18,
+    "description": "High-refresh 1440p gaming monster with a clean, silent cooling setup.",
+    "specs": [
+      "RTX 5070 Ti Graphics",
+      "Ryzen 7 9700X CPU",
+      "32GB DDR5 RAM",
+      "1TB Gen4 NVMe SSD",
+      "850W Gold PSU"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Strike S-300",
+    "category": "Pre-Built PCs",
+    "iconPaths": [
+      "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+    ],
+    "price": 1249,
+    "oldPrice": 1399,
+    "badge": "Value Pick",
+    "rating": 4.6,
+    "stock": 24,
+    "description": "1080p eSports powerhouse that stays cool and quiet under pressure.",
+    "specs": [
+      "RTX 4070 Graphics",
+      "Ryzen 5 7600 CPU",
+      "16GB DDR5 RAM",
+      "1TB NVMe SSD",
+      "650W Gold PSU"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Nano N-150",
+    "category": "Pre-Built PCs",
+    "iconPaths": [
+      "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+    ],
+    "price": 849,
+    "rating": 4.5,
+    "stock": 30,
+    "description": "Compact living-room build with big performance in a tiny footprint.",
+    "specs": [
+      "RX 9070 Graphics",
+      "Ryzen 5 7600 CPU",
+      "16GB DDR5 RAM",
+      "500GB NVMe SSD",
+      "600W Bronze PSU"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Titan T-900 Pro",
+    "category": "Pre-Built PCs",
+    "iconPaths": [
+      "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
+    ],
+    "price": 4299,
+    "badge": "New",
+    "rating": 4.9,
+    "stock": 6,
+    "description": "The ultimate workstation and 8K gaming rig. No compromises, no limits.",
+    "specs": [
+      "RTX 5090 Graphics",
+      "Ryzen 9 9950X CPU",
+      "128GB DDR5 RAM",
+      "4TB Gen5 NVMe SSD",
+      "1200W Titanium PSU"
+    ]
+  }
+]

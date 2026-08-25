@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "RTX 5080 Gamer",
+    "category": "Graphics Cards",
+    "iconPaths": ["M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"],
+    "price": 999,
+    "badge": "New",
+    "rating": 4.9,
+    "stock": 10,
+    "description": "Next-gen raster and ray tracing performance for 4K and high-refresh gaming.",
+    "specs": [
+      "16GB GDDR7 VRAM",
+      "Ada-next Architecture",
+      "DLSS 4 Support",
+      "3x Axial Fans",
+      "2x HDMI, 3x DP"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "RTX 5070 Ti",
+    "category": "Graphics Cards",
+    "iconPaths": ["M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"],
+    "price": 749,
+    "rating": 4.8,
+    "stock": 15,
+    "description": "The sweet spot for 1440p high-refresh and entry-level 4K gaming.",
+    "specs": ["16GB GDDR7 VRAM", "DLSS 4 Support", "Triple Fan Cooler", "2x HDMI, 3x DP"]
+  },
+  {
+    "id": 3,
+    "name": "RX 9070 XT",
+    "category": "Graphics Cards",
+    "iconPaths": ["M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"],
+    "price": 649,
+    "rating": 4.6,
+    "stock": 20,
+    "description": "AMD's ray tracing champion with superb raster value per dollar.",
+    "specs": ["16GB GDDR6 VRAM", "RDNA 4 Architecture", "FSR 4 Support", "Dual-slot Cooler"]
+  },
+  {
+    "id": 4,
+    "name": "RTX 4070 Super",
+    "category": "Graphics Cards",
+    "iconPaths": ["M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"],
+    "price": 549,
+    "oldPrice": 599,
+    "badge": "Best Seller",
+    "rating": 4.7,
+    "stock": 25,
+    "description": "Efficient 1440p gaming with excellent power draw and cool temps.",
+    "specs": ["12GB GDDR6X VRAM", "DLSS 3 Support", "Dual Fan Design", "1x HDMI, 3x DP"]
+  },
+  {
+    "id": 5,
+    "name": "GTX 1660 Super",
+    "category": "Graphics Cards",
+    "iconPaths": ["M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"],
+    "price": 249,
+    "rating": 4.3,
+    "stock": 40,
+    "description": "Budget 1080p classic that still delivers solid frame rates today.",
+    "specs": ["6GB GDDR6 VRAM", "Turing Architecture", "Single Fan Design", "1x HDMI, 1x DP"]
+  }
+]

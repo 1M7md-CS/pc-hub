@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Ryzen 9 9950X",
+    "category": "Processors",
+    "iconPaths": [
+      "M6.75 6.75h10.5v10.5H6.75z",
+      "M10.5 10.5h3v3h-3z",
+      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
+    ],
+    "price": 649,
+    "rating": 4.8,
+    "stock": 14,
+    "description": "16-core flagship for creators who also want top-tier gaming performance.",
+    "specs": ["16 Cores / 32 Threads", "Boost up to 5.7GHz", "AM5 Socket", "170W TDP", "Unlocked"]
+  },
+  {
+    "id": 2,
+    "name": "Ryzen 7 9700X",
+    "category": "Processors",
+    "iconPaths": [
+      "M6.75 6.75h10.5v10.5H6.75z",
+      "M10.5 10.5h3v3h-3z",
+      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
+    ],
+    "price": 359,
+    "rating": 4.7,
+    "stock": 22,
+    "description": "The gamer's choice: 8 fast cores with incredible efficiency.",
+    "specs": ["8 Cores / 16 Threads", "Boost up to 5.5GHz", "AM5 Socket", "65W TDP", "Unlocked"]
+  },
+  {
+    "id": 3,
+    "name": "Intel Core i9-14900K",
+    "category": "Processors",
+    "iconPaths": [
+      "M6.75 6.75h10.5v10.5H6.75z",
+      "M10.5 10.5h3v3h-3z",
+      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
+    ],
+    "price": 549,
+    "rating": 4.6,
+    "stock": 16,
+    "description": "24 cores of hybrid power for streaming, editing, and gaming.",
+    "specs": [
+      "24 Cores / 32 Threads",
+      "Boost up to 6.0GHz",
+      "LGA1700 Socket",
+      "125W Base TDP",
+      "Unlocked"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Intel Core i5-14600K",
+    "category": "Processors",
+    "iconPaths": [
+      "M6.75 6.75h10.5v10.5H6.75z",
+      "M10.5 10.5h3v3h-3z",
+      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
+    ],
+    "price": 319,
+    "oldPrice": 349,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Mainstream value king for gaming and everyday productivity.",
+    "specs": [
+      "14 Cores / 20 Threads",
+      "Boost up to 5.3GHz",
+      "LGA1700 Socket",
+      "125W Base TDP",
+      "Unlocked"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Ryzen 5 7600",
+    "category": "Processors",
+    "iconPaths": [
+      "M6.75 6.75h10.5v10.5H6.75z",
+      "M10.5 10.5h3v3h-3z",
+      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
+    ],
+    "price": 199,
+    "rating": 4.5,
+    "stock": 35,
+    "description": "Affordable AM5 entry that punches far above its price class.",
+    "specs": ["6 Cores / 12 Threads", "Boost up to 5.1GHz", "AM5 Socket", "65W TDP", "Unlocked"]
+  }
+]
