@@ -112,7 +112,7 @@ html {
 }
 
 .cta-button:hover svg {
-  transform: translateX(0.2rem);
+  transform: translateX(0.35rem) scale(1.1);
 }
 
 body {
