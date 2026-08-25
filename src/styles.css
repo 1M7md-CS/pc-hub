@@ -21,6 +21,7 @@ html {
   --text: #fafafa;
   --text-muted: #b0b2b6;
   --border: #414349;
+  --icon-border: #b8ff3d33;
 }
 
 @keyframes fadeInUp {
