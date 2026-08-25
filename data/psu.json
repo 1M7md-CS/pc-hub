@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "name": "1000W Platinum PSU",
+    "category": "Power Supplies",
+    "iconPaths": ["M12 3.75v7.5", "M5.25 9.75a7.5 7.5 0 1 0 13.5 0"],
+    "price": 199,
+    "rating": 4.7,
+    "stock": 20,
+    "description": "Headroom for the most power-hungry GPUs with platinum efficiency.",
+    "specs": ["1000W Output", "80+ Platinum", "Fully Modular", "ATX 3.0", "10-Year Warranty"]
+  },
+  {
+    "id": 2,
+    "name": "850W Gold PSU",
+    "category": "Power Supplies",
+    "iconPaths": ["M12 3.75v7.5", "M5.25 9.75a7.5 7.5 0 1 0 13.5 0"],
+    "price": 129,
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "stock": 34,
+    "description": "The dependable sweet spot for high-end gaming builds.",
+    "specs": ["850W Output", "80+ Gold", "Fully Modular", "ATX 3.0", "10-Year Warranty"]
+  },
+  {
+    "id": 3,
+    "name": "750W Gold PSU",
+    "category": "Power Supplies",
+    "iconPaths": ["M12 3.75v7.5", "M5.25 9.75a7.5 7.5 0 1 0 13.5 0"],
+    "price": 99,
+    "rating": 4.6,
+    "stock": 40,
+    "description": "Reliable power with clean rails for mid-range systems.",
+    "specs": ["750W Output", "80+ Gold", "Fully Modular", "ATX 3.0", "10-Year Warranty"]
+  },
+  {
+    "id": 4,
+    "name": "650W Bronze PSU",
+    "category": "Power Supplies",
+    "iconPaths": ["M12 3.75v7.5", "M5.25 9.75a7.5 7.5 0 1 0 13.5 0"],
+    "price": 69,
+    "oldPrice": 79,
+    "rating": 4.5,
+    "stock": 50,
+    "description": "Budget-friendly power with stable, quiet operation.",
+    "specs": ["650W Output", "80+ Bronze", "Semi-Modular", "120mm Silent Fan", "5-Year Warranty"]
+  },
+  {
+    "id": 5,
+    "name": "1200W Titanium PSU",
+    "category": "Power Supplies",
+    "iconPaths": ["M12 3.75v7.5", "M5.25 9.75a7.5 7.5 0 1 0 13.5 0"],
+    "price": 299,
+    "badge": "New",
+    "rating": 4.9,
+    "stock": 8,
+    "description": "Ultimate efficiency for extreme multi-GPU and workstation builds.",
+    "specs": ["1200W Output", "80+ Titanium", "Fully Modular", "ATX 3.0", "12-Year Warranty"]
+  }
+]

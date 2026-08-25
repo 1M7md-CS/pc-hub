@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Vortex Mid-Tower",
+    "category": "Cases",
+    "iconPaths": [
+      "M3.75 6.75h16.5M3.75 6.75V18A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6.75M3.75 6.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25M9 13.5h6M9 16.5h4.5"
+    ],
+    "price": 129,
+    "badge": "Best Seller",
+    "rating": 4.7,
+    "stock": 26,
+    "description": "Tempered glass and superb airflow in a clean mid-tower design.",
+    "specs": [
+      "Mid-Tower ATX",
+      "Tempered Glass Panel",
+      "4x Pre-Installed Fans",
+      "Supports 360mm AIO",
+      "USB-C Front Port"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Phantom RGB Full-Tower",
+    "category": "Cases",
+    "iconPaths": [
+      "M3.75 6.75h16.5M3.75 6.75V18A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6.75M3.75 6.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25M9 13.5h6M9 16.5h4.5"
+    ],
+    "price": 159,
+    "rating": 4.6,
+    "stock": 18,
+    "description": "Show-stopping RGB showcase with room for everything and more.",
+    "specs": [
+      "Full-Tower E-ATX",
+      "ARGB Front Panel",
+      "6x Fan Support",
+      "Vertical GPU Mount",
+      "Dust Filters"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Compact Mini-ITX",
+    "category": "Cases",
+    "iconPaths": [
+      "M3.75 6.75h16.5M3.75 6.75V18A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6.75M3.75 6.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25M9 13.5h6M9 16.5h4.5"
+    ],
+    "price": 109,
+    "rating": 4.5,
+    "stock": 22,
+    "description": "Tiny footprint, big cooling, perfect for clean desk setups.",
+    "specs": [
+      "Mini-ITX",
+      "SFX PSU Support",
+      "Supports 280mm AIO",
+      "Dual GPU Slot",
+      "Tool-Less Panels"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Airflow Mesh ATX",
+    "category": "Cases",
+    "iconPaths": [
+      "M3.75 6.75h16.5M3.75 6.75V18A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6.75M3.75 6.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25M9 13.5h6M9 16.5h4.5"
+    ],
+    "price": 89,
+    "rating": 4.6,
+    "stock": 38,
+    "description": "Maximum mesh airflow for hot components without the RGB noise.",
+    "specs": [
+      "Mid-Tower ATX",
+      "Full Mesh Front",
+      "3x 140mm Fans",
+      "Supports 360mm AIO",
+      "Cable Management"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Tempered Glass Showcase",
+    "category": "Cases",
+    "iconPaths": [
+      "M3.75 6.75h16.5M3.75 6.75V18A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6.75M3.75 6.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25M9 13.5h6M9 16.5h4.5"
+    ],
+    "price": 179,
+    "badge": "New",
+    "rating": 4.8,
+    "stock": 10,
+    "description": "A dual-chamber glass case built to show off your masterpiece.",
+    "specs": [
+      "Dual-Chamber ATX",
+      "Tempered Glass Everywhere",
+      "Rear-Facing GPU Slot",
+      "Supports 360mm AIO",
+      "ARGB Controller"
+    ]
+  }
+]

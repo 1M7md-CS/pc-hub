@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "360mm AIO Liquid Cooler",
+    "category": "Cooling",
+    "iconPaths": ["M3 7.5h9a3 3 0 1 0-3-3", "M3 12h13.5a3 3 0 1 1-3 3", "M3 16.5h6a3 3 0 1 1-3 3"],
+    "price": 139,
+    "badge": "Best Seller",
+    "rating": 4.8,
+    "stock": 24,
+    "description": "Top-tier CPU cooling for overclockers and hot flagship chips.",
+    "specs": [
+      "360mm Radiator",
+      "3x 120mm RGB Fans",
+      "Supports LGA1700 / AM5",
+      "Pump Speed 2600 RPM",
+      "6-Year Warranty"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "240mm AIO Liquid Cooler",
+    "category": "Cooling",
+    "iconPaths": ["M3 7.5h9a3 3 0 1 0-3-3", "M3 12h13.5a3 3 0 1 1-3 3", "M3 16.5h6a3 3 0 1 1-3 3"],
+    "price": 99,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Compact liquid cooling that fits most cases and cases of chips.",
+    "specs": [
+      "240mm Radiator",
+      "2x 120mm Fans",
+      "Supports LGA1700 / AM5",
+      "Low-Profile Pump",
+      "5-Year Warranty"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "High-End Air Cooler",
+    "category": "Cooling",
+    "iconPaths": ["M3 7.5h9a3 3 0 1 0-3-3", "M3 12h13.5a3 3 0 1 1-3 3", "M3 16.5h6a3 3 0 1 1-3 3"],
+    "price": 79,
+    "rating": 4.5,
+    "stock": 34,
+    "description": "Tower air cooling that rivals AIOs with zero pump failure risk.",
+    "specs": [
+      "Dual Tower Heatsink",
+      "2x 120mm Fans",
+      "6 Heat Pipes",
+      "Supports LGA1700 / AM5",
+      "Silent Operation"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "3-Pack RGB Fans",
+    "category": "Cooling",
+    "iconPaths": ["M3 7.5h9a3 3 0 1 0-3-3", "M3 12h13.5a3 3 0 1 1-3 3", "M3 16.5h6a3 3 0 1 1-3 3"],
+    "price": 49,
+    "rating": 4.4,
+    "stock": 60,
+    "description": "Daisy-chainable ARGB fans to light up your whole rig.",
+    "specs": ["3x 120mm Fans", "ARGB Lighting", "PWM Control", "1500 RPM Max", "Hub Included"]
+  },
+  {
+    "id": 5,
+    "name": "140mm Fan 3-Pack",
+    "category": "Cooling",
+    "iconPaths": ["M3 7.5h9a3 3 0 1 0-3-3", "M3 12h13.5a3 3 0 1 1-3 3", "M3 16.5h6a3 3 0 1 1-3 3"],
+    "price": 39,
+    "oldPrice": 45,
+    "rating": 4.3,
+    "stock": 70,
+    "description": "Quiet, high-airflow 140mm fans for mesh cases and radiators.",
+    "specs": ["3x 140mm Fans", "PWM Control", "1200 RPM Max", "Low Noise", "Anti-Vibration Pads"]
+  }
+]
