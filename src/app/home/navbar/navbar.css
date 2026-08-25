@@ -30,14 +30,11 @@ button svg {
   display: block;
   width: auto;
   height: clamp(2rem, 4vw, 3rem);
-  transition:
-    transform var(--transition),
-    filter var(--transition);
+  transition: transform var(--transition);
 }
 
 .logo img:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 0.8rem rgba(184, 255, 61, 0.45));
 }
 
 ul {
@@ -62,7 +59,6 @@ ul li a {
   text-transform: uppercase;
   font-size: clamp(0.9rem, 0.8vw + 0.5rem, 1rem);
   letter-spacing: 0.1rem;
-  transition: color var(--transition);
 }
 
 ul li a::after {
@@ -75,12 +71,7 @@ ul li a::after {
   background: var(--primary);
   box-shadow: 0 0 0.6rem var(--primary);
   transform: translateX(-50%);
-  transition: width 0.3s ease;
-}
-
-ul li a:hover,
-ul li a.active {
-  color: var(--accent);
+  transition: width var(--transition);
 }
 
 ul li a:hover::after,
@@ -119,7 +110,7 @@ ul li a.active::after {
     backdrop-filter: blur(0.6rem);
     border-bottom: 0.1rem solid var(--border);
     transition:
-      max-height 0.4s ease,
+      max-height var(--transition),
       opacity var(--transition),
       visibility var(--transition);
   }
