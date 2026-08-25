@@ -1,3 +1,13 @@
+@keyframes skeleton {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 .build {
   background-color: var(--background);
   display: grid;
@@ -54,12 +64,35 @@
 }
 
 .build-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.build-current-price {
   font-size: clamp(1.3rem, 2.5vw, 1.8rem);
   font-weight: 700;
+}
+
+.build-old-price {
+  color: var(--text-muted);
+  font-size: clamp(0.75rem, 1vw, 0.85rem);
+  text-decoration: line-through;
+}
+
+.build-price-skeleton {
+  width: 7rem;
+  height: 1.8rem;
+  border-radius: 0.3rem;
+  background: var(--surface);
+  animation: skeleton 1.2s ease-in-out infinite alternate;
 }
 
 @media (max-width: 768px) {
   .build {
     grid-template-columns: 1fr;
+  }
+
+  .build-bottom {
+    justify-content: space-between;
   }
 }

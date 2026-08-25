@@ -34,7 +34,16 @@
     </ul>
 
     <div class="build-bottom">
-      <span class="build-price">$2,899</span>
+      @if (product(); as product) {
+        <div class="build-price">
+          @if (product.oldPrice) {
+            <span class="build-old-price">${{ product.oldPrice }}</span>
+          }
+          <span class="build-current-price">${{ product.price }}</span>
+        </div>
+      } @else {
+        <div class="build-price-skeleton"></div>
+      }
       <a class="cta-button">
         <span>View build</span>
         <svg
