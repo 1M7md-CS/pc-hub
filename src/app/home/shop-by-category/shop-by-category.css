@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: clamp(1rem, 2.5vw, 1.6rem);
   padding: clamp(1.2rem, 2.5vw, 1.8rem);
-  background-color: #121520;
+  background-color: var(--surface);
   border: 0.1rem solid var(--border);
   border-radius: 1rem;
   transition:
@@ -22,9 +22,9 @@
 }
 
 .category-card:hover {
-  background: rgba(255, 59, 63, 0.05);
+  background: rgba(184, 255, 61, 0.04);
   border-color: var(--primary);
-  box-shadow: 0 0 1.4rem rgba(255, 59, 63, 0.35);
+  box-shadow: 0 0 1.4rem rgba(184, 255, 61, 0.22);
   transform: translateY(-0.35rem);
 }
 
@@ -34,15 +34,15 @@
   justify-content: center;
   width: clamp(2.8rem, 5vw, 3.4rem);
   height: clamp(2.8rem, 5vw, 3.4rem);
-  background: rgba(255, 59, 63, 0.12);
-  border: 0.05rem solid rgba(255, 59, 63, 0.4);
+  background: rgba(184, 255, 61, 0.1);
+  border: 0.05rem solid rgba(184, 255, 61, 0.35);
   border-radius: 0.7rem;
   color: var(--primary);
   transition: box-shadow 0.3s ease;
 }
 
 .category-card:hover .category-icon {
-  box-shadow: 0 0 1rem rgba(255, 59, 63, 0.5);
+  box-shadow: 0 0 1rem rgba(184, 255, 61, 0.3);
 }
 
 .category-icon svg {

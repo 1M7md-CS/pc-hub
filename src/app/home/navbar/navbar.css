@@ -8,7 +8,7 @@ nav {
 
 button {
   background: transparent;
-  color: var(--white);
+  color: var(--text);
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -18,7 +18,7 @@ button {
 
 button:hover,
 button:active {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(184, 255, 61, 0.1);
 }
 
 button svg {
@@ -37,7 +37,7 @@ button svg {
 
 .logo img:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 0 0.8rem rgba(255, 59, 63, 0.6));
+  filter: drop-shadow(0 0 0.8rem rgba(184, 255, 61, 0.45));
 }
 
 ul {
@@ -80,7 +80,7 @@ ul li a::after {
 
 ul li a:hover,
 ul li a.active {
-  color: var(--white);
+  color: var(--accent);
 }
 
 ul li a:hover::after,
@@ -115,9 +115,9 @@ ul li a.active::after {
     overflow: hidden;
     opacity: 0;
     visibility: hidden;
-    background: var(--background);
+    background: var(--bg);
     backdrop-filter: blur(0.6rem);
-    border-bottom: 0.1rem solid rgb(50, 50, 50);
+    border-bottom: 0.1rem solid var(--border);
     transition:
       max-height 0.4s ease,
       opacity 0.3s ease,
@@ -152,7 +152,7 @@ ul li a.active::after {
   ul li a:hover,
   ul li a.active {
     color: var(--primary);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(184, 255, 61, 0.06);
     border-left-color: var(--primary);
   }
 }

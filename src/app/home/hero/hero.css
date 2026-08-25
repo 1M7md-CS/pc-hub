@@ -4,7 +4,7 @@
   background-image: url('../../../../public/images/hero/hero-pc.webp');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .hero-content {
@@ -45,7 +45,7 @@
 
 .hero-content .badge {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--bg);
 
   padding: clamp(0.1rem, 0.5vw, 0.3rem) clamp(0.4rem, 1vw, 0.8rem);
 
@@ -68,7 +68,7 @@
   background: transparent;
   border: none;
 
-  color: #2563eb;
+  color: var(--primary);
 
   font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   font-weight: 500;
@@ -89,7 +89,7 @@
 
 .hero-content .cta-btn a {
   text-decoration: none;
-  color: #2563eb;
+  color: var(--primary);
 
   transition: color 0.2s ease;
 }
@@ -104,7 +104,7 @@
 }
 
 .hero-content .cta-btn:hover a {
-  color: #3b82f6;
+  color: var(--accent);
 }
 
 .hero-content .cta-btn:hover svg {

@@ -6,7 +6,7 @@
 }
 
 .section-header span {
-  color: var(--secondary);
+  color: var(--accent);
   font-size: clamp(0.7rem, 0.8vw, 0.9rem);
   font-weight: 500;
   text-transform: uppercase;

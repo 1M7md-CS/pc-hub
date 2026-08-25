@@ -12,14 +12,13 @@ html {
 }
 
 :root {
-  --primary: #a90003;
-  --secondary: #ff4347;
-  --text: #e8e6e3;
-  --background: #11131e;
-  --white: #ffffff;
-  --border: #262626;
-
-  --text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --primary: #ff7849;
+  --accent: #ffc2ad;
+  --bg: #202124;
+  --surface: #2a2c30;
+  --text: #fafafa;
+  --text-muted: #b0b2b6;
+  --border: #414349;
 }
 
 @keyframes fadeInUp {
@@ -49,18 +48,17 @@ html {
 @keyframes pulseGlow {
   0%,
   100% {
-    box-shadow: 0 0 0.6rem rgba(255, 59, 63, 0.4);
+    box-shadow: 0 0 0.6rem rgba(184, 255, 61, 0.35);
   }
 
   50% {
-    box-shadow: 0 0 1.3rem rgba(255, 59, 63, 0.8);
+    box-shadow: 0 0 1.3rem rgba(184, 255, 61, 0.7);
   }
 }
 
 body {
-  background: var(--background);
+  background: var(--bg);
   color: var(--text);
-  text-shadow: var(--text-shadow);
 }
 
 :where(h1, h2) {
@@ -94,10 +92,10 @@ section {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary);
+  background: var(--accent);
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--bg);
   border-radius: 0.2rem;
 }
