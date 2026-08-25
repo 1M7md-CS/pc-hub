@@ -1,4 +1,5 @@
 import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Category } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
@@ -15,10 +16,8 @@ export class ShopByCategory implements OnInit {
   readonly categories = signal<Category[]>([]);
 
   ngOnInit(): void {
-    const subscription = this.productsService.categories.subscribe({
+    this.productsService.categories.pipe(takeUntilDestroyed(this.destroyRef)).subscribe({
       next: (categories) => this.categories.set(categories),
     });
-
-    this.destroyRef.onDestroy(() => subscription.unsubscribe());
   }
 }

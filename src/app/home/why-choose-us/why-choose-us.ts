@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Features } from '../../models/feature-model';
 
 @Component({
@@ -14,10 +15,11 @@ export class WhyChooseUs implements OnInit {
   features = signal<Features[]>([]);
 
   ngOnInit() {
-    const subscription = this.httpClient.get<Features[]>('data/features.json').subscribe({
-      next: (features) => this.features.set(features),
-    });
-
-    this.destroyRef.onDestroy(() => subscription.unsubscribe);
+    this.httpClient
+      .get<Features[]>('data/features.json')
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe({
+        next: (features) => this.features.set(features),
+      });
   }
 }

@@ -1,5 +1,6 @@
 import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Product } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { ProductCard } from '../../shared/ui/product-card/product-card';
@@ -17,10 +18,8 @@ export class FeaturedProducts implements OnInit {
   products = signal<Product[]>([]);
 
   ngOnInit(): void {
-    const subscription = this.productsService.featuredProducts.subscribe({
+    this.productsService.featuredProducts.pipe(takeUntilDestroyed(this.destroyRef)).subscribe({
       next: (data) => this.products.set(data),
     });
-
-    this.destroyRef.onDestroy(() => subscription.unsubscribe());
   }
 }
