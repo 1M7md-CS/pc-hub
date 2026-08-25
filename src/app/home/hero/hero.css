@@ -12,14 +12,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
   width: clamp(85%, 90vw, 43.7rem);
   gap: clamp(0.8rem, 1.5vw, 1.3rem);
   padding: clamp(1rem, 3vw, 2.5rem);
@@ -27,17 +24,15 @@
 
 .hero-content h1 {
   font-size: clamp(2.5rem, 5vw + 1rem, 4.3rem);
+  opacity: 0;
   animation: fadeInUp 0.8s ease 0.2s forwards;
 }
 
 .hero-content p {
   font-size: clamp(1.1rem, 1.2vw + 0.5rem, 1.3rem);
   max-width: clamp(20rem, 80vw, 36.3rem);
-
   opacity: 0;
-
   animation: fadeInUp 0.8s ease 0.4s forwards;
-
   text-shadow:
     0 2px 4px rgba(0, 0, 0, 0.9),
     0 0 10px rgba(0, 0, 0, 0.8);
@@ -46,51 +41,35 @@
 .hero-content .badge {
   background-color: var(--primary);
   color: var(--bg);
-
   padding: clamp(0.1rem, 0.5vw, 0.3rem) clamp(0.4rem, 1vw, 0.8rem);
-
   border-radius: 0.3rem;
-
   font-size: clamp(1rem, 1vw, 1.5rem);
   font-weight: 600;
-
   display: inline-block;
   white-space: nowrap;
-
   animation: pulseGlow 2.5s infinite ease-in-out;
-
   transform: rotate(-1deg);
-
   text-shadow: none;
 }
 
 .hero-content .cta-btn {
   background: transparent;
   border: none;
-
   color: var(--primary);
-
   font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   font-weight: 500;
-
   cursor: pointer;
-
   display: flex;
   align-items: center;
-
   gap: clamp(0.4rem, 0.8vw, 0.6rem);
-
   opacity: 0;
-
   animation: fadeInUp 0.8s ease 0.6s forwards;
-
   transition: color 0.2s ease;
 }
 
 .hero-content .cta-btn a {
   text-decoration: none;
   color: var(--primary);
-
   transition: color 0.2s ease;
 }
 
