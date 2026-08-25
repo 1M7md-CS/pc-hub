@@ -1,12 +1,28 @@
 <header>
-  <app-navbar></app-navbar>
-  <app-hero></app-hero>
+  <app-navbar />
+  <app-hero />
 </header>
 
 <main>
   <app-shop-by-category></app-shop-by-category>
-  <app-featured-products></app-featured-products>
-  <app-why-choose-us></app-why-choose-us>
+
+  @defer (on viewport) {
+    <app-featured-products></app-featured-products>
+  } @placeholder {
+    <section class="section-placeholder"></section>
+  }
+
+  @defer (on viewport) {
+    <app-why-choose-us></app-why-choose-us>
+  } @placeholder {
+    <section class="section-placeholder"></section>
+  }
+
   <app-promo-banner></app-promo-banner>
-  <app-build-of-the-month></app-build-of-the-month>
+
+  @defer (on viewport) {
+    <app-build-of-the-month></app-build-of-the-month>
+  } @placeholder {
+    <section class="section-placeholder"></section>
+  }
 </main>

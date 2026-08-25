@@ -18,3 +18,7 @@ main {
   max-width: 90rem;
   margin: 0 auto 0;
 }
+
+.section-placeholder {
+  min-height: 40rem;
+}
