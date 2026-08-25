@@ -1,10 +1,10 @@
 section {
-  min-width: 100vw;
-  margin-left: calc(50% - 50vw);
   border-top: 0.1rem solid var(--border);
   padding-bottom: clamp(3rem, 8vw, 6rem);
   margin-top: clamp(3rem, 8vw, 6rem);
 }
+
+
 
 .features-grid {
   display: grid;
@@ -20,26 +20,8 @@ section {
   gap: clamp(0.8rem, 2vw, 1.2rem);
 }
 
-.feature-icon {
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  width: clamp(2.8rem, 5vw, 3.4rem);
-  height: clamp(2.8rem, 5vw, 3.4rem);
-  background: var(--icon-bg);
-  border: 0.05rem solid var(--icon-border);
-  border-radius: 0.7rem;
-  color: var(--primary);
-  transition: box-shadow 0.3s ease;
-}
-
-.feature-icon svg {
-  width: clamp(1.3rem, 2.5vw, 1.6rem);
-  height: clamp(1.3rem, 2.5vw, 1.6rem);
-}
-
-.feature-item:hover .feature-icon {
-  box-shadow: 0 0 1rem rgba(184, 255, 61, 0.3);
+.feature-item:hover .icon-box {
+  box-shadow: 0 0 1rem var(--glow);
 }
 
 .feature-item h3 {

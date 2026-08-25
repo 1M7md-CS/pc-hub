@@ -1,6 +1,4 @@
 .banner {
-  min-width: 100vw;
-  margin-left: calc(50% - 50vw);
   background: linear-gradient(180deg, var(--surface), var(--bg));
   padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
   border-block: 0.1rem solid var(--border);
@@ -45,8 +43,8 @@
   padding: clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.2rem, 2.5vw, 1.8rem);
   border-radius: 0.5rem;
   transition:
-    box-shadow 0.3s ease,
-    transform 0.2s ease;
+    box-shadow var(--transition),
+    transform var(--transition);
   cursor: pointer;
 }
 
@@ -58,11 +56,7 @@
 .banner-cta svg {
   width: 1.15rem;
   height: 1.15rem;
-  transition: transform 0.2s ease;
-}
-
-.banner-cta:hover svg {
-  transform: translateX(0.2rem);
+  transition: transform var(--transition);
 }
 
 .banner-cta:hover svg {
