@@ -87,6 +87,10 @@
   animation: skeleton 1.2s ease-in-out infinite alternate;
 }
 
+.cta-button {
+  transform: none;
+}
+
 @media (max-width: 768px) {
   .build {
     grid-template-columns: 1fr;
