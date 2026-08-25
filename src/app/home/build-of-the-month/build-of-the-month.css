@@ -58,6 +58,8 @@
 .build-bottom {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
   gap: clamp(1rem, 3vw, 1.8rem);
   flex-wrap: wrap;
   margin-top: clamp(1.2rem, 2.5vw, 1.8rem);
@@ -94,9 +96,5 @@
 @media (max-width: 768px) {
   .build {
     grid-template-columns: 1fr;
-  }
-
-  .build-bottom {
-    justify-content: space-between;
   }
 }
