@@ -35,25 +35,11 @@ html {
   border: 0.05rem solid var(--icon-border);
   border-radius: 0.7rem;
   color: var(--primary);
-  transition: box-shadow var(--transition);
 }
 
 .icon-box svg {
   width: clamp(1.3rem, 2.5vw, 1.6rem);
   height: clamp(1.3rem, 2.5vw, 1.6rem);
-}
-
-.card-hover {
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition),
-    transform var(--transition);
-}
-
-.card-hover:hover {
-  border-color: var(--primary);
-  box-shadow: 0 0 1.5rem var(--glow);
-  transform: translateY(-0.3rem);
 }
 
 .full-bleed {
@@ -90,16 +76,43 @@ html {
 }
 
 .list-diamond li {
-  padding-left: 1.3rem;
+  padding-left: 1.15rem;
   font-size: clamp(0.85rem, 1.1vw, 0.95rem);
 }
 
 .list-diamond li::before {
-  top: 0.45em;
+  left: 0;
+  top: 0.4em;
   width: 0.55rem;
   height: 0.55rem;
   border-radius: 0.1rem;
   transform: rotate(45deg);
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--primary);
+  font-weight: 600;
+  padding: clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.2rem, 2.5vw, 1.8rem);
+  border-radius: 0.5rem;
+  transition: transform var(--transition);
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-0.15rem);
+}
+
+.cta-button svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  transition: transform var(--transition);
+}
+
+.cta-button:hover svg {
+  transform: translateX(0.2rem);
 }
 
 body {
@@ -108,11 +121,15 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-:where(h1, h2) {
+h1,
+h2 {
   font-family: 'Orbitron', sans-serif;
 }
 
-:where(h3, h4, h5, h6) {
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   line-height: 1.1;
 }
