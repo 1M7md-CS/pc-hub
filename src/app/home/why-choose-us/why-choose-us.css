@@ -27,7 +27,7 @@ section {
   width: clamp(2.8rem, 5vw, 3.4rem);
   height: clamp(2.8rem, 5vw, 3.4rem);
   background: var(--icon-bg);
-  border: 0.05rem solid var(--border);
+  border: 0.05rem solid var(--icon-border);
   border-radius: 0.7rem;
   color: var(--primary);
   transition: box-shadow 0.3s ease;
