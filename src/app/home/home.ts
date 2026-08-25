@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+
+import { FeaturedProducts } from './featured-products/featured-products';
 import { Hero } from './hero/hero';
 import { Navbar } from './navbar/navbar';
 import { ShopByCategory } from './shop-by-category/shop-by-category';
-import { FeaturedProducts } from "./featured-products/featured-products";
 
 @Component({
   selector: 'app-home',
