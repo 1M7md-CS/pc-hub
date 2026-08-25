@@ -4,8 +4,6 @@ section {
   margin-top: clamp(3rem, 8vw, 6rem);
 }
 
-
-
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(clamp(11rem, 18vw, 16rem), 1fr));
@@ -18,10 +16,6 @@ section {
   display: flex;
   align-items: flex-start;
   gap: clamp(0.8rem, 2vw, 1.2rem);
-}
-
-.feature-item:hover .icon-box {
-  box-shadow: 0 0 1rem var(--glow);
 }
 
 .feature-item h3 {

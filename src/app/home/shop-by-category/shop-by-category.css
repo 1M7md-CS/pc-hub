@@ -12,23 +12,12 @@
   padding: clamp(1.2rem, 2.5vw, 1.8rem);
   background-color: var(--surface);
   border-radius: 1rem;
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition),
-    transform var(--transition),
-    background-color var(--transition);
+  transition: transform var(--transition);
   cursor: pointer;
 }
 
 .category-card:hover {
-  background: rgba(184, 255, 61, 0.04);
-  border-color: var(--primary);
-  box-shadow: 0 0 1.4rem var(--glow);
   transform: translateY(-0.35rem);
-}
-
-.category-card:hover .icon-box {
-  box-shadow: 0 0 1rem var(--glow);
 }
 
 .category-info h3 {

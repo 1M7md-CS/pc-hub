@@ -127,14 +127,3 @@ section {
     transform: translateY(0);
   }
 }
-
-@keyframes pulseGlow {
-  0%,
-  100% {
-    box-shadow: 0 0 0.6rem rgba(184, 255, 61, 0.35);
-  }
-
-  50% {
-    box-shadow: 0 0 1.3rem rgba(184, 255, 61, 0.7);
-  }
-}

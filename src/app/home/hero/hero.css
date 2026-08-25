@@ -47,7 +47,6 @@
   font-weight: 600;
   display: inline-block;
   white-space: nowrap;
-  animation: pulseGlow 2.5s infinite ease-in-out;
   transform: rotate(-1deg);
   text-shadow: none;
 }

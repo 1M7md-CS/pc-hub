@@ -1,17 +1,10 @@
 .product-card {
-  display: flex;
-  flex-direction: column;
   background-color: var(--surface);
   border-radius: 1rem;
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition),
-    transform var(--transition);
+  transition: transform var(--transition);
 }
 
 .product-card:hover {
-  border-color: var(--primary);
-  box-shadow: 0 0 1.5rem var(--glow);
   transform: translateY(-0.3rem);
 }
 
@@ -36,13 +29,12 @@
   left: 0.8rem;
   background: var(--primary);
   color: var(--bg);
-  font-size: 0.7rem;
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   padding: 0.25rem 0.6rem;
   border-radius: 0.3rem;
-  box-shadow: 0 0 0.8rem var(--glow);
 }
 
 .product-info {
@@ -50,7 +42,6 @@
   flex-direction: column;
   gap: 0.5rem;
   padding: clamp(0.9rem, 2vw, 1.2rem);
-  flex: 1;
 }
 
 .product-meta {
@@ -64,12 +55,11 @@
   font-size: clamp(0.7rem, 1vw, 0.8rem);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.08rem;
 }
 
 .product-rating {
-  display: inline-flex;
-  align-items: center;
+  display: flex;
   gap: 0.25rem;
   font-size: clamp(0.75rem, 1vw, 0.85rem);
   font-weight: 600;
@@ -91,7 +81,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
-  flex: 1;
   padding-bottom: 1rem;
 }
 
@@ -103,8 +92,8 @@ li {
 li::before {
   content: '';
   position: absolute;
-  left: 0;
-  top: 0.45em;
+  inset: 0;
+  top: 0.4rem;
   width: 0.4rem;
   height: 0.4rem;
   background: var(--primary);
@@ -121,12 +110,9 @@ li::before {
 .product-price {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.4rem;
 }
 
 .product-current-price {
-  color: var(--text);
   font-size: clamp(1rem, 1.4vw, 1.15rem);
   font-weight: 700;
 }
@@ -142,7 +128,7 @@ li::before {
   align-items: center;
   justify-content: space-between;
   gap: 0.4rem;
-  background: rgba(184, 255, 61, 0.1);
+  background: var(--icon-bg);
   border: 0.05rem solid var(--icon-border);
   border-radius: 0.5rem;
   color: var(--primary);
@@ -150,10 +136,7 @@ li::before {
   font-weight: 600;
   cursor: pointer;
   padding: clamp(0.5rem, 1.2vw, 0.65rem) clamp(0.8rem, 1.5vw, 1rem);
-  transition:
-    background-color var(--transition),
-    color var(--transition),
-    box-shadow var(--transition);
+  transition: box-shadow var(--transition);
 }
 
 .product-add svg {
@@ -162,12 +145,5 @@ li::before {
 }
 
 .product-add:hover {
-  background: var(--primary);
-  color: var(--bg);
   box-shadow: 0 0 0.9rem var(--glow);
-}
-
-.product-add.added {
-  background: var(--primary);
-  color: var(--bg);
 }
