@@ -32,3 +32,18 @@
 .view-all:hover svg {
   transform: translateX(0.2rem);
 }
+
+.products-track {
+  display: flex;
+  gap: clamp(0.8rem, 2vw, 1.4rem);
+  padding: 1rem clamp(0.5rem, 2vw, 1rem) 1.5rem;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--background);
+  scroll-snap-type: x mandatory;
+}
+
+.product-track-item {
+  flex: 0 0 clamp(14rem, 22vw, 17rem);
+  scroll-snap-align: start;
+}

@@ -22,5 +22,11 @@
     </a>
   </div>
 
-  
+  <div class="products-track">
+    @for (product of products(); track product.name) {
+      <div class="product-track-item">
+        <app-product-card [product]="product" />
+      </div>
+    }
+  </div>
 </section>
