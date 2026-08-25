@@ -77,9 +77,8 @@
 }
 
 .product-specs {
+  display: grid;
   list-style: none;
-  display: flex;
-  flex-direction: column;
   gap: 0.3rem;
   padding-bottom: 1rem;
 }
@@ -87,13 +86,14 @@
 li {
   position: relative;
   padding-left: 1rem;
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 li::before {
   content: '';
   position: absolute;
-  inset: 0;
-  top: 0.4rem;
+  left: 0;
+  top: clamp(0.3em, 1vw, 0.4em);
   width: 0.4rem;
   height: 0.4rem;
   background: var(--primary);

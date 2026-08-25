@@ -25,4 +25,5 @@ section {
 
 .feature-item p {
   font-size: clamp(0.82rem, 1.1vw, 0.92rem);
+  color: var(--text-muted);
 }
