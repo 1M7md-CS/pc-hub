@@ -1,7 +1,5 @@
 section {
-  border-top: 0.1rem solid var(--border);
   padding-bottom: clamp(3rem, 8vw, 6rem);
-  margin-top: clamp(3rem, 8vw, 6rem);
 }
 
 .features-grid {

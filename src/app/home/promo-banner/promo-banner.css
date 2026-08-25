@@ -32,29 +32,3 @@
   margin: 0 auto clamp(1.5rem, 3.5vw, 2.2rem);
   max-width: 36rem;
 }
-
-.banner-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  background: var(--primary);
-  font-weight: 600;
-  padding: clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.2rem, 2.5vw, 1.8rem);
-  border-radius: 0.5rem;
-  transition: transform var(--transition);
-  cursor: pointer;
-}
-
-.banner-cta:hover {
-  transform: translateY(-0.15rem);
-}
-
-.banner-cta svg {
-  width: 1.15rem;
-  height: 1.15rem;
-  transition: transform var(--transition);
-}
-
-.banner-cta:hover svg {
-  transform: translateX(0.2rem);
-}
