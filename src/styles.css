@@ -138,7 +138,7 @@ p {
   line-height: 1.5;
 }
 
-section {
+.home-section {
   padding: 0 clamp(1rem, 5vw, 3rem);
   padding-top: clamp(3rem, 8vw, 6rem);
 }

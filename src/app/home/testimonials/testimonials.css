@@ -1,5 +1,5 @@
-.testimonials {
-  padding: clamp(3rem, 8vw, 6rem) clamp(1rem, 5vw, 3rem);
+.home-section {
+  padding-bottom: clamp(3rem, 8vw, 8rem);
 }
 
 .testimonials-grid {
