@@ -5,10 +5,11 @@ import { Product } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { ProductCard } from '../../shared/ui/product-card/product-card';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-featured-products',
-  imports: [SectionHeader, ProductCard],
+  imports: [SectionHeader, ProductCard, RouterLink],
   templateUrl: './featured-products.html',
   styleUrl: './featured-products.css',
 })
