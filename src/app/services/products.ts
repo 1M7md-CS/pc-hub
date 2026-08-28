@@ -34,8 +34,4 @@ export class ProductsService {
       ]),
     );
   }
-
-  get icons() {
-    return this.httpClient.get<Record<string, string[]>>('data/icons.json');
-  }
 }
