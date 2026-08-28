@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { CategoryProducts } from './category-products/category-products';
 import { Home } from './home/home';
 import { Page } from './page/page';
 
@@ -28,6 +29,10 @@ export const routes: Routes = [
   {
     path: 'pages/:slug',
     component: Page,
+  },
+  {
+    path: 'products/:slug',
+    component: CategoryProducts,
   },
   ...pageRoutes.map(({ path, slug }) => ({
     path: path,
