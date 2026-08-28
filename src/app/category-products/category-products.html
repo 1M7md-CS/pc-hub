@@ -1,0 +1,43 @@
+<main class="category-page">
+  <a class="back-link" routerLink="/home">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19.5 12h-15m0 0 6.75 6.75M4.5 12l6.75-6.75"
+      />
+    </svg>
+    <span>Back to home</span>
+  </a>
+
+  <app-section-header
+    label="Category"
+    title="{{ categoryTitle() }}"
+    description="Browse our collection of {{ categoryTitle() }} and gear up for your next build."
+  ></app-section-header>
+
+  @if (products()) {
+    <div class="products-grid">
+      @for (product of products(); track product.id) {
+        <app-product-card [product]="product" />
+      }
+    </div>
+  } @else {
+    <div class="empty">
+      <p>Products coming soon.</p>
+    </div>
+  }
+
+  @if (isEmptyProducts() && products()) {
+    <div class="empty">
+      <p>Products coming soon.</p>
+    </div>
+  }
+</main>

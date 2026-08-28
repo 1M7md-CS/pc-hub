@@ -1,0 +1,38 @@
+.category-page {
+  margin: clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 3rem) clamp(3rem, 8vw, 6rem);
+}
+
+app-section-header {
+  display: block;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(clamp(13rem, 20vw, 16rem), 1fr));
+  gap: clamp(1rem, 2.5vw, 1.6rem);
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+.empty {
+  display: grid;
+  place-content: center;
+  max-width: 40rem;
+  margin: 0 auto;
+  min-height: 12rem;
+  border: 0.1rem dashed var(--border);
+  border-radius: 1rem;
+}
+
+.empty p {
+  color: var(--text-muted);
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  app-section-header {
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+}
