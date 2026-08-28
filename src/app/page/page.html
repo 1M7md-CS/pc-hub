@@ -1,0 +1,43 @@
+<main class="page">
+  <a class="back-link" routerLink="/home">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M19.5 12h-15m0 0 6.75 6.75M4.5 12l6.75-6.75"
+      />
+    </svg>
+    <span>Back to home</span>
+  </a>
+
+  <div class="page-head">
+    <span class="page-tag">PcHub</span>
+    <h1>{{ page()?.title }}</h1>
+    <p>{{ page()?.intro }}</p>
+  </div>
+
+  <div class="page-body">
+    @for (section of page()?.sections; track section.heading) {
+      <section class="page-section">
+        <h2>{{ section.heading }}</h2>
+        @if (section.body) {
+          <p>{{ section.body }}</p>
+        }
+        @if (section.items?.length) {
+          <ul class="list-circle">
+            @for (item of section.items; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        }
+      </section>
+    }
+  </div>
+</main>

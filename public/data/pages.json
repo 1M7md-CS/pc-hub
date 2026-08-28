@@ -1,0 +1,250 @@
+{
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "intro": "Quick answers to the questions we hear most often.",
+    "sections": [
+      {
+        "heading": "How long does shipping take?",
+        "body": "Orders placed before 2 PM ship the same day. Delivery takes 2–5 business days depending on your location."
+      },
+      {
+        "heading": "Do you offer custom builds?",
+        "body": "Yes. Start from the Custom Builds page or contact our support team and we will design a rig around your budget and use case."
+      },
+      {
+        "heading": "What is covered by the warranty?",
+        "body": "Every pre-built PC and component we sell is covered.",
+        "items": [
+          "Defective parts replaced within 2 years",
+          "Free labor and diagnostics on pre-built PCs",
+          "Lifetime technical support on our builds"
+        ]
+      },
+      {
+        "heading": "Can I return an opened product?",
+        "body": "Yes, most items can be returned within 30 days as long as they are in original condition and packaging."
+      }
+    ]
+  },
+  "shipping-and-returns": {
+    "title": "Shipping & Returns",
+    "intro": "Everything you need to know about getting your gear and sending it back.",
+    "sections": [
+      {
+        "heading": "Processing",
+        "body": "In-stock items are packed and dispatched within 1 business day. Pre-built PCs are assembled, tested, and quality-checked before leaving our workshop."
+      },
+      {
+        "heading": "Delivery times",
+        "body": "Standard shipping takes 2–5 business days depending on your region.",
+        "items": [
+          "Free 2-day shipping on orders over $100",
+          "Express next-day shipping available at checkout",
+          "Live tracking provided via email and SMS"
+        ]
+      },
+      {
+        "heading": "Returns",
+        "body": "You have 30 days from delivery to request a return.",
+        "items": [
+          "Items must be in original condition with all accessories",
+          "Return shipping is free for defective or damaged products",
+          "Refunds are issued to your original payment method within 7 days"
+        ]
+      },
+      {
+        "heading": "Damaged or defective items",
+        "body": "If your order arrives damaged or stops working, contact support within 30 days and we will arrange a replacement or refund right away."
+      }
+    ]
+  },
+  "warranty": {
+    "title": "Warranty",
+    "intro": "We stand behind every build and every part we sell.",
+    "sections": [
+      {
+        "heading": "Pre-Built PCs",
+        "body": "All pre-built systems include a 2-year warranty covering parts and labor. We repair or replace any faulty component at no cost."
+      },
+      {
+        "heading": "Components",
+        "body": "Individual components carry a 2-year warranty against manufacturing defects from the date of purchase."
+      },
+      {
+        "heading": "What is not covered",
+        "items": [
+          "Physical damage caused by misuse or accidents",
+          "Liquid damage or electrical surges",
+          "Modifications outside of manufacturer specifications",
+          "Cosmetic wear and tear"
+        ]
+      },
+      {
+        "heading": "How to claim",
+        "body": "Contact our support team with your order number and a description of the issue. We will send you a prepaid shipping label and process the claim."
+      }
+    ]
+  },
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "intro": "How we collect, use, and protect your personal information.",
+    "sections": [
+      {
+        "heading": "Information we collect",
+        "body": "We collect information you provide directly, such as your name, email, shipping address, and payment details, as well as technical data like device and usage information."
+      },
+      {
+        "heading": "How we use your information",
+        "items": [
+          "Process and deliver your orders",
+          "Provide customer support",
+          "Send order updates and promotions you opt in to",
+          "Improve and secure our website"
+        ]
+      },
+      {
+        "heading": "Cookies",
+        "body": "We use cookies to remember your preferences, keep your cart, and understand how visitors use the site. See our Cookies page for details."
+      },
+      {
+        "heading": "Your rights",
+        "body": "You can request access to, correction of, or deletion of your personal data at any time by contacting us. We never sell your data to third parties."
+      }
+    ]
+  },
+  "terms-of-service": {
+    "title": "Terms of Service",
+    "intro": "The rules and guidelines for using PcHub.",
+    "sections": [
+      {
+        "heading": "Acceptance of terms",
+        "body": "By accessing or purchasing from PcHub you agree to these terms. If you do not agree, please do not use our services."
+      },
+      {
+        "heading": "Orders and pricing",
+        "body": "Prices are shown in USD and may change without notice. We reserve the right to cancel any order affected by pricing errors or stock issues."
+      },
+      {
+        "heading": "Intellectual property",
+        "body": "All content on this site, including text, graphics, logos, and product imagery, is the property of PcHub and may not be reused without permission."
+      },
+      {
+        "heading": "Limitation of liability",
+        "body": "PcHub is not liable for indirect or consequential damages arising from the use of our products or services, to the maximum extent permitted by law."
+      },
+      {
+        "heading": "Changes to these terms",
+        "body": "We may update these terms from time to time. Continued use of the site after changes are posted constitutes acceptance of the updated terms."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "intro": "Build guides, hardware reviews, and news from the PcHub team.",
+    "sections": [
+      {
+        "heading": "Building guides",
+        "body": "Step-by-step tutorials for every skill level, from your first budget build to a fully custom water-cooled rig."
+      },
+      {
+        "heading": "Hardware reviews",
+        "body": "Hands-on testing of the latest GPUs, CPUs, memory, and storage so you can buy with confidence."
+      },
+      {
+        "heading": "Industry news",
+        "body": "Stay up to date with new releases, price drops, and upcoming hardware launches. New articles drop every week."
+      }
+    ]
+  },
+  "careers": {
+    "title": "Careers",
+    "intro": "Join the team that builds the gaming PCs everyone wants.",
+    "sections": [
+      {
+        "heading": "Join the team",
+        "body": "We are always looking for passionate builders, engineers, and customer heroes to grow with us."
+      },
+      {
+        "heading": "Why work with us",
+        "items": [
+          "Work on high-end gaming and workstation hardware",
+          "Small team, real impact, no corporate bloat",
+          "Flexible hours and remote-friendly roles",
+          "Employee discounts on everything we sell"
+        ]
+      },
+      {
+        "heading": "Open positions",
+        "body": "Send your resume to careers@pc-hub.example with a short note about why you want to build with us. We reply to every applicant."
+      }
+    ]
+  },
+  "custom-builds": {
+    "title": "Custom Builds",
+    "intro": "Tell us your budget and goals and we will build your dream machine.",
+    "sections": [
+      {
+        "heading": "How it works",
+        "body": "Reach out with your budget and what you want the PC for. Our team designs a build, shares the full part list and price, and starts building once you approve."
+      },
+      {
+        "heading": "What we offer",
+        "items": [
+          "Gaming, streaming, and workstation configurations",
+          "Perfect cable management and tested stability",
+          "RGB tuning and quiet fan profiles",
+          "2-year parts and labor warranty"
+        ]
+      },
+      {
+        "heading": "Get started",
+        "body": "Visit the contact page or email builds@pc-hub.example and a builder will get back to you within 24 hours."
+      }
+    ]
+  },
+  "about-us": {
+    "title": "About Us",
+    "intro": "A team of gamers and builders obsessed with perfect PCs.",
+    "sections": [
+      {
+        "heading": "Who we are",
+        "body": "PcHub started as a small workshop building PCs for friends. Today we ship pre-built and custom systems to gamers everywhere, but we still test every machine like it is our own."
+      },
+      {
+        "heading": "Our mission",
+        "body": "To make high-performance PCs accessible to everyone by combining honest advice, quality parts, and build perfection."
+      },
+      {
+        "heading": "Why gamers choose us",
+        "items": [
+          "Every build hand-assembled and stress-tested",
+          "Real builders on support, not scripts",
+          "Competitive pricing with a 2-year warranty",
+          "A community that helps you upgrade smarter"
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookies",
+    "intro": "What cookies are and how we use them on PcHub.",
+    "sections": [
+      {
+        "heading": "What are cookies?",
+        "body": "Cookies are small text files stored on your device that help websites remember your preferences and work efficiently."
+      },
+      {
+        "heading": "How we use cookies",
+        "items": [
+          "Essential cookies to keep the site and cart working",
+          "Preference cookies to remember your choices",
+          "Analytics cookies to understand how the site is used"
+        ]
+      },
+      {
+        "heading": "Managing cookies",
+        "body": "You can disable cookies in your browser settings at any time. Note that some parts of the site, like the shopping cart, may not work without them."
+      }
+    ]
+  }
+}

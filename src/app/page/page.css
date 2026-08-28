@@ -1,0 +1,91 @@
+.page {
+  min-height: 100vh;
+  background-color: var(--background);
+  padding: clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 3rem) clamp(3rem, 8vw, 6rem);
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.back-link svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.page-head {
+  text-align: center;
+  margin-top: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: clamp(2rem, 5vw, 3.5rem);
+}
+
+.page-tag {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: clamp(0.5rem, 1vw, 0.8rem);
+}
+
+.page-head h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin: 0 0 clamp(0.6rem, 1.5vw, 1rem);
+}
+
+.page-head p {
+  font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  margin: 0 auto;
+  max-width: 34rem;
+  color: var(--text-muted);
+}
+
+.page-body {
+  max-width: 46rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.page-section h2 {
+  position: relative;
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  margin: 0 0 clamp(0.6rem, 1.2vw, 0.8rem);
+  padding-left: 1.1rem;
+}
+
+.page-section h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 0.55rem;
+  height: 0.55rem;
+  background: var(--primary);
+  box-shadow: 0 0 0.5rem var(--primary);
+  border-radius: 0.1rem;
+  transform: rotate(45deg);
+}
+
+.page-section p {
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.page-section ul li {
+  color: var(--text-muted);
+  font-weight: 500;
+}
