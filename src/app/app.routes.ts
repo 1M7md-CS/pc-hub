@@ -1,7 +1,4 @@
 import { Routes } from '@angular/router';
-import { CategoryProducts } from './category-products/category-products';
-import { Home } from './home/home';
-import { Page } from './page/page';
 
 const pageRoutes: { path: string; slug: string }[] = [
   { path: 'faq', slug: 'faq' },
@@ -24,15 +21,15 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    component: Home,
+    loadComponent: () => import('./home/home').then(m => m.Home),
   },
   {
     path: 'pages/:slug',
-    component: Page,
+    loadComponent: () => import('./page/page').then(m => m.Page),
   },
   {
     path: 'products/:slug',
-    component: CategoryProducts,
+    loadComponent: () => import('./category-products/category-products').then(m => m.CategoryProducts),
   },
   ...pageRoutes.map(({ path, slug }) => ({
     path: path,
