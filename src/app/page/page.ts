@@ -1,13 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { RouterLink } from '@angular/router';
 import { map } from 'rxjs';
-import { RouterLink } from "@angular/router";
-import { SectionHeader } from "../shared/ui/section-header/section-header";
+import { SectionHeader } from '../shared/ui/section-header/section-header';
+import { Skeleton } from '../shared/ui/skeleton/skeleton';
 
 @Component({
   selector: 'app-page',
-  imports: [RouterLink, SectionHeader],
+  imports: [RouterLink, SectionHeader, Skeleton],
   templateUrl: './page.html',
   styleUrl: './page.css',
 })
@@ -16,6 +17,7 @@ export class Page implements OnInit {
   private destroyRef = inject(DestroyRef);
   readonly slug = input.required<string>();
   page = signal<PageContent | undefined>(undefined);
+  isLoading = signal(true);
 
   ngOnInit(): void {
     this.httpClient
@@ -25,7 +27,10 @@ export class Page implements OnInit {
         takeUntilDestroyed(this.destroyRef),
       )
       .subscribe({
-        next: (page) => this.page.set(page),
+        next: (page) => {
+          this.page.set(page);
+          this.isLoading.set(false);
+        },
       });
   }
 }

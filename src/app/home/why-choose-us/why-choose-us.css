@@ -25,3 +25,11 @@ section {
   font-size: clamp(0.82rem, 1.1vw, 0.92rem);
   color: var(--text-muted);
 }
+
+.feature-item app-skeleton {
+  flex-shrink: 0;
+}
+
+.feature-item app-skeleton > div {
+  flex-shrink: 0;
+}

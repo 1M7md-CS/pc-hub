@@ -34,15 +34,15 @@
     </ul>
 
     <div class="build-bottom">
-      @if (product(); as product) {
+      @if (isLoading()) {
+        <app-skeleton height="2.2rem" width="9rem" radius="0.5rem" />
+      } @else if (product(); as product) {
         <div class="build-price">
           @if (product.oldPrice) {
             <span class="build-old-price">${{ product.oldPrice }}</span>
           }
           <span class="build-current-price">${{ product.price }}</span>
         </div>
-      } @else {
-        <div class="build-price-skeleton"></div>
       }
       <a class="cta-button" routerLink="/products/pre-built-pcs">
         <span>View build</span>

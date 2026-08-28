@@ -22,11 +22,43 @@
     </a>
   </div>
 
-  <div class="products-track">
-    @for (product of products(); track product.name) {
-      <div class="product-track-item">
-        <app-product-card [product]="product" />
-      </div>
-    }
-  </div>
+  @if (isLoading()) {
+    <div class="products-track">
+      @for (item of [0, 1, 2, 3, 4]; track item) {
+        <div class="product-track-item">
+          <div>
+            <app-skeleton height="14rem" radius="1rem" />
+            <app-skeleton
+              height="0.9rem"
+              radius="0.4rem"
+              [style]="{ 'margin-top': '1rem', width: '70%' }"
+            />
+            <app-skeleton
+              height="1.2rem"
+              radius="0.4rem"
+              [style]="{ 'margin-top': '0.5rem', width: '50%' }"
+            />
+            <app-skeleton
+              height="0.9rem"
+              radius="0.4rem"
+              [style]="{ 'margin-top': '1rem', width: '100%' }"
+            />
+            <app-skeleton
+              height="2.5rem"
+              radius="0.5rem"
+              [style]="{ 'margin-top': '1rem', width: '100%' }"
+            />
+          </div>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="products-track">
+      @for (product of products(); track product.name) {
+        <div class="product-track-item">
+          <app-product-card [product]="product" />
+        </div>
+      }
+    </div>
+  }
 </section>

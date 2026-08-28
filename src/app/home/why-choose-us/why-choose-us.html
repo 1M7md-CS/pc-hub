@@ -1,27 +1,42 @@
 <section class="full-bleed home-section">
-  <div class="features-grid">
-    @for (feature of features(); track feature.title) {
-      <div class="feature-item">
-        <div class="icon-box">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            @for (path of feature.iconPaths; track path) {
-              <path [attr.d]="path" />
-            }
-          </svg>
+  @if (isLoading()) {
+    <div class="features-grid">
+      @for (item of [0, 1, 2, 3]; track item) {
+        <div class="feature-item">
+          <app-skeleton height="3.2rem" width="3.2rem" radius="0.7rem" />
+          <div>
+            <app-skeleton height="1rem" width="60%" radius="0.4rem" />
+            <app-skeleton height="0.9rem" radius="0.4rem" [style]="{ 'margin-top': '0.6rem' }" />
+            <app-skeleton height="0.9rem" radius="0.4rem" [style]="{ 'margin-top': '0.4rem' }" />
+          </div>
         </div>
-        <div>
-          <h3>{{ feature.title }}</h3>
-          <p>{{ feature.text }}</p>
+      }
+    </div>
+  } @else {
+    <div class="features-grid">
+      @for (feature of features(); track feature.title) {
+        <div class="feature-item">
+          <div class="icon-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              @for (path of feature.iconPaths; track path) {
+                <path [attr.d]="path" />
+              }
+            </svg>
+          </div>
+          <div>
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.text }}</p>
+          </div>
         </div>
-      </div>
-    }
-  </div>
+      }
+    </div>
+  }
 </section>

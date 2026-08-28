@@ -48,6 +48,14 @@ app-section-header {
   font-weight: 500;
 }
 
+.page-skeleton {
+  max-width: 46rem;
+  margin: clamp(1rem, 10vw, 5rem) auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 @media (max-width: 767px) {
   app-section-header {
     margin-top: clamp(2rem, 4vw, 3rem);

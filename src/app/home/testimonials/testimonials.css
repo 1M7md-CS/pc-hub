@@ -73,3 +73,19 @@
   color: var(--text-muted);
   font-weight: 500;
 }
+
+.testimonial-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: clamp(1.3rem, 2.5vw, 1.8rem);
+  background: var(--surface);
+  border-radius: 1rem;
+}
+
+.testimonial-skeleton-author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}

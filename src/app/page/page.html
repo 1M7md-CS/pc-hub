@@ -17,27 +17,42 @@
     <span>Back to home</span>
   </a>
 
-  <app-section-header
-    label="PcHub"
-    title="{{ page()?.title }}"
-    description="{{ page()?.intro }}"
-  ></app-section-header>
+  @if (isLoading()) {
+    <div class="page-skeleton">
+      <app-skeleton height="1.2rem" width="8rem" radius="0.4rem" />
+      <app-skeleton
+        height="2.2rem"
+        width="60%"
+        radius="0.5rem"
+        [style]="{ 'margin-top': '1rem' }"
+      />
+      @for (item of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; track $index) {
+        <app-skeleton height="1rem" radius="0.4rem" [style]="{ 'margin-top': '1rem' }" />
+      }
+    </div>
+  } @else {
+    <app-section-header
+      label="PcHub"
+      title="{{ page()?.title }}"
+      description="{{ page()?.intro }}"
+    ></app-section-header>
 
-  <div class="page-body">
-    @for (section of page()?.sections; track section.heading) {
-      <section class="page-section">
-        <h2>{{ section.heading }}</h2>
-        @if (section.body) {
-          <p>{{ section.body }}</p>
-        }
-        @if (section.items?.length) {
-          <ul class="list-circle">
-            @for (item of section.items; track item) {
-              <li>{{ item }}</li>
-            }
-          </ul>
-        }
-      </section>
-    }
-  </div>
+    <div class="page-body">
+      @for (section of page()?.sections; track section.heading) {
+        <section class="page-section">
+          <h2>{{ section.heading }}</h2>
+          @if (section.body) {
+            <p>{{ section.body }}</p>
+          }
+          @if (section.items?.length) {
+            <ul class="list-circle">
+              @for (item of section.items; track item) {
+                <li>{{ item }}</li>
+              }
+            </ul>
+          }
+        </section>
+      }
+    </div>
+  }
 </main>

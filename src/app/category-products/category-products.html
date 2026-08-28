@@ -23,19 +23,43 @@
     description="Browse our collection of {{ categoryTitle() }} and gear up for your next build."
   ></app-section-header>
 
-  @if (products()) {
+  @if (isLoading()) {
+    <div class="products-grid">
+      @for (item of [0, 1, 2, 3, 4, 5, 6, 7]; track item) {
+        <div class="category-products-skeleton">
+          <app-skeleton height="14rem" radius="1rem" />
+          <app-skeleton
+            height="0.9rem"
+            radius="0.4rem"
+            [style]="{ 'margin-top': '1rem', width: '70%' }"
+          />
+          <app-skeleton
+            height="1.2rem"
+            radius="0.4rem"
+            [style]="{ 'margin-top': '0.5rem', width: '50%' }"
+          />
+          <app-skeleton
+            height="0.9rem"
+            radius="0.4rem"
+            [style]="{ 'margin-top': '1rem', width: '100%' }"
+          />
+          <app-skeleton
+            height="2.5rem"
+            radius="0.5rem"
+            [style]="{ 'margin-top': '1rem', width: '100%' }"
+          />
+        </div>
+      }
+    </div>
+  } @else if (products()) {
     <div class="products-grid">
       @for (product of products(); track product.id) {
         <app-product-card [product]="product" />
       }
     </div>
-  } @else {
-    <div class="empty">
-      <p>Products coming soon.</p>
-    </div>
   }
 
-  @if (isEmptyProducts() && products()) {
+  @if (!isLoading() && isEmptyProducts() && products()) {
     <div class="empty">
       <p>Products coming soon.</p>
     </div>
