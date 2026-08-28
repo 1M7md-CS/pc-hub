@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { Home } from './home/home';
 
 const pageRoutes: { path: string; slug: string }[] = [
   { path: 'faq', slug: 'faq' },
@@ -21,7 +22,7 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    loadComponent: () => import('./home/home').then(m => m.Home),
+    component: Home,
   },
   {
     path: 'pages/:slug',
