@@ -82,6 +82,10 @@
   align-items: center;
 }
 
+.list-circle {
+  padding-bottom: clamp(0.7rem, 1.4vw, 1rem);
+}
+
 .product-price {
   display: flex;
   flex-direction: column;
