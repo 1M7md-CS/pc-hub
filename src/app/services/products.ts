@@ -10,7 +10,7 @@ export class ProductsService {
   get productOfTheMonth() {
     return this.httpClient
       .get<Product[]>('data/pre-built-pcs.json')
-      .pipe(map((product) => product[0]));
+      .pipe(map((products) => products[0]));
   }
 
   get categories() {
@@ -33,5 +33,15 @@ export class ProductsService {
         ...storage.slice(0, 2),
       ]),
     );
+  }
+
+  getCategory(slug: string) {
+    return this.categories.pipe(
+      map((categories) => categories.find((category) => category.link === `/products/${slug}`)),
+    );
+  }
+
+  getProducts(slug: string) {
+    return this.httpClient.get<Product[]>(`data/${slug}.json`);
   }
 }
