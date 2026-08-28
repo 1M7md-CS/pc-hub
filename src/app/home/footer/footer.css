@@ -72,6 +72,8 @@
   font-size: clamp(0.85rem, 1.1vw, 0.92rem);
   transition: color var(--transition);
   cursor: pointer;
+  text-decoration: none;
+  color: var(--text);
 }
 
 .footer-col a:hover {
