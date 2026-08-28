@@ -28,6 +28,7 @@
 .category-info p {
   font-size: clamp(0.78rem, 1vw, 0.9rem);
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .category-arrow {

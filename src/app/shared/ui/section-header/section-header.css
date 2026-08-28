@@ -20,7 +20,6 @@
 
 .section-header p {
   font-size: clamp(0.9rem, 1.2vw, 1.1rem);
-  font-weight: 400;
   color: var(--text-muted);
 }
 

@@ -23,6 +23,7 @@
   margin: clamp(0.8rem, 1.5vw, 1rem) 0 0;
   max-width: 20rem;
   color: var(--text-muted);
+  font-weight: 500;
 }
 
 .footer-social {
@@ -94,6 +95,7 @@
 .footer-bottom p {
   color: var(--text-muted);
   font-size: clamp(0.8rem, 1vw, 0.88rem);
+  font-weight: 500;
 }
 
 .footer-legal {
@@ -107,6 +109,7 @@
   font-size: clamp(0.8rem, 1vw, 0.88rem);
   transition: color var(--transition);
   cursor: pointer;
+  font-weight: 500;
 }
 
 .footer-legal a:hover {
