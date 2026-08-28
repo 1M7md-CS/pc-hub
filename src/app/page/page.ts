@@ -3,10 +3,11 @@ import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/c
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import { RouterLink } from "@angular/router";
+import { SectionHeader } from "../shared/ui/section-header/section-header";
 
 @Component({
   selector: 'app-page',
-  imports: [RouterLink],
+  imports: [RouterLink, SectionHeader],
   templateUrl: './page.html',
   styleUrl: './page.css',
 })

@@ -17,11 +17,11 @@
     <span>Back to home</span>
   </a>
 
-  <div class="page-head">
-    <span class="page-tag">PcHub</span>
-    <h1>{{ page()?.title }}</h1>
-    <p>{{ page()?.intro }}</p>
-  </div>
+  <app-section-header
+    label="PcHub"
+    title="{{ page()?.title }}"
+    description="{{ page()?.intro }}"
+  ></app-section-header>
 
   <div class="page-body">
     @for (section of page()?.sections; track section.heading) {
