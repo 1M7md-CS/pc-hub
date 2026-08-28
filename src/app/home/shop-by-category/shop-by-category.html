@@ -7,7 +7,7 @@
 
   <div class="categories-grid">
     @for (category of categories(); track category.title) {
-      <a class="category-card">
+      <a class="category-card" [routerLink]="category.link">
         <svg
           class="category-arrow"
           xmlns="http://www.w3.org/2000/svg"

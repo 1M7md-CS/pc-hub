@@ -3,10 +3,11 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Category } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-shop-by-category',
-  imports: [SectionHeader],
+  imports: [SectionHeader, RouterLink],
   templateUrl: './shop-by-category.html',
   styleUrl: './shop-by-category.css',
 })
