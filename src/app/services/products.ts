@@ -21,7 +21,7 @@ export class ProductsService {
     return forkJoin({
       pre_built_pc: this.httpClient.get<Product[]>('data/pre-built-pcs.json'),
       gpu: this.httpClient.get<Product[]>('data/gpu.json'),
-      cpu: this.httpClient.get<Product[]>('data/cpu.json'),
+      cpu: this.httpClient.get<Product[]>('data/processors.json'),
       ram: this.httpClient.get<Product[]>('data/ram.json'),
       storage: this.httpClient.get<Product[]>('data/storage.json'),
     }).pipe(
