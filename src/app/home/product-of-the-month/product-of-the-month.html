@@ -17,7 +17,7 @@
     </svg>
   </div>
 
-  @if (isLoading()) {
+  @if (state.isLoading()) {
     <div class="build-skeleton">
       <app-skeleton width="35%" height="0.8rem" />
       <app-skeleton width="80%" height="2.5rem" />
@@ -46,24 +46,24 @@
     </div>
   } @else {
     <div class="build-content">
-      <span class="build-tag">Build of the Month</span>
-      <h2>{{ product()?.name }}</h2>
+      <span class="build-tag">Product of the Month</span>
+      <h2>{{ state.data()?.name }}</h2>
       <p>
-        {{ product()?.description }}
+        {{ state.data()?.description }}
       </p>
 
       <ul class="list-diamond">
-        @for (spec of product()?.specs; track spec) {
+        @for (spec of state.data()?.specs; track spec) {
           <li>{{ spec }}</li>
         }
       </ul>
 
       <div class="build-bottom">
         <div class="build-price">
-          @if (product()?.oldPrice) {
-            <span class="build-old-price">${{ product()?.oldPrice }}</span>
+          @if (state.data()?.oldPrice) {
+            <span class="build-old-price">${{ state.data()?.oldPrice }}</span>
           }
-          <span class="build-current-price">${{ product()?.price }}</span>
+          <span class="build-current-price">${{ state.data()?.price }}</span>
         </div>
 
         <a class="cta-button" routerLink="/products/pre-built-pcs">
