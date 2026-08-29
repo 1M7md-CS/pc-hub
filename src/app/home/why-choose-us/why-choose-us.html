@@ -3,11 +3,15 @@
     <div class="features-grid">
       @for (item of [0, 1, 2, 3]; track item) {
         <div class="feature-item">
-          <app-skeleton height="3.2rem" width="3.2rem" radius="0.7rem" />
-          <div>
-            <app-skeleton height="1rem" width="60%" radius="0.4rem" />
-            <app-skeleton height="0.9rem" radius="0.4rem" [style]="{ 'margin-top': '0.6rem' }" />
-            <app-skeleton height="0.9rem" radius="0.4rem" [style]="{ 'margin-top': '0.4rem' }" />
+          <app-skeleton width="3.7rem" height="3.7rem"></app-skeleton>
+
+          <div class="skeleton-content">
+            <app-skeleton width="50%"></app-skeleton>
+            <app-skeleton
+              width="clamp(7rem,10vw,10rem)"
+              [style]="{ 'margin-top': '1rem' }"
+            ></app-skeleton>
+            <app-skeleton width="80%" [style]="{ 'margin-top': '0.2rem' }"></app-skeleton>
           </div>
         </div>
       }
