@@ -44,7 +44,7 @@ export class ProductsService {
     return this.httpClient.get<Product[]>(`data/${slug}.json`);
   }
 
-  geticon() {
+  get icons() {
     return this.httpClient.get<Icon[]>(`data/icons.json`);
   }
 }

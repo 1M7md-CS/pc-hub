@@ -20,11 +20,8 @@ export class Icon implements OnInit {
   readonly paths = signal<string[]>([]);
 
   ngOnInit(): void {
-    this.productsService
-      .geticon()
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((icons) => {
-        this.paths.set(icons.find((i) => i.name === this.name())?.paths ?? []);
-      });
+    this.productsService.icons.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((icons) => {
+      this.paths.set(icons.find((icon) => icon.name === this.name())?.paths ?? []);
+    });
   }
 }
