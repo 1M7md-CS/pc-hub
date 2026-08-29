@@ -1,0 +1,27 @@
+.state-card-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.7rem;
+  min-height: 16rem;
+  background: var(--surface);
+  border: 0.1rem solid var(--border);
+  border-radius: 1rem;
+}
+
+.state-card-error {
+  border-color: var(--primary);
+  margin-top: clamp(3rem, 8vw, 4rem);
+}
+
+.icon-box {
+  width: clamp(4rem, 8vw, 5rem);
+  height: clamp(4rem, 8vw, 5rem);
+}
+
+.icon-box svg {
+  width: clamp(2.25rem, 5vw, 3rem);
+  height: clamp(2.25rem, 5vw, 3rem);
+}
