@@ -17,50 +17,73 @@
     </svg>
   </div>
 
-  <div class="build-content">
-    <span class="build-tag">Build of the Month</span>
-    <h2>Vortex VX-1 Ultimate</h2>
-    <p>
-      Our flagship rig, hand-tuned for 4K gaming, streaming, and heavy creative work. Every cable
-      routed, every fan tuned, ready to drop in and play.
-    </p>
+  @if (isLoading()) {
+    <div class="build-skeleton">
+      <app-skeleton width="35%" height="0.8rem" />
+      <app-skeleton width="80%" height="2.5rem" />
 
-    <ul class="list-diamond">
-      <li>RTX 5080 Graphics</li>
-      <li>Ryzen 9 9950X CPU</li>
-      <li>64GB DDR5 RAM</li>
-      <li>2TB Gen4 NVMe SSD</li>
-      <li>1000W Platinum PSU</li>
-    </ul>
+      <div>
+        <app-skeleton width="90%" />
+        <app-skeleton width="75%" [style]="{ 'margin-top': '0.4rem' }" />
+      </div>
 
-    <div class="build-bottom">
-      @if (isLoading()) {
-        <app-skeleton height="2.2rem" width="9rem" radius="0.5rem" />
-      } @else if (product(); as product) {
-        <div class="build-price">
-          @if (product.oldPrice) {
-            <span class="build-old-price">${{ product.oldPrice }}</span>
-          }
-          <span class="build-current-price">${{ product.price }}</span>
+      <div class="skeleton-specs">
+        <app-skeleton width="35%" />
+        <app-skeleton width="40%" />
+        <app-skeleton width="30%" />
+        <app-skeleton width="35%" />
+        <app-skeleton width="40%" />
+      </div>
+
+      <div class="skeleton-bottom">
+        <div class="skeleton-price">
+          <app-skeleton width="3rem" height="0.8rem" />
+          <app-skeleton width="5rem" height="1.8rem" />
         </div>
-      }
-      <a class="cta-button" routerLink="/products/pre-built-pcs">
-        <span>View build</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M13.5 4.5 21 12l-7.5 7.5M21 12H3"
-          />
-        </svg>
-      </a>
+
+        <app-skeleton width="10rem" height="3rem" />
+      </div>
     </div>
-  </div>
+  } @else {
+    <div class="build-content">
+      <span class="build-tag">Build of the Month</span>
+      <h2>{{ product()?.name }}</h2>
+      <p>
+        {{ product()?.description }}
+      </p>
+
+      <ul class="list-diamond">
+        @for (spec of product()?.specs; track spec) {
+          <li>{{ spec }}</li>
+        }
+      </ul>
+
+      <div class="build-bottom">
+        <div class="build-price">
+          @if (product()?.oldPrice) {
+            <span class="build-old-price">${{ product()?.oldPrice }}</span>
+          }
+          <span class="build-current-price">${{ product()?.price }}</span>
+        </div>
+
+        <a class="cta-button" routerLink="/products/pre-built-pcs">
+          <span>View build</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 4.5 21 12l-7.5 7.5M21 12H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  }
 </section>

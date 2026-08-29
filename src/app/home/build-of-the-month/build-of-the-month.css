@@ -75,6 +75,26 @@
   transform: none;
 }
 
+.build-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skeleton-specs,
+.skeleton-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.skeleton-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 @media (max-width: 768px) {
   .build {
     grid-template-columns: 1fr;
