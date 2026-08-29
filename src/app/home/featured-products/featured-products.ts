@@ -5,12 +5,12 @@ import { RouterLink } from '@angular/router';
 import { Product } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { ProductCard } from '../../shared/ui/product-card/product-card';
+import { ProductSkeleton } from '../../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
-import { Skeleton } from '../../shared/ui/skeleton/skeleton';
 
 @Component({
   selector: 'app-featured-products',
-  imports: [SectionHeader, ProductCard, RouterLink, Skeleton],
+  imports: [SectionHeader, ProductCard, RouterLink, ProductSkeleton],
   templateUrl: './featured-products.html',
   styleUrl: './featured-products.css',
 })
