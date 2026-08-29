@@ -1,5 +1,5 @@
 <div class="section-header" [class.align-normal]="align() === 'normal'">
   <span>{{ label() }}</span>
-  <h2>{{ title() }}</h2>
+  <h2>{{ title() || fallback() }}</h2>
   <p>{{ description() }}</p>
 </div>

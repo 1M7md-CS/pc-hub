@@ -11,4 +11,5 @@ export class SectionHeader {
   readonly title = input.required<string>();
   readonly description = input.required<string>();
   readonly align = input<'normal'>();
+  readonly fallback = input<string>();
 }
