@@ -20,26 +20,29 @@
   <app-section-header
     label="Category"
     title="{{ categoryTitle() }}"
-    description="Browse our collection of {{ categoryTitle() }} and gear up for your next build."
+    description="Browse our collection and gear up for your next build."
+    fallback="Products"
   ></app-section-header>
 
-  @if (isLoading()) {
+  @if (state.isLoading()) {
     <div class="products-grid">
       @for (item of [0, 1, 2, 3, 4, 5, 6, 7]; track item) {
         <app-product-skeleton></app-product-skeleton>
       }
     </div>
-  } @else if (products()) {
-    <div class="products-grid">
-      @for (product of products(); track product.id) {
-        <app-product-card [product]="product" />
-      }
+  } @else if (state.error()) {
+    <div class="error">
+      <p>Error while fetching the products.</p>
     </div>
-  }
-
-  @if (!isLoading() && isEmptyProducts() && products()) {
+  } @else if (state.isEmpty()) {
     <div class="empty">
       <p>Products coming soon.</p>
+    </div>
+  } @else {
+    <div class="products-grid">
+      @for (product of state.data(); track product.id) {
+        <app-product-card [product]="product" />
+      }
     </div>
   }
 </main>

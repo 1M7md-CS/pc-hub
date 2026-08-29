@@ -1,8 +1,8 @@
 import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { Product } from '../models/product-model';
 import { ProductsService } from '../services/products';
+import { LoadState, loadState } from '../shared/async-state';
 import { ProductCard } from '../shared/ui/product-card/product-card';
 import { ProductSkeleton } from '../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
@@ -19,32 +19,14 @@ export class CategoryProducts implements OnInit {
   private productsService = inject(ProductsService);
   private destroyRef = inject(DestroyRef);
 
-  categoryTitle = signal<string | undefined>(undefined);
-  products = signal<Product[] | undefined>(undefined);
-  isEmptyProducts = signal(false);
-  isLoading = signal(true);
+  readonly state = new LoadState<Product[]>();
+  readonly categoryTitle = signal<string | undefined>(undefined);
 
   ngOnInit(): void {
-    this.productsService
-      .getCategory(this.slug())
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe({
-        next: (category) => this.categoryTitle.set(category?.title),
-      });
+    loadState(this.productsService.getProducts(this.slug()), this.state, this.destroyRef);
 
-    this.productsService
-      .getProducts(this.slug())
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe({
-        next: (products) => {
-          this.isLoading.set(false);
-          if (products.length === 0) {
-            this.isEmptyProducts.set(true);
-            return;
-          }
-
-          this.products.set(products);
-        },
-      });
+    this.productsService.getCategory(this.slug()).subscribe({
+      next: (category) => this.categoryTitle.set(category?.title),
+    });
   }
 }

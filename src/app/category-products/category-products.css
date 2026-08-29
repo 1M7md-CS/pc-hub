@@ -15,7 +15,8 @@ app-section-header {
   margin: 0 auto;
 }
 
-.empty {
+.empty,
+.error {
   display: grid;
   place-content: center;
   max-width: 40rem;
@@ -25,7 +26,8 @@ app-section-header {
   border-radius: 1rem;
 }
 
-.empty p {
+.empty p,
+.error p {
   color: var(--text-muted);
   font-size: clamp(0.9rem, 1.2vw, 1.05rem);
   font-weight: 600;
