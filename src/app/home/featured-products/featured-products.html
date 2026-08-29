@@ -22,7 +22,7 @@
     </a>
   </div>
 
-  @if (isLoading()) {
+  @if (state.isLoading()) {
     <div class="products-track">
       @for (item of [0, 1, 2, 3, 4]; track item) {
         <div class="product-track-item">
@@ -30,9 +30,32 @@
         </div>
       }
     </div>
+  } @else if (state.error()) {
+    <app-state-card-error></app-state-card-error>
+  } @else if (state.isEmpty()) {
+    <div class="state-card empty">
+      <div class="state-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.6"
+          stroke="currentColor"
+          aria-hidden="true"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 3h6M10 3l-7 11h7l-1 7 8-12h-6l2-6"
+          />
+        </svg>
+      </div>
+      <h3>Coming soon</h3>
+      <p>New featured products are on the way. Check back shortly.</p>
+    </div>
   } @else {
     <div class="products-track">
-      @for (product of products(); track product.name) {
+      @for (product of state.data(); track product.name) {
         <div class="product-track-item">
           <app-product-card [product]="product" />
         </div>

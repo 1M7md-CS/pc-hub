@@ -1,31 +1,26 @@
-import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
+import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { loadState, LoadState } from './../../shared/async-state';
 
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { Product } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { ProductCard } from '../../shared/ui/product-card/product-card';
 import { ProductSkeleton } from '../../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
+import { StateCardError } from "../../shared/ui/state-card-error/state-card-error";
 
 @Component({
   selector: 'app-featured-products',
-  imports: [SectionHeader, ProductCard, RouterLink, ProductSkeleton],
+  imports: [SectionHeader, ProductCard, RouterLink, ProductSkeleton, StateCardError],
   templateUrl: './featured-products.html',
   styleUrl: './featured-products.css',
 })
 export class FeaturedProducts implements OnInit {
   private productsService = inject(ProductsService);
   private destroyRef = inject(DestroyRef);
-  products = signal<Product[]>([]);
-  isLoading = signal(true);
+  readonly state = new LoadState<Product[]>();
 
   ngOnInit(): void {
-    this.productsService.featuredProducts.pipe(takeUntilDestroyed(this.destroyRef)).subscribe({
-      next: (data) => {
-        this.products.set(data);
-        this.isLoading.set(false);
-      },
-    });
+    loadState(this.productsService.featuredProducts, this.state, this.destroyRef);
   }
 }
