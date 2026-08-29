@@ -18,6 +18,7 @@ export function loadState<T>(source: Observable<T>, state: LoadState<T>, destroy
     },
     error: (error) => {
       state.isLoading.set(false);
+      state.isEmpty.set(false);
       state.error.set(error);
     },
   });
