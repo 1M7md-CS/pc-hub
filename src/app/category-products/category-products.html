@@ -31,11 +31,9 @@
       }
     </div>
   } @else if (state.error()) {
-    <app-state-card-error></app-state-card-error>
+    <app-state-card state="error"></app-state-card>
   } @else if (state.isEmpty()) {
-    <div class="empty">
-      <p>Products coming soon.</p>
-    </div>
+    <app-state-card state="empty"></app-state-card>
   } @else {
     <div class="products-grid">
       @for (product of state.data(); track product.id) {

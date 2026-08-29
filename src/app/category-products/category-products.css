@@ -15,22 +15,6 @@ app-section-header {
   margin: 0 auto;
 }
 
-.empty {
-  display: grid;
-  place-content: center;
-  max-width: 40rem;
-  margin: 0 auto;
-  min-height: 12rem;
-  border: 0.1rem dashed var(--border);
-  border-radius: 1rem;
-}
-
-.empty p {
-  color: var(--text-muted);
-  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
-  font-weight: 600;
-}
-
 @media (max-width: 767px) {
   app-section-header {
     margin-top: clamp(2rem, 4vw, 3rem);
