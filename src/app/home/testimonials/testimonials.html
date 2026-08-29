@@ -8,20 +8,16 @@
   @if (isLoading()) {
     <div class="testimonials-grid">
       @for (item of [0, 1, 2]; track item) {
-        <div class="testimonial-skeleton">
-          <app-skeleton height="1rem" width="6rem" radius="0.25rem" />
-          <app-skeleton height="0.9rem" radius="0.4rem" [style]="{ 'margin-top': '1.2rem' }" />
-          <app-skeleton height="0.9rem" radius="0.4rem" [style]="{ 'margin-top': '0.5rem' }" />
-          <div class="testimonial-skeleton-author">
+        <div class="testimonial-card">
+          <app-skeleton width="6rem" />
+          <app-skeleton />
+          <app-skeleton width="80%" />
+
+          <div class="skeleton-author">
             <app-skeleton height="2.5rem" width="2.5rem" radius="50%" />
             <div>
-              <app-skeleton height="0.9rem" width="8rem" radius="0.4rem" />
-              <app-skeleton
-                height="0.8rem"
-                width="6rem"
-                radius="0.4rem"
-                [style]="{ 'margin-top': '0.4rem' }"
-              />
+              <app-skeleton width="8rem" />
+              <app-skeleton width="80%" [style]="{ 'margin-top': '0.4rem' }" />
             </div>
           </div>
         </div>
