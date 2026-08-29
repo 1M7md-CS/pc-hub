@@ -1,5 +1,5 @@
-import { Component, computed, inject, input } from '@angular/core';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { ProductsService } from '../../../services/products';
 
 @Component({
@@ -8,16 +8,23 @@ import { ProductsService } from '../../../services/products';
   templateUrl: './icon.html',
   styleUrl: './icon.css',
 })
-export class Icon {
+export class Icon implements OnInit {
   private readonly productsService = inject(ProductsService);
+  private readonly destroyRef = inject(DestroyRef);
 
   readonly name = input.required<string>();
   readonly fill = input<'none' | 'currentColor'>('none');
   readonly size = input<string | undefined>(undefined);
+  readonly strokeWidth = input<string>('2');
 
-  readonly icons = toSignal(this.productsService.geticon(), { initialValue: [] });
+  readonly paths = signal<string[]>([]);
 
-  readonly iconPaths = computed(
-    () => this.icons().find((icon) => icon.name === this.name())?.paths ?? [],
-  );
+  ngOnInit(): void {
+    this.productsService
+      .geticon()
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((icons) => {
+        this.paths.set(icons.find((i) => i.name === this.name())?.paths ?? []);
+      });
+  }
 }

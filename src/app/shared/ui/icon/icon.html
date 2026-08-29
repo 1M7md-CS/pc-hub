@@ -7,11 +7,11 @@
   [attr.fill]="fill()"
   fill-rule="nonzero"
   stroke="currentColor"
-  stroke-width="2"
+  [attr.stroke-width]="strokeWidth()"
   [style.width]="size()"
   [style.height]="size()"
 >
-  @for (path of iconPaths(); track path) {
+  @for (path of paths(); track path) {
     <path [attr.d]="path" />
   }
 </svg>
