@@ -8,9 +8,7 @@ export class ProductsService {
   private httpClient = inject(HttpClient);
 
   get productOfTheMonth() {
-    return this.httpClient
-      .get<Product[]>('data/pre-built-pcs.json')
-      .pipe(map((products) => products[0]));
+    return this.httpClient.get<Product>('data/product-of-the-month.json');
   }
 
   get categories() {
