@@ -1,4 +1,4 @@
-.state-card-error {
+.state-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
   border-radius: 1rem;
 }
 
-.state-card-error {
+.state-card {
   border-color: var(--primary);
   margin-top: clamp(3rem, 8vw, 4rem);
 }
