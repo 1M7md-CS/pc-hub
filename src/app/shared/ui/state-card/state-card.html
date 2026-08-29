@@ -1,0 +1,43 @@
+<div class="state-card-error">
+  <div class="icon-box">
+    @if (state() === 'error') {
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.6"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 9v3.75m0 3.75h.008M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </svg>
+    } @else if (state() === 'empty') {
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.6"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 7.5-9-5-9 5m18 0-9 5m9-5v9l-9 5m0-9-9-5m9 5v9m-9-9v-9"
+        />
+      </svg>
+    }
+  </div>
+
+  @if (state() === 'error') {
+    <h3>Something went wrong</h3>
+    <p>We couldn't load the products. Please try again in a moment.</p>
+  } @else if (state() === 'empty') {
+    <h3>No products found</h3>
+    <p>There are no products available in this category right now.</p>
+  }
+</div>
