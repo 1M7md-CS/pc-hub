@@ -9,17 +9,9 @@
     <div class="categories-grid">
       @for (item of [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; track item) {
         <div class="category-skeleton">
-          <app-skeleton height="3.2rem" width="3.2rem" radius="0.7rem" />
-          <app-skeleton
-            height="1rem"
-            radius="0.4rem"
-            [style]="{ 'margin-top': '1rem', width: '60%' }"
-          />
-          <app-skeleton
-            height="0.9rem"
-            radius="0.4rem"
-            [style]="{ 'margin-top': '0.5rem', width: '40%' }"
-          />
+          <app-skeleton height="3.2rem" width="3.2rem" />
+          <app-skeleton [style]="{ 'margin-top': '1rem' }" />
+          <app-skeleton [style]="{ 'margin-top': '0.5rem' }" />
         </div>
       }
     </div>
