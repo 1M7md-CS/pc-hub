@@ -4,13 +4,12 @@ import { RouterLink } from '@angular/router';
 import { Product } from '../models/product-model';
 import { ProductsService } from '../services/products';
 import { ProductCard } from '../shared/ui/product-card/product-card';
+import { ProductSkeleton } from '../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
-import { Skeleton } from '../shared/ui/skeleton/skeleton';
-import { ProductSkeleton } from "../shared/ui/product-skeleton/product-skeleton";
 
 @Component({
   selector: 'app-category-products',
-  imports: [RouterLink, ProductCard, SectionHeader, Skeleton, ProductSkeleton],
+  imports: [RouterLink, ProductCard, SectionHeader, ProductSkeleton],
   templateUrl: './category-products.html',
   styleUrl: './category-products.css',
 })
@@ -38,7 +37,7 @@ export class CategoryProducts implements OnInit {
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe({
         next: (products) => {
-          this.isLoading.set(true);
+          this.isLoading.set(false);
           if (products.length === 0) {
             this.isEmptyProducts.set(true);
             return;
