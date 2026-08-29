@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "name": "Vortex VX-1 Ultimate",
+  "category": "Pre-Built PCs",
+  "iconName": "desktop",
+  "price": 2899,
+  "oldPrice": 3199,
+  "badge": "Best Seller",
+  "rating": 4.8,
+  "stock": 12,
+  "description": "Our flagship rig, hand-tuned for 4K gaming, streaming, and heavy creative work.",
+  "specs": [
+    "RTX 5080 Graphics",
+    "Ryzen 9 9950X CPU",
+    "64GB DDR5 RAM",
+    "2TB Gen4 NVMe SSD",
+    "1000W Platinum PSU"
+  ]
+}

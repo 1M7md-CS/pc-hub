@@ -3,10 +3,7 @@
     "id": 1,
     "name": "RGB Mechanical Keyboard",
     "category": "Accessories",
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ],
+    "iconName": "keyboard",
     "price": 119,
     "badge": "Best Seller",
     "rating": 4.7,
@@ -24,10 +21,7 @@
     "id": 2,
     "name": "Pro Gaming Mouse",
     "category": "Accessories",
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ],
+    "iconName": "mouse",
     "price": 69,
     "rating": 4.6,
     "stock": 58,
@@ -38,10 +32,7 @@
     "id": 3,
     "name": "1440p 165Hz Monitor",
     "category": "Accessories",
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ],
+    "iconName": "monitor",
     "price": 349,
     "oldPrice": 399,
     "badge": "New",
@@ -54,10 +45,7 @@
     "id": 4,
     "name": "Gaming Headset",
     "category": "Accessories",
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ],
+    "iconName": "headset",
     "price": 99,
     "rating": 4.5,
     "stock": 40,
@@ -73,11 +61,8 @@
   {
     "id": 5,
     "name": "XL RGB Mouse Pad",
-    "category": "Accessories",
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ],
+    "category": "mouse-pad",
+    "iconName": "mouse",
     "price": 29,
     "rating": 4.4,
     "stock": 90,
@@ -94,10 +79,7 @@
     "id": 6,
     "name": "Wireless Controller",
     "category": "Accessories",
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ],
+    "iconName": "controller",
     "price": 59,
     "rating": 4.6,
     "stock": 32,
