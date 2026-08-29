@@ -44,6 +44,10 @@
         <app-skeleton width="10rem" height="3rem" />
       </div>
     </div>
+  } @else if (state.error()) {
+    <app-state-card state="error"></app-state-card>
+  } @else if (state.isEmpty()) {
+    <app-state-card state="empty"></app-state-card>
   } @else {
     <div class="build-content">
       <span class="build-tag">Product of the Month</span>
