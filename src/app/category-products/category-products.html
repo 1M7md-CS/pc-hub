@@ -31,9 +31,7 @@
       }
     </div>
   } @else if (state.error()) {
-    <div class="error">
-      <p>Error while fetching the products.</p>
-    </div>
+    <app-state-card-error></app-state-card-error>
   } @else if (state.isEmpty()) {
     <div class="empty">
       <p>Products coming soon.</p>
