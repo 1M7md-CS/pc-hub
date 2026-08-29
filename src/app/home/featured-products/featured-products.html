@@ -31,28 +31,9 @@
       }
     </div>
   } @else if (state.error()) {
-    <app-state-card-error></app-state-card-error>
+    <app-state-card state="error"></app-state-card>
   } @else if (state.isEmpty()) {
-    <div class="state-card empty">
-      <div class="state-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.6"
-          stroke="currentColor"
-          aria-hidden="true"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M9 3h6M10 3l-7 11h7l-1 7 8-12h-6l2-6"
-          />
-        </svg>
-      </div>
-      <h3>Coming soon</h3>
-      <p>New featured products are on the way. Check back shortly.</p>
-    </div>
+    <app-state-card state="empty"></app-state-card>
   } @else {
     <div class="products-track">
       @for (product of state.data(); track product.name) {
