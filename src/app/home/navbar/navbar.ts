@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Icon } from '../../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-navbar',
-  imports: [RouterLink],
+  imports: [RouterLink, Icon],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })

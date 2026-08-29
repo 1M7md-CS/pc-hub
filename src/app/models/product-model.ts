@@ -2,7 +2,7 @@ export type Product = {
   id: number;
   name: string;
   category: string;
-  iconPaths: string[];
+  iconName: string;
   price: number;
   oldPrice?: number;
   badge?: string;
@@ -16,5 +16,5 @@ export interface Category {
   title: string;
   link: string;
   count: number;
-  iconPaths: string[];
+  iconName: string;
 }

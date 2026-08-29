@@ -4,10 +4,11 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Testimonial } from '../../models/testimonial-model';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
 import { Skeleton } from '../../shared/ui/skeleton/skeleton';
+import { Icon } from '../../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-testimonials',
-  imports: [SectionHeader, Skeleton],
+  imports: [SectionHeader, Skeleton, Icon],
   templateUrl: './testimonials.html',
   styleUrl: './testimonials.css',
 })

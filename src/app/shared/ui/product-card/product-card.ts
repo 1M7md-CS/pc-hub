@@ -1,13 +1,13 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Product } from '../../../models/product-model';
+import { Icon } from '../icon/icon';
 
 @Component({
   selector: 'app-product-card',
-  imports: [],
+  imports: [Icon],
   templateUrl: './product-card.html',
   styleUrl: './product-card.css',
 })
 export class ProductCard {
   product = input.required<Product>();
-  iconPaths = computed(() => this.product().iconPaths ?? []);
 }

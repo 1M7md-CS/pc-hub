@@ -3,10 +3,11 @@ import { Component, DestroyRef, inject, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Features } from '../../models/feature-model';
 import { Skeleton } from '../../shared/ui/skeleton/skeleton';
+import { Icon } from '../../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-why-choose-us',
-  imports: [Skeleton],
+  imports: [Skeleton, Icon],
   templateUrl: './why-choose-us.html',
   styleUrl: './why-choose-us.css',
 })

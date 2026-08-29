@@ -21,19 +21,7 @@
       @for (feature of features(); track feature.title) {
         <div class="feature-item">
           <div class="icon-box">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              @for (path of feature.iconPaths; track path) {
-                <path [attr.d]="path" />
-              }
-            </svg>
+            <app-icon [name]="feature.iconName" />
           </div>
           <div>
             <h3>{{ feature.title }}</h3>

@@ -5,10 +5,11 @@ import { Category } from '../../models/product-model';
 import { ProductsService } from '../../services/products';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
 import { Skeleton } from '../../shared/ui/skeleton/skeleton';
+import { Icon } from '../../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-shop-by-category',
-  imports: [SectionHeader, RouterLink, Skeleton],
+  imports: [SectionHeader, RouterLink, Skeleton, Icon],
   templateUrl: './shop-by-category.html',
   styleUrl: './shop-by-category.css',
 })

@@ -14,13 +14,13 @@
   cursor: pointer;
 }
 
-.view-all svg {
+.view-all app-icon {
   width: 1.1rem;
   height: 1.1rem;
   transition: transform var(--transition);
 }
 
-.view-all:hover svg {
+.view-all:hover app-icon {
   transform: translateX(0.2rem);
 }
 

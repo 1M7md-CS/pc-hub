@@ -3,11 +3,7 @@
     "id": 1,
     "name": "Ryzen 9 9950X",
     "category": "Processors",
-    "iconPaths": [
-      "M6.75 6.75h10.5v10.5H6.75z",
-      "M10.5 10.5h3v3h-3z",
-      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
-    ],
+    "iconName": "processor",
     "price": 649,
     "rating": 4.8,
     "stock": 14,
@@ -18,11 +14,7 @@
     "id": 2,
     "name": "Ryzen 7 9700X",
     "category": "Processors",
-    "iconPaths": [
-      "M6.75 6.75h10.5v10.5H6.75z",
-      "M10.5 10.5h3v3h-3z",
-      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
-    ],
+    "iconName": "processor",
     "price": 359,
     "rating": 4.7,
     "stock": 22,
@@ -33,11 +25,7 @@
     "id": 3,
     "name": "Intel Core i9-14900K",
     "category": "Processors",
-    "iconPaths": [
-      "M6.75 6.75h10.5v10.5H6.75z",
-      "M10.5 10.5h3v3h-3z",
-      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
-    ],
+    "iconName": "processor",
     "price": 549,
     "rating": 4.6,
     "stock": 16,
@@ -54,11 +42,7 @@
     "id": 4,
     "name": "Intel Core i5-14600K",
     "category": "Processors",
-    "iconPaths": [
-      "M6.75 6.75h10.5v10.5H6.75z",
-      "M10.5 10.5h3v3h-3z",
-      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
-    ],
+    "iconName": "processor",
     "price": 319,
     "oldPrice": 349,
     "rating": 4.6,
@@ -76,11 +60,7 @@
     "id": 5,
     "name": "Ryzen 5 7600",
     "category": "Processors",
-    "iconPaths": [
-      "M6.75 6.75h10.5v10.5H6.75z",
-      "M10.5 10.5h3v3h-3z",
-      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
-    ],
+    "iconName": "processor",
     "price": 199,
     "rating": 4.5,
     "stock": 35,

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Service } from '@angular/core';
 import { forkJoin, map } from 'rxjs';
+import { Icon } from '../models/icon-model';
 import { Category, Product } from '../models/product-model';
 
 @Service()
@@ -41,5 +42,9 @@ export class ProductsService {
 
   getProducts(slug: string) {
     return this.httpClient.get<Product[]>(`data/${slug}.json`);
+  }
+
+  geticon() {
+    return this.httpClient.get<Icon[]>(`data/icons.json`);
   }
 }

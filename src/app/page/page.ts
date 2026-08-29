@@ -5,10 +5,11 @@ import { RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
 import { Skeleton } from '../shared/ui/skeleton/skeleton';
+import { Icon } from '../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-page',
-  imports: [RouterLink, SectionHeader, Skeleton],
+  imports: [RouterLink, SectionHeader, Skeleton, Icon],
   templateUrl: './page.html',
   styleUrl: './page.css',
 })

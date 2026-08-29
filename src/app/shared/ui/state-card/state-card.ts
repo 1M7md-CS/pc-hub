@@ -1,8 +1,9 @@
 import { Component, input } from '@angular/core';
+import { Icon } from '../icon/icon';
 
 @Component({
   selector: 'app-state-card',
-  imports: [],
+  imports: [Icon],
   templateUrl: './state-card.html',
   styleUrl: './state-card.css',
 })

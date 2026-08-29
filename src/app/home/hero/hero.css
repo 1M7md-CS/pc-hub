@@ -71,7 +71,7 @@
   transition: color var(--transition);
 }
 
-.hero-content .cta-btn svg {
+.hero-content .cta-btn app-icon {
   width: clamp(0.9rem, 1.1vw, 1.1rem);
   height: clamp(0.9rem, 1.1vw, 1.1rem);
 
@@ -84,7 +84,7 @@
   color: var(--accent);
 }
 
-.hero-content .cta-btn:hover svg {
+.hero-content .cta-btn:hover app-icon {
   transform: translateY(0.2rem);
 }
 

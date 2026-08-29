@@ -21,7 +21,7 @@
   height: clamp(4rem, 8vw, 5rem);
 }
 
-.icon-box svg {
+.icon-box app-icon {
   width: clamp(2.25rem, 5vw, 3rem);
   height: clamp(2.25rem, 5vw, 3rem);
 }

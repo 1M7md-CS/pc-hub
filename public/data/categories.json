@@ -3,78 +3,60 @@
     "title": "Pre-Built PCs",
     "link": "/products/pre-built-pcs",
     "count": 40,
-    "iconPaths": [
-      "M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"
-    ]
+    "iconName": "desktop"
   },
   {
     "title": "Graphics Cards",
     "link": "/products/gpu",
     "count": 120,
-    "iconPaths": ["M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"]
+    "iconName": "gpu"
   },
   {
     "title": "Processors",
     "link": "/products/processors",
     "count": 90,
-    "iconPaths": [
-      "M6.75 6.75h10.5v10.5H6.75z",
-      "M10.5 10.5h3v3h-3z",
-      "M12 3v3.75M12 17.25V21M3 12h3.75M17.25 12H21"
-    ]
+    "iconName": "processor"
   },
   {
     "title": "Memory",
     "link": "/products/ram",
     "count": 150,
-    "iconPaths": [
-      "M6.75 3.75h10.5a2.25 2.25 0 0 1 2.25 2.25v14.25H4.5V6a2.25 2.25 0 0 1 2.25-2.25z",
-      "M8.25 9.75h4.5M8.25 13.5h4.5M8.25 17.25h3"
-    ]
+    "iconName": "memory"
   },
   {
     "title": "Storage",
     "link": "/products/storage",
     "count": 180,
-    "iconPaths": [
-      "M5.25 8.25h13.5M5.25 8.25A2.25 2.25 0 0 0 3 10.5v6a2.25 2.25 0 0 0 2.25 2.25h13.5A2.25 2.25 0 0 0 21 16.5v-6a2.25 2.25 0 0 0-2.25-2.25M5.25 8.25l1.845-3.1a2.25 2.25 0 0 1 1.93-1.1h6.05a2.25 2.25 0 0 1 1.93 1.1L18.75 8.25M6.75 14.25h.008M16.5 14.25h.008"
-    ]
+    "iconName": "storage"
   },
   {
     "title": "Power Supplies",
     "link": "/products/psu",
     "count": 110,
-    "iconPaths": ["M12 3.75v7.5", "M5.25 9.75a7.5 7.5 0 1 0 13.5 0"]
+    "iconName": "bolt"
   },
   {
     "title": "Cases",
     "link": "/products/cases",
     "count": 95,
-    "iconPaths": [
-      "M3.75 6.75h16.5M3.75 6.75V18A2.25 2.25 0 0 0 6 20.25h12A2.25 2.25 0 0 0 20.25 18V6.75M3.75 6.75a2.25 2.25 0 0 1 2.25-2.25h12a2.25 2.25 0 0 1 2.25 2.25M9 13.5h6M9 16.5h4.5"
-    ]
+    "iconName": "case"
   },
   {
     "title": "Cooling",
     "link": "/products/cooling",
     "count": 140,
-    "iconPaths": ["M3 7.5h9a3 3 0 1 0-3-3", "M3 12h13.5a3 3 0 1 1-3 3", "M3 16.5h6a3 3 0 1 1-3 3"]
+    "iconName": "fan"
   },
   {
     "title": "Motherboards",
     "link": "/products/motherboards",
     "count": 130,
-    "iconPaths": [
-      "M4.5 8.25V6a2.25 2.25 0 0 1 2.25-2.25h10.5A2.25 2.25 0 0 1 19.5 6v2.25M4.5 15.75V18a2.25 2.25 0 0 0 2.25 2.25h10.5A2.25 2.25 0 0 0 19.5 18v-2.25M12 6.75v10.5M8.25 12h7.5M6.75 8.25h.008M6.75 15.75h.008M17.25 8.25h.008M17.25 15.75h.008"
-    ]
+    "iconName": "motherboard"
   },
   {
     "title": "Accessories",
     "link": "/products/accessories",
     "count": 220,
-    "iconPaths": [
-      "M12 2.25A5.25 5.25 0 0 0 6.75 7.5v6A5.25 5.25 0 0 0 12 18.75 5.25 5.25 0 0 0 17.25 13.5v-6A5.25 5.25 0 0 0 12 2.25z",
-      "M12 6.75v2.25"
-    ]
+    "iconName": "mouse"
   }
 ]

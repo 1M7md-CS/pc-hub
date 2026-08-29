@@ -3,10 +3,7 @@
     "id": 1,
     "name": "32GB DDR5 RGB Kit",
     "category": "Memory",
-    "iconPaths": [
-      "M6.75 3.75h10.5a2.25 2.25 0 0 1 2.25 2.25v14.25H4.5V6a2.25 2.25 0 0 1 2.25-2.25z",
-      "M8.25 9.75h4.5M8.25 13.5h4.5M8.25 17.25h3"
-    ],
+    "iconName": "memory",
     "price": 149,
     "badge": "Best Seller",
     "rating": 4.8,
@@ -18,10 +15,7 @@
     "id": 2,
     "name": "64GB DDR5 Kit",
     "category": "Memory",
-    "iconPaths": [
-      "M6.75 3.75h10.5a2.25 2.25 0 0 1 2.25 2.25v14.25H4.5V6a2.25 2.25 0 0 1 2.25-2.25z",
-      "M8.25 9.75h4.5M8.25 13.5h4.5M8.25 17.25h3"
-    ],
+    "iconName": "memory",
     "price": 249,
     "rating": 4.7,
     "stock": 18,
@@ -32,10 +26,7 @@
     "id": 3,
     "name": "16GB DDR4 RGB Kit",
     "category": "Memory",
-    "iconPaths": [
-      "M6.75 3.75h10.5a2.25 2.25 0 0 1 2.25 2.25v14.25H4.5V6a2.25 2.25 0 0 1 2.25-2.25z",
-      "M8.25 9.75h4.5M8.25 13.5h4.5M8.25 17.25h3"
-    ],
+    "iconName": "memory",
     "price": 59,
     "oldPrice": 69,
     "rating": 4.5,
@@ -47,10 +38,7 @@
     "id": 4,
     "name": "32GB DDR4 Kit",
     "category": "Memory",
-    "iconPaths": [
-      "M6.75 3.75h10.5a2.25 2.25 0 0 1 2.25 2.25v14.25H4.5V6a2.25 2.25 0 0 1 2.25-2.25z",
-      "M8.25 9.75h4.5M8.25 13.5h4.5M8.25 17.25h3"
-    ],
+    "iconName": "memory",
     "price": 89,
     "rating": 4.6,
     "stock": 45,
@@ -61,10 +49,7 @@
     "id": 5,
     "name": "16GB DDR5 Kit",
     "category": "Memory",
-    "iconPaths": [
-      "M6.75 3.75h10.5a2.25 2.25 0 0 1 2.25 2.25v14.25H4.5V6a2.25 2.25 0 0 1 2.25-2.25z",
-      "M8.25 9.75h4.5M8.25 13.5h4.5M8.25 17.25h3"
-    ],
+    "iconName": "memory",
     "price": 79,
     "rating": 4.5,
     "stock": 50,

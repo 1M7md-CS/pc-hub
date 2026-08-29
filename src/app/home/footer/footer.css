@@ -48,7 +48,7 @@
   transform: translateY(-0.15rem);
 }
 
-.footer-social svg {
+.footer-social app-icon {
   width: clamp(1rem, 1.8vw, 1.2rem);
   height: clamp(1rem, 1.8vw, 1.2rem);
 }

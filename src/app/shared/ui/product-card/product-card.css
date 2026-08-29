@@ -18,7 +18,7 @@
   border-bottom: 0.1rem solid var(--border);
 }
 
-.product-visual svg {
+.product-visual app-icon {
   width: clamp(2.4rem, 5vw, 3.1rem);
   height: clamp(2.4rem, 5vw, 3.1rem);
 }
@@ -65,7 +65,7 @@
   font-weight: 600;
 }
 
-.product-rating svg {
+.product-rating app-icon {
   width: 0.95rem;
   height: 0.95rem;
   color: var(--primary);
@@ -118,7 +118,7 @@
   transition: box-shadow var(--transition);
 }
 
-.product-add svg {
+.product-add app-icon {
   width: 1rem;
   height: 1rem;
 }
