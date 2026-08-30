@@ -24,7 +24,7 @@ export class WhyChooseUs implements OnInit {
       .subscribe({
         next: (features) => {
           this.features.set(features);
-          this.isLoading.set(true);
+          this.isLoading.set(false);
         },
       });
   }
