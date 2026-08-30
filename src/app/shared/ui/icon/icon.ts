@@ -1,6 +1,5 @@
-import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { ProductsService } from '../../../services/products';
+import { Component, computed, input } from '@angular/core';
+import { icons } from '../../../models/icons';
 
 @Component({
   selector: 'app-icon',
@@ -8,20 +7,11 @@ import { ProductsService } from '../../../services/products';
   templateUrl: './icon.html',
   styleUrl: './icon.css',
 })
-export class Icon implements OnInit {
-  private readonly productsService = inject(ProductsService);
-  private readonly destroyRef = inject(DestroyRef);
-
+export class Icon {
   readonly name = input.required<string>();
   readonly fill = input<'none' | 'currentColor'>('none');
   readonly size = input<string | undefined>(undefined);
   readonly strokeWidth = input<string>('2');
 
-  readonly paths = signal<string[]>([]);
-
-  ngOnInit(): void {
-    this.productsService.icons.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((icons) => {
-      this.paths.set(icons.find((icon) => icon.name === this.name())?.paths ?? []);
-    });
-  }
+  readonly paths = computed(() => icons.find((icon) => icon.name === this.name())?.paths ?? []);
 }
