@@ -3,9 +3,10 @@ import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/c
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { map } from 'rxjs';
+import { PageContent } from '../models/page-model';
+import { Icon } from '../shared/ui/icon/icon';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
 import { Skeleton } from '../shared/ui/skeleton/skeleton';
-import { Icon } from '../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-page',
