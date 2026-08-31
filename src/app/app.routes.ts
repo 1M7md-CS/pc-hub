@@ -38,4 +38,8 @@ export const routes: Routes = [
     redirectTo: `pages/${slug}`,
     pathMatch: 'full' as const,
   })),
+  {
+    path: '**',
+    loadComponent: () => import('./not-found/not-found').then((m) => m.NotFound),
+  },
 ];
