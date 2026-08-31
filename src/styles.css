@@ -124,6 +124,7 @@ html {
   text-decoration: none;
   color: var(--text-muted);
   font-weight: 600;
+  width: fit-content;
 }
 
 .back-link app-icon {
