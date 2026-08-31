@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background-color: var(--background);
+  background-color: var(--bg);
   padding: clamp(4rem, 10vw, 6rem) clamp(1rem, 5vw, 3rem) clamp(3rem, 8vw, 6rem);
 }
 
