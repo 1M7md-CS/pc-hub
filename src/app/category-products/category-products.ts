@@ -6,12 +6,12 @@ import { LoadState, loadState } from '../shared/async-state';
 import { ProductCard } from '../shared/ui/product-card/product-card';
 import { ProductSkeleton } from '../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
-import { StateCardError } from '../shared/ui/state-card/state-card';
+import { StateCard } from '../shared/ui/state-card/state-card';
 import { Icon } from '../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-category-products',
-  imports: [RouterLink, ProductCard, SectionHeader, ProductSkeleton, StateCardError, Icon],
+  imports: [RouterLink, ProductCard, SectionHeader, ProductSkeleton, StateCard, Icon],
   templateUrl: './category-products.html',
   styleUrl: './category-products.css',
 })

@@ -7,12 +7,12 @@ import { ProductsService } from '../../services/products';
 import { ProductCard } from '../../shared/ui/product-card/product-card';
 import { ProductSkeleton } from '../../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../../shared/ui/section-header/section-header';
-import { StateCardError } from '../../shared/ui/state-card/state-card';
+import { StateCard } from '../../shared/ui/state-card/state-card';
 import { Icon } from '../../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-featured-products',
-  imports: [SectionHeader, ProductCard, RouterLink, ProductSkeleton, StateCardError, Icon],
+  imports: [SectionHeader, ProductCard, RouterLink, ProductSkeleton, StateCard, Icon],
   templateUrl: './featured-products.html',
   styleUrl: './featured-products.css',
 })

@@ -7,6 +7,6 @@ import { Icon } from '../icon/icon';
   templateUrl: './state-card.html',
   styleUrl: './state-card.css',
 })
-export class StateCardError {
+export class StateCard {
   state = input.required<'error' | 'empty'>();
 }
