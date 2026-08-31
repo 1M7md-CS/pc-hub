@@ -26,11 +26,12 @@ export const routes: Routes = [
   },
   {
     path: 'pages/:slug',
-    loadComponent: () => import('./page/page').then(m => m.Page),
+    loadComponent: () => import('./page/page').then((m) => m.Page),
   },
   {
     path: 'products/:slug',
-    loadComponent: () => import('./category-products/category-products').then(m => m.CategoryProducts),
+    loadComponent: () =>
+      import('./category-products/category-products').then((m) => m.CategoryProducts),
   },
   ...pageRoutes.map(({ path, slug }) => ({
     path: path,
