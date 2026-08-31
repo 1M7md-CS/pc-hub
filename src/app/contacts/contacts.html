@@ -1,0 +1,77 @@
+<main>
+  <a class="back-link" routerLink="/home">
+    <app-icon name="arrow-left" />
+    <span>Back to home</span>
+  </a>
+
+  <app-section-header
+    label="Contact Us"
+    title="Get in touch"
+    description="Questions about an order, a build, or anything else? We reply within 24 hours."
+  ></app-section-header>
+
+  <section class="contact-layout">
+    <div class="contact-info">
+      <div class="contact-detail">
+        <div class="icon-box">
+          <app-icon name="email" />
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p>mohammadhammad.dev@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="icon-box">
+          <app-icon name="phone" />
+        </div>
+        <div>
+          <h3>Phone</h3>
+          <p>+962791231234</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="icon-box">
+          <app-icon name="location" />
+        </div>
+        <div>
+          <h3>Location</h3>
+          <p>Building 12, Innovation Avenue, Amman Business Park, Amman, Jordan</p>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <div class="icon-box">
+          <app-icon name="hours" />
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Mon&dash;Sat, 9 AM &dash; 8 PM</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <form class="contact-form" action="https://formspree.io/f/mdeoaqay" method="POST">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+        </div>
+
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="How can we help?"></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>

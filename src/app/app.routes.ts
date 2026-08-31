@@ -33,6 +33,10 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./category-products/category-products').then((m) => m.CategoryProducts),
   },
+  {
+    path: 'contacts',
+    loadComponent: () => import('./contacts/contacts').then((m) => m.Contacts),
+  },
   ...pageRoutes.map(({ path, slug }) => ({
     path: path,
     redirectTo: `pages/${slug}`,
