@@ -14,24 +14,20 @@
       <a routerLink="/about-us">About</a>
     </li>
     <li>
-      <a href="#">Contacts</a>
+      <a routerLink="/contacts">Contacts</a>
     </li>
   </ul>
 
   <div class="nav-action">
-    <a routerLink="/cart">
-      <button class="cart">
-        <app-icon name="cart" />
-      </button>
+    <a routerLink="/cart" class="cart">
+      <app-icon name="cart" />
     </a>
 
-    <a routerLink="/login">
-      <button class="login">
-        <app-icon name="user" />
-      </button>
+    <a routerLink="/login" class="login">
+      <app-icon name="user" />
     </a>
 
-    <button (click)="toggleMenu()" class="nav-menu">
+    <button (click)="toggleMenu()" class="nav-menu" aria-label="Toggle menu">
       @if (!isMenuOpen()) {
         <app-icon name="menu" />
       } @else {

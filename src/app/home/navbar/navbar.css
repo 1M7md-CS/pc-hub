@@ -16,12 +16,32 @@ button {
   border-radius: 0.4rem;
 }
 
+.cart,
+.login {
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color var(--transition);
+  padding: clamp(0.3rem, 1vw, 0.5rem);
+  border-radius: 0.4rem;
+}
+
+.cart:hover,
+.cart:active,
+.login:hover,
+.login:active {
+  background: rgba(184, 255, 61, 0.1);
+}
+
 button:hover,
 button:active {
   background: rgba(184, 255, 61, 0.1);
 }
 
-button app-icon {
+button app-icon,
+.cart app-icon,
+.login app-icon {
   width: clamp(1.3rem, 2.5vw, 1.8rem);
   height: clamp(1.3rem, 2.5vw, 1.8rem);
 }
