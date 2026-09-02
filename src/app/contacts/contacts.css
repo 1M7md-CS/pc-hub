@@ -118,8 +118,31 @@ app-section-header {
   transition: transform var(--transition);
 }
 
+.submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+}
+
 .submit-button:hover {
   transform: translateY(-0.1rem);
+}
+
+.form-status {
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-weight: 700;
+}
+
+.form-status.success {
+  color: #2e7d32;
+}
+
+.form-status.error {
+  color: #b85c5c;
+}
+
+.form-status.invalid {
+  color: #a66a2c;
 }
 
 .submit-button:focus-visible {

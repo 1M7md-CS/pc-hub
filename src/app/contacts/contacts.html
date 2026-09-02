@@ -54,23 +54,65 @@
     </div>
 
     <div class="contact-form-wrap">
-      <form class="contact-form" action="https://formspree.io/f/mdeoaqay" method="POST">
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mdeoaqay"
+        method="POST"
+        [formGroup]="contactsForm"
+        (ngSubmit)="onSubmit()"
+      >
         <div class="form-field">
           <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" />
+          <input id="name" name="name" type="text" placeholder="Your name" formControlName="name" />
         </div>
 
         <div class="form-field">
           <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" />
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            formControlName="email"
+          />
         </div>
 
         <div class="form-field">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="How can we help?"></textarea>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="How can we help?"
+            formControlName="message"
+          ></textarea>
         </div>
 
-        <button type="submit" class="submit-button">Send message</button>
+        @if (status() === 'success') {
+          <p class="form-status success">
+            Thanks for reaching out! Your message has been sent successfully.
+          </p>
+        } @else if (status() === 'error') {
+          <p class="form-status error">
+            We&lsquo;re having trouble sending your message. Please try again in a moment.
+          </p>
+        } @else if (status() === 'invalid') {
+          <p class="form-status invalid">
+            Almost there! Please review your information and try again.
+          </p>
+        }
+
+        <button
+          type="submit"
+          class="submit-button"
+          [disabled]="status() === 'error' || status() === 'sending'"
+        >
+          @if (status() === 'sending') {
+            Sending...
+          } @else {
+            Send message
+          }
+        </button>
       </form>
     </div>
   </section>
