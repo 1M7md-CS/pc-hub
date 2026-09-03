@@ -46,13 +46,13 @@
 
 .auth-card > p {
   font-size: clamp(0.88rem, 1.2vw, 0.95rem);
-  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 clamp(1rem, 3vw, 1.5rem);
 }
 
 .auth-error {
   color: var(--error);
-  font-size: clamp(0.82rem, 1.1vw, 0.9rem);
-  margin: 0 0 clamp(0.5rem, 1vw, 0.8rem);
+  font-weight: 700;
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
 }
 
 .auth-form {
@@ -88,14 +88,10 @@
   color: var(--text-muted);
 }
 
-.auth-field input:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0.8rem var(--glow);
-}
-
 .auth-error-text {
   color: var(--error);
-  font-size: clamp(0.75rem, 0.9vw, 0.82rem);
+  font-weight: 700;
+  font-size: clamp(0.8rem, 0.9vw, 0.9rem);
 }
 
 .auth-form .cta-button {

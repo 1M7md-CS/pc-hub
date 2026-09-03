@@ -117,15 +117,15 @@ app-section-header {
 }
 
 .form-status.success {
-  color: #2e7d32;
+  color: #107c16;
 }
 
 .form-status.error {
-  color: #b85c5c;
+  color: var(--error);
 }
 
 .form-status.invalid {
-  color: #a66a2c;
+  color: var(--primary);
 }
 
 .submit-button:focus-visible {
