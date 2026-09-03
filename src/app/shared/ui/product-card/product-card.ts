@@ -1,4 +1,4 @@
-import { Component, inject, input, signal } from '@angular/core';
+import { Component, computed, inject, input, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from '../../../models/product-model';
 import { Auth } from '../../../services/auth';
@@ -18,14 +18,22 @@ export class ProductCard {
   product = input.required<Product>();
   added = signal(false);
 
+  atStockLimit = computed(() => {
+    const p = this.product();
+    return this.cart.quantityInCart(p) >= p.stock;
+  });
+
   addToCart() {
     if (this.added()) return;
     if (!this.auth.isAuthenticated()) {
       this.router.navigate(['/signin']);
       return;
     }
+    const qtyBefore = this.cart.quantityInCart(this.product());
     this.cart.add(this.product());
-    this.added.set(true);
-    setTimeout(() => this.added.set(false), 1500);
+    if (this.cart.quantityInCart(this.product()) > qtyBefore) {
+      this.added.set(true);
+      setTimeout(() => this.added.set(false), 1500);
+    }
   }
 }

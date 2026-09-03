@@ -42,12 +42,15 @@
         class="product-add"
         [class.added]="added()"
         [class.out-of-stock]="product().stock === 0"
-        [disabled]="product().stock === 0"
+        [disabled]="product().stock === 0 || atStockLimit()"
         (click)="addToCart()"
       >
         @if (product().stock === 0) {
           <app-icon name="close" />
           <span>Out of stock</span>
+        } @else if (atStockLimit()) {
+          <app-icon name="check" />
+          <span>In cart</span>
         } @else if (added()) {
           <app-icon name="check" />
           <span>Added</span>
