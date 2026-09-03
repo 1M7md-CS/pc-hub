@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Product } from '../models/product-model';
 import { Cart } from '../services/cart';
 import { Icon } from '../shared/ui/icon/icon';
 
@@ -15,24 +16,28 @@ export class CartPage {
   readonly count = this.cartService.count;
   readonly total = this.cartService.total;
 
-  setQuantity(id: number, quantity: number) {
-    this.cartService.setQuantity(id, quantity);
+  keyOf(product: Product): string {
+    return this.cartService.keyOf(product);
   }
 
-  stockLevel(id: number) {
-    return this.cartService.stockLevel(id);
+  setQuantity(key: string, quantity: number) {
+    this.cartService.setQuantity(key, quantity);
   }
 
-  atStockLimit(id: number) {
-    return this.cartService.atStockLimit(id);
+  stockLevel(key: string) {
+    return this.cartService.stockLevel(key);
+  }
+
+  atStockLimit(key: string) {
+    return this.cartService.atStockLimit(key);
   }
 
   hasOutOfStock() {
     return this.cartService.hasOutOfStock();
   }
 
-  remove(id: number) {
-    this.cartService.remove(id);
+  remove(key: string) {
+    this.cartService.remove(key);
   }
 
   clear() {
