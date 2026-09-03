@@ -28,7 +28,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/pc-hub/",
               "budgets": [
                 {
                   "type": "initial",
