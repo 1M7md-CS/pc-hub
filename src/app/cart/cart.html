@@ -23,7 +23,7 @@
   } @else {
     <div class="cart-layout">
       <ul class="cart-list">
-        @for (item of items(); track item.product.id) {
+        @for (item of items(); track keyOf(item.product)) {
           <li class="cart-item">
             <div class="cart-item-icon icon-box">
               <app-icon [name]="item.product.iconName" />
@@ -37,31 +37,31 @@
 
             <div class="cart-item-actions">
               <div class="cart-qty">
-                <button (click)="setQuantity(item.product.id, item.quantity - 1)" aria-label="Decrease quantity">-</button>
+                <button (click)="setQuantity(keyOf(item.product), item.quantity - 1)" aria-label="Decrease quantity">-</button>
                 <input
                   type="number"
                   min="1"
                   [max]="item.product.stock"
                   [value]="item.quantity"
-                  (change)="setQuantity(item.product.id, $any($event.target).valueAsNumber)"
+                  (change)="setQuantity(keyOf(item.product), $any($event.target).valueAsNumber)"
                 />
                 <button
-                  (click)="setQuantity(item.product.id, item.quantity + 1)"
+                  (click)="setQuantity(keyOf(item.product), item.quantity + 1)"
                   aria-label="Increase quantity"
-                  [disabled]="atStockLimit(item.product.id)"
+                  [disabled]="atStockLimit(keyOf(item.product))"
                 >+</button>
               </div>
               <span
                 class="cart-stock-left"
-                [class.low]="stockLevel(item.product.id) <= 5"
+                [class.low]="stockLevel(keyOf(item.product)) <= 5"
               >
                 @if (item.product.stock === 0) {
                   Out of stock
                 } @else {
-                  {{ stockLevel(item.product.id) }} left
+                  {{ stockLevel(keyOf(item.product)) }} left
                 }
               </span>
-              <button class="cart-remove" (click)="remove(item.product.id)">
+              <button class="cart-remove" (click)="remove(keyOf(item.product))">
                 <app-icon name="close" />
               </button>
             </div>
