@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production --base-href /pc-hub/ && npx angular-cli-ghpages --dir=dist/pc-hub/browser"
+    "deploy": "ng build --configuration production && node -e \"require('fs').copyFileSync('dist/pc-hub/browser/index.html','dist/pc-hub/browser/404.html')\" && npx angular-cli-ghpages --dir=dist/pc-hub/browser"
   },
   "private": true,
   "packageManager": "npm@11.17.0",
