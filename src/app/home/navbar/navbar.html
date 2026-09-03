@@ -22,7 +22,7 @@
     <a routerLink="/cart" class="cart">
       <app-icon name="cart" />
       @if (cartCount() > 0) {
-        <span class="cart-badge">{{ cartCount() }}</span>
+        <span class="cart-badge">{{ cartCount() > 99 ? '99+' : cartCount() }}</span>
       }
     </a>
 
