@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { Home } from './home/home';
+import { redirectIfAuthenticated } from './guards/auth.guard';
 
 const pageRoutes: { path: string; slug: string }[] = [
   { path: 'faq', slug: 'faq' },
@@ -36,6 +37,16 @@ export const routes: Routes = [
   {
     path: 'contacts',
     loadComponent: () => import('./contacts/contacts').then((m) => m.Contacts),
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./auth-page/auth-page').then((m) => m.AuthPage),
+    canActivate: [redirectIfAuthenticated],
+  },
+  {
+    path: 'signup',
+    loadComponent: () => import('./auth-page/auth-page').then((m) => m.AuthPage),
+    canActivate: [redirectIfAuthenticated],
   },
   ...pageRoutes.map(({ path, slug }) => ({
     path: path,

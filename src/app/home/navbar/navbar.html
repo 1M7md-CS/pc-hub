@@ -23,9 +23,35 @@
       <app-icon name="cart" />
     </a>
 
-    <a routerLink="/login" class="login">
-      <app-icon name="user" />
-    </a>
+    @if (isAuthenticated()) {
+      @let u = user()!;
+      <div class="user-menu">
+        <button class="user-btn" (click)="toggleDropdown()">
+          <span class="user-avatar" aria-hidden="true">{{ u.name.charAt(0) }}</span>
+          <span class="user-name">{{ u.name }}</span>
+          <app-icon name="chevron-down" class="chevron" [class.open]="isDropdownOpen()" />
+        </button>
+        <div class="user-dropdown" [class.active]="isDropdownOpen()">
+          <div class="dropdown-header">
+            <span class="dropdown-name">{{ u.name }}</span>
+            <span class="dropdown-email">{{ u.email }}</span>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a routerLink="/cart" class="dropdown-item" (click)="closeDropdown()">
+            <app-icon name="cart" />
+            <span>Cart</span>
+          </a>
+          <button class="dropdown-item" (click)="logout()">
+            <app-icon name="lock" />
+            <span>Logout</span>
+          </button>
+        </div>
+      </div>
+    } @else {
+      <a routerLink="/login" class="login">
+        <app-icon name="user" />
+      </a>
+    }
 
     <button (click)="toggleMenu()" class="nav-menu" aria-label="Toggle menu">
       @if (!isMenuOpen()) {

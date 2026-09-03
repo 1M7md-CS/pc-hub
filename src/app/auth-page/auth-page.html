@@ -1,0 +1,74 @@
+<main class="auth-page">
+  <div class="auth-glow" aria-hidden="true"></div>
+
+  <a class="back-link" routerLink="/home">
+    <app-icon name="arrow-left" />
+    <span>Back to home</span>
+  </a>
+
+  <div class="auth-card">
+    <a class="auth-logo" routerLink="/home">
+      <img src="images/nav/logo.webp" alt="PcHub" />
+    </a>
+
+    <h1>{{ title() }}</h1>
+    <p>{{ subtitle() }}</p>
+
+    @if (errorMessage()) {
+      <p class="auth-error">{{ errorMessage() }}</p>
+    }
+
+    <form class="auth-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+      @if (mode() === 'signup') {
+        <div class="auth-field">
+          <label for="auth-name">Name</label>
+          <input id="auth-name" formControlName="name" type="text" placeholder="Your name" />
+          @if (fieldInvalid('name')) {
+            <span class="auth-error-text">Name is required.</span>
+          }
+        </div>
+      }
+
+      <div class="auth-field">
+        <label for="auth-email">Email</label>
+        <input id="auth-email" formControlName="email" type="email" placeholder="you@example.com" />
+        @if (fieldInvalid('email')) {
+          <span class="auth-error-text">
+            @if (form.get('email')?.errors?.['required']) {
+              Email is required.
+            } @else {
+              Enter a valid email.
+            }
+          </span>
+        }
+      </div>
+
+      <div class="auth-field">
+        <label for="auth-password">Password</label>
+        <input
+          id="auth-password"
+          formControlName="password"
+          type="password"
+          placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;"
+        />
+        @if (fieldInvalid('password')) {
+          <span class="auth-error-text">
+            @if (form.get('password')?.errors?.['required']) {
+              Password is required.
+            } @else {
+              Minimum 6 characters.
+            }
+          </span>
+        }
+      </div>
+
+      <button class="cta-button" type="submit" [disabled]="status() === 'sending'">
+        {{ status() === 'sending' ? 'Please wait...' : submitLabel() }}
+      </button>
+    </form>
+
+    <p class="auth-switch">
+      {{ switchPrefix() }} <a [routerLink]="switchLink()">{{ switchAction() }}</a>
+    </p>
+  </div>
+</main>

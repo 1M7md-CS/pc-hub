@@ -1,0 +1,124 @@
+.auth-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 5vw, 3rem);
+}
+
+.auth-glow {
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(20rem, 60vw, 40rem);
+  height: clamp(20rem, 60vw, 40rem);
+  background: radial-gradient(circle, hsla(15, 100%, 64%, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.auth-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 24rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 0.1rem solid var(--border);
+  border-radius: 1rem;
+  margin-top: clamp(1.8rem, 5vw, 2.5rem);
+  padding: clamp(1.8rem, 5vw, 2.5rem);
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.auth-logo img {
+  display: inline-block;
+  height: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.auth-card h1 {
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  margin: 0 0 clamp(0.4rem, 1vw, 0.6rem);
+}
+
+.auth-card > p {
+  font-size: clamp(0.88rem, 1.2vw, 0.95rem);
+  margin: 0 0 clamp(1.5rem, 3vw, 2rem);
+}
+
+.auth-error {
+  color: var(--error);
+  font-size: clamp(0.82rem, 1.1vw, 0.9rem);
+  margin: 0 0 clamp(0.5rem, 1vw, 0.8rem);
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.9rem, 2vw, 1.2rem);
+  text-align: left;
+}
+
+.auth-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.auth-field label {
+  color: var(--primary);
+  font-size: clamp(0.8rem, 1vw, 0.88rem);
+  font-weight: 500;
+}
+
+.auth-field input {
+  background: var(--bg);
+  border: 0.1rem solid var(--border);
+  border-radius: 0.5rem;
+  color: var(--text);
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  padding: clamp(0.65rem, 1.5vw, 0.8rem);
+  outline: none;
+}
+
+.auth-field input::placeholder {
+  color: var(--text-muted);
+}
+
+.auth-field input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0.8rem var(--glow);
+}
+
+.auth-error-text {
+  color: var(--error);
+  font-size: clamp(0.75rem, 0.9vw, 0.82rem);
+}
+
+.auth-form .cta-button {
+  margin-bottom: clamp(1.2rem, 2.5vw, 1.6rem);
+  width: 100%;
+}
+
+.auth-form .cta-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-card .auth-switch {
+  margin: clamp(0.5rem, 1.5vw, 1rem) 0 clamp(1.8rem, 3vw, 2.5rem);
+  font-size: clamp(0.85rem, 1.1vw, 0.92rem);
+}
+
+.auth-switch a {
+  color: var(--primary);
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.auth-switch a:hover {
+  filter: drop-shadow(0 0 0.5rem var(--primary));
+}
