@@ -1,13 +1,14 @@
 import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 import { Product } from '../models/product-model';
 import { ProductsService } from '../services/products';
 import { LoadState, loadState } from '../shared/async-state';
+import { Icon } from '../shared/ui/icon/icon';
 import { ProductCard } from '../shared/ui/product-card/product-card';
 import { ProductSkeleton } from '../shared/ui/product-skeleton/product-skeleton';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
 import { StateCard } from '../shared/ui/state-card/state-card';
-import { Icon } from '../shared/ui/icon/icon';
 
 @Component({
   selector: 'app-category-products',
@@ -20,6 +21,7 @@ export class CategoryProducts implements OnInit {
 
   private productsService = inject(ProductsService);
   private destroyRef = inject(DestroyRef);
+  private title = inject(Title);
 
   readonly state = new LoadState<Product[]>();
   readonly categoryTitle = signal<string | undefined>(undefined);
@@ -28,7 +30,12 @@ export class CategoryProducts implements OnInit {
     loadState(this.productsService.getProducts(this.slug()), this.state, this.destroyRef);
 
     this.productsService.getCategory(this.slug()).subscribe({
-      next: (category) => this.categoryTitle.set(category?.title),
+      next: (category) => {
+        this.categoryTitle.set(category?.title);
+        if (category?.title) {
+          this.title.setTitle(`PcHub | ${category.title}`);
+        }
+      },
     });
   }
 }

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, DestroyRef, inject, input, OnInit, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Title } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 import { map } from 'rxjs';
 import { PageContent } from '../models/page-model';
@@ -17,6 +18,7 @@ import { Skeleton } from '../shared/ui/skeleton/skeleton';
 export class Page implements OnInit {
   private httpClient = inject(HttpClient);
   private destroyRef = inject(DestroyRef);
+  private title = inject(Title);
   readonly slug = input.required<string>();
   page = signal<PageContent | undefined>(undefined);
   isLoading = signal(true);
@@ -32,6 +34,9 @@ export class Page implements OnInit {
         next: (page) => {
           this.page.set(page);
           this.isLoading.set(false);
+          if (page?.title) {
+            this.title.setTitle(`PcHub | ${page.title}`);
+          }
         },
       });
   }

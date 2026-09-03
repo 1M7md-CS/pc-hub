@@ -24,6 +24,7 @@ export const routes: Routes = [
   {
     path: 'home',
     component: Home,
+    title: 'Home',
   },
   {
     path: 'pages/:slug',
@@ -37,21 +38,25 @@ export const routes: Routes = [
   {
     path: 'contacts',
     loadComponent: () => import('./contacts/contacts').then((m) => m.Contacts),
+    title: 'Contacts',
   },
   {
     path: 'cart',
     loadComponent: () => import('./cart/cart').then((m) => m.CartPage),
     canActivate: [requireAuthentication],
+    title: 'Cart',
   },
   {
     path: 'login',
     loadComponent: () => import('./auth-page/auth-page').then((m) => m.AuthPage),
     canActivate: [redirectIfAuthenticated],
+    title: 'Login',
   },
   {
     path: 'signup',
     loadComponent: () => import('./auth-page/auth-page').then((m) => m.AuthPage),
     canActivate: [redirectIfAuthenticated],
+    title: 'Signup',
   },
   ...pageRoutes.map(({ path, slug }) => ({
     path: path,
@@ -61,5 +66,6 @@ export const routes: Routes = [
   {
     path: '**',
     loadComponent: () => import('./not-found/not-found').then((m) => m.NotFound),
+    title: 'Not Found',
   },
 ];
