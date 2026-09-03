@@ -27,7 +27,7 @@
     <app-state-card state="empty"></app-state-card>
   } @else {
     <div class="products-track">
-      @for (product of state.data(); track product.name) {
+      @for (product of state.data(); track product.category + '-' + product.id) {
         <div class="product-track-item">
           <app-product-card [product]="product" />
         </div>
