@@ -20,7 +20,11 @@ export class Contacts {
   contactsForm = new FormGroup({
     name: new FormControl('', [Validators.required, Validators.maxLength(50)]),
 
-    email: new FormControl('', [Validators.required, Validators.email]),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.email,
+      Validators.pattern(/^[^\s@]+@[^\s@]+\.[^\s@]+$/),
+    ]),
 
     message: new FormControl('', [
       Validators.required,
