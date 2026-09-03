@@ -24,17 +24,23 @@ export class CartPage {
     this.cartService.setQuantity(key, quantity);
   }
 
-  onQuantityInput(key: string, raw: string) {
-    const sanitized = raw.replace(/[^0-9]/g, '');
-    const parsed = parseInt(sanitized, 10);
-    if (!Number.isNaN(parsed)) {
-      this.setQuantity(key, parsed);
+  blockInvalidKey(event: KeyboardEvent, stock: number, current: string) {
+    const isDigit = /^[0-9]$/.test(event.key);
+    if (event.key.length === 1 && !isDigit) {
+      event.preventDefault();
+      return;
+    }
+    if (isDigit) {
+      const next = parseInt(current + event.key, 10);
+      if (next > stock) {
+        event.preventDefault();
+      }
     }
   }
 
-  commitQuantity(key: string, raw: string) {
-    const parsed = parseInt(raw.replace(/[^0-9]/g, ''), 10);
-    this.setQuantity(key, Number.isNaN(parsed) ? 0 : parsed);
+  onQuantityInput(key: string, raw: string) {
+    if (raw === '') return;
+    this.setQuantity(key, parseInt(raw, 10));
   }
 
   stockLevel(key: string) {
@@ -58,7 +64,6 @@ export class CartPage {
   }
 
   orderOnWhatsApp() {
-    if (this.hasOutOfStock()) return;
     const itemLines = this.items().map(
       (item, index) =>
         `${index + 1}. ${item.product.name} (${item.product.category}) x${item.quantity} = $${item.product.price * item.quantity}`,
