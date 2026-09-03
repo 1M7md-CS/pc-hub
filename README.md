@@ -1,59 +1,77 @@
 # PcHub
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.4.
+<img alt="PcHub" src="public/images/nav/logo.webp" width="120" />
 
-## Development server
+PcHub | Angular storefront for PC components, pre-built PCs, and deals.
 
-To start a local development server, run:
+Built with **Angular 22**, **TypeScript**, and **Signals**.
 
-```bash
-ng serve
-```
+## Live demo
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Deployed on GitHub Pages: https://1m7md-cs.github.io/pc-hub/
 
-## Code scaffolding
+## Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Browse PC components, pre-built PCs, and monthly deals
+- Per-user accounts (sign in / sign up)
+- Per-user carts
+- Editable item quantities and live totals
+- Order your cart directly via WhatsApp
+- Authenticated cart & sign-in guards
+- Reactive forms with validation
+- Dynamic page titles & Open Graph metadata
+- Responsive UI with CSS theme variables
 
-```bash
-ng generate component component-name
-```
+## Tech stack
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Angular 22 (Signals, standalone components, control flow)
+- TypeScript, CSS
+- Angular Router (guards, lazy loading)
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## Getting started
 
 ```bash
-ng test
+npm install
+npm start          # dev server at http://localhost:4200
 ```
 
-## Running end-to-end tests
+## Project structure
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
 ```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+src/
+├── app/
+│   ├── home/                     # landing page
+│   │   ├── navbar/               # nav + user menu + cart badge
+│   │   ├── hero/                 # hero section
+│   │   ├── shop-by-category/     # category grid
+│   │   ├── featured-products/    # featured products
+│   │   ├── product-of-the-month/ # product of the month
+│   │   ├── promo-banner/         # promo banner
+│   │   ├── why-choose-us/        # why choose us
+│   │   ├── testimonials/         # testimonials
+│   │   └── footer/               # footer
+│   ├── cart/                     # cart page (qty, totals, WhatsApp order)
+│   ├── category-products/        # products by category
+│   ├── contacts/                 # contacts page
+│   ├── auth-page/                # sign in / sign up
+│   ├── page/                     # static content pages (FAQ, about, etc.)
+│   ├── not-found/                # 404 page
+│   ├── shared/
+│   │   ├── ui/                   # reusable components
+│   │   │   ├── icon/
+│   │   │   ├── product-card/
+│   │   │   ├── product-skeleton/
+│   │   │   ├── section-header/
+│   │   │   ├── skeleton/
+│   │   │   └── state-card/
+│   │   └── async-state.ts        # async load-state helper
+│   ├── models/                   # typed models (product, user, page, ...)
+│   ├── services/                 # auth, cart, products, title-strategy
+│   ├── guards/                   # route guards
+│   ├── app.routes.ts             # routing config
+│   ├── app.config.ts             # providers / config
+│   ├── app.ts                    # root component
+│   └── ...
+├── index.html                    # app shell
+└── styles.css                    # global theme variables
+```
