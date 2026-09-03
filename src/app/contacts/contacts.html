@@ -64,6 +64,15 @@
         <div class="form-field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" placeholder="Your name" formControlName="name" />
+          @if (
+            contactsForm.controls.name.hasError('required') && contactsForm.controls.name.touched
+          ) {
+            <p class="form-status error">Name is required.</p>
+          } @else if (
+            contactsForm.controls.name.hasError('maxlength') && contactsForm.controls.name.touched
+          ) {
+            <p class="form-status error">Name cannot exceed 50 characters.</p>
+          }
         </div>
 
         <div class="form-field">
@@ -75,6 +84,16 @@
             placeholder="you@example.com"
             formControlName="email"
           />
+
+          @if (
+            contactsForm.controls.email.hasError('required') && contactsForm.controls.email.touched
+          ) {
+            <p class="form-status error">Email is required.</p>
+          } @else if (
+            contactsForm.controls.email.hasError('pattern') && contactsForm.controls.email.touched
+          ) {
+            <p class="form-status error">Please enter a valid email address.</p>
+          }
         </div>
 
         <div class="form-field">
@@ -86,7 +105,36 @@
             placeholder="How can we help?"
             formControlName="message"
           ></textarea>
+
+          @if (
+            contactsForm.controls.message.hasError('required') &&
+            contactsForm.controls.message.touched
+          ) {
+            <p class="form-status error">Message is required.</p>
+          } @else if (
+            contactsForm.controls.message.hasError('minlength') &&
+            contactsForm.controls.message.touched
+          ) {
+            <p class="form-status error">Message must be at least 5 characters.</p>
+          } @else if (
+            contactsForm.controls.message.hasError('maxlength') &&
+            contactsForm.controls.message.touched
+          ) {
+            <p class="form-status error">Message cannot exceed 1000 characters.</p>
+          }
         </div>
+
+        <button
+          type="submit"
+          class="cta-button"
+          [disabled]="status() === 'error' || status() === 'sending'"
+        >
+          @if (status() === 'sending') {
+            Sending...
+          } @else {
+            Send message
+          }
+        </button>
 
         @if (status() === 'success') {
           <p class="form-status success">
@@ -101,18 +149,6 @@
             Almost there! Please review your information and try again.
           </p>
         }
-
-        <button
-          type="submit"
-          class="submit-button"
-          [disabled]="status() === 'error' || status() === 'sending'"
-        >
-          @if (status() === 'sending') {
-            Sending...
-          } @else {
-            Send message
-          }
-        </button>
       </form>
     </div>
   </section>
