@@ -41,9 +41,11 @@
                 <input
                   type="number"
                   min="1"
+                  step="1"
                   [max]="item.product.stock"
                   [value]="item.quantity"
-                  (change)="setQuantity(keyOf(item.product), $any($event.target).valueAsNumber)"
+                  (input)="onQuantityInput(keyOf(item.product), $any($event.target).value)"
+                  (change)="commitQuantity(keyOf(item.product), $any($event.target).value)"
                 />
                 <button
                   (click)="setQuantity(keyOf(item.product), item.quantity + 1)"

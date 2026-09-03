@@ -24,6 +24,19 @@ export class CartPage {
     this.cartService.setQuantity(key, quantity);
   }
 
+  onQuantityInput(key: string, raw: string) {
+    const sanitized = raw.replace(/[^0-9]/g, '');
+    const parsed = parseInt(sanitized, 10);
+    if (!Number.isNaN(parsed)) {
+      this.setQuantity(key, parsed);
+    }
+  }
+
+  commitQuantity(key: string, raw: string) {
+    const parsed = parseInt(raw.replace(/[^0-9]/g, ''), 10);
+    this.setQuantity(key, Number.isNaN(parsed) ? 0 : parsed);
+  }
+
   stockLevel(key: string) {
     return this.cartService.stockLevel(key);
   }

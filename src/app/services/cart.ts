@@ -74,7 +74,7 @@ export class Cart {
     this.items.update((items) =>
       items.map((i) => {
         if (this.keyOf(i.product) !== key) return i;
-        const clamped = Math.min(quantity, i.product.stock);
+        const clamped = Math.min(Math.floor(quantity), i.product.stock);
         return { ...i, quantity: Math.max(1, clamped) };
       }),
     );
