@@ -91,6 +91,10 @@ html {
 
 .cta-button {
   display: inline-flex;
+  border: none;
+  justify-content: center;
+  color: var(--text);
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
   align-items: center;
   gap: 0.6rem;
   background: var(--primary);
@@ -145,17 +149,20 @@ body {
 h1,
 h2 {
   font-family: 'Orbitron', sans-serif;
+  color: var(--text);
 }
 
 h3,
 h4,
 h5,
 h6 {
+  color: var(--text);
   font-weight: 700;
   line-height: 1.1;
 }
 
 p {
+  color: var(--text);
   line-height: 1.5;
 }
 
