@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Ryzen 9 9950X",
+    "name": "AMD Ryzen 9 9950X",
     "category": "Processors",
     "iconName": "processor",
-    "price": 649,
+    "price": 640,
     "rating": 4.8,
     "stock": 14,
     "description": "16-core flagship for creators who also want top-tier gaming performance.",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "name": "Ryzen 7 9700X",
+    "name": "AMD Ryzen 7 9700X",
     "category": "Processors",
     "iconName": "processor",
     "price": 359,
@@ -28,7 +28,7 @@
     "iconName": "processor",
     "price": 549,
     "rating": 4.6,
-    "stock": 16,
+    "stock": 0,
     "description": "24 cores of hybrid power for streaming, editing, and gaming.",
     "specs": [
       "24 Cores / 32 Threads",
@@ -43,7 +43,7 @@
     "name": "Intel Core i5-14600K",
     "category": "Processors",
     "iconName": "processor",
-    "price": 319,
+    "price": 299,
     "oldPrice": 349,
     "rating": 4.6,
     "stock": 30,
@@ -58,7 +58,7 @@
   },
   {
     "id": 5,
-    "name": "Ryzen 5 7600",
+    "name": "AMD Ryzen 5 7600",
     "category": "Processors",
     "iconName": "processor",
     "price": 199,
@@ -66,5 +66,27 @@
     "stock": 35,
     "description": "Affordable AM5 entry that punches far above its price class.",
     "specs": ["6 Cores / 12 Threads", "Boost up to 5.1GHz", "AM5 Socket", "65W TDP", "Unlocked"]
+  },
+  {
+    "id": 6,
+    "name": "AMD Ryzen 5 5600X",
+    "category": "Processors",
+    "iconName": "processor",
+    "price": 129,
+    "rating": 4.4,
+    "stock": 48,
+    "description": "A legendary AM4 value for 1080p gaming builds.",
+    "specs": ["6 Cores / 12 Threads", "Boost up to 4.6GHz", "AM4 Socket", "65W TDP", "Unlocked"]
+  },
+  {
+    "id": 7,
+    "name": "Intel Core i5-13400F",
+    "category": "Processors",
+    "iconName": "processor",
+    "price": 179,
+    "rating": 4.4,
+    "stock": 40,
+    "description": "The go-to budget CPU for everyday gaming and productivity.",
+    "specs": ["10 Cores / 16 Threads", "Boost up to 4.6GHz", "LGA1700 Socket", "65W TDP"]
   }
 ]

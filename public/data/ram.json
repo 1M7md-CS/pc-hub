@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "32GB DDR5 RGB Kit",
+    "name": "Corsair Vengeance RGB 32GB (2x16GB) DDR5-6000",
     "category": "Memory",
     "iconName": "memory",
-    "price": 149,
+    "price": 129,
     "badge": "Best Seller",
     "rating": 4.8,
     "stock": 40,
@@ -13,22 +13,22 @@
   },
   {
     "id": 2,
-    "name": "64GB DDR5 Kit",
+    "name": "G.Skill Trident Z5 Neo 64GB (2x32GB) DDR5-5600",
     "category": "Memory",
     "iconName": "memory",
-    "price": 249,
+    "price": 219,
     "rating": 4.7,
-    "stock": 18,
+    "stock": 0,
     "description": "Massive capacity for streaming, editing, and heavy multitasking.",
     "specs": ["2 x 32GB", "5600 MT/s", "CL40", "Intel XMP", "Black Heatsink"]
   },
   {
     "id": 3,
-    "name": "16GB DDR4 RGB Kit",
+    "name": "Corsair Vengeance RGB Pro 16GB (2x8GB) DDR4-3200",
     "category": "Memory",
     "iconName": "memory",
-    "price": 59,
-    "oldPrice": 69,
+    "price": 49,
+    "oldPrice": 59,
     "rating": 4.5,
     "stock": 60,
     "description": "Budget-friendly upgrade for older platforms with style to spare.",
@@ -36,10 +36,10 @@
   },
   {
     "id": 4,
-    "name": "32GB DDR4 Kit",
+    "name": "Corsair Vengeance LPX 32GB (2x16GB) DDR4-3200",
     "category": "Memory",
     "iconName": "memory",
-    "price": 89,
+    "price": 74,
     "rating": 4.6,
     "stock": 45,
     "description": "Solid, reliable DDR4 for gaming and productivity builds.",
@@ -47,13 +47,36 @@
   },
   {
     "id": 5,
-    "name": "16GB DDR5 Kit",
+    "name": "Corsair Vengeance 16GB (2x8GB) DDR5-5600",
     "category": "Memory",
     "iconName": "memory",
-    "price": 79,
+    "price": 64,
     "rating": 4.5,
     "stock": 50,
     "description": "A fast, affordable step into the DDR5 platform.",
     "specs": ["2 x 8GB", "5600 MT/s", "CL40", "Intel XMP", "Silver Heatsink"]
+  },
+  {
+    "id": 6,
+    "name": "G.Skill Ripjaws V 16GB (2x8GB) DDR4-3600",
+    "category": "Memory",
+    "iconName": "memory",
+    "price": 39,
+    "rating": 4.4,
+    "stock": 70,
+    "description": "Reliable, low-profile DDR4 for budget and mid-range builds.",
+    "specs": ["2 x 8GB", "3600 MT/s", "CL18", "Low Profile", "Intel XMP"]
+  },
+  {
+    "id": 7,
+    "name": "Kingston Fury Beast 32GB (2x16GB) DDR5-6000",
+    "category": "Memory",
+    "iconName": "memory",
+    "price": 99,
+    "badge": "Value",
+    "rating": 4.6,
+    "stock": 46,
+    "description": "Great-performing DDR5 without the RGB premium.",
+    "specs": ["2 x 16GB", "6000 MT/s", "CL36", "AMD EXPO / Intel XMP", "Black Heatsink"]
   }
 ]

@@ -1,44 +1,44 @@
 [
   {
     "id": 1,
-    "name": "X870E Gaming",
+    "name": "ASUS ROG Strix X870E-E Gaming WiFi",
     "category": "Motherboards",
     "iconName": "motherboard",
-    "price": 329,
+    "price": 499,
     "badge": "New",
     "rating": 4.8,
     "stock": 14,
     "description": "Flagship AM5 board with PCIe Gen5 everywhere and premium audio.",
-    "specs": ["AM5 Socket", "DDR5 Up to 8000", "PCIe Gen5 x16", "WiFi 7", "4x M.2 Slots"]
+    "specs": ["AM5 Socket", "DDR5 Up to 8600", "PCIe Gen5 x16", "WiFi 7", "4x M.2 Slots"]
   },
   {
     "id": 2,
-    "name": "Z790 Max",
+    "name": "ASUS ROG Maximus Z790 Hero",
     "category": "Motherboards",
     "iconName": "motherboard",
-    "price": 279,
+    "price": 599,
     "rating": 4.7,
-    "stock": 16,
+    "stock": 0,
     "description": "Intel's top-tier LGA1700 platform for overclocking heroes.",
-    "specs": ["LGA1700 Socket", "DDR5 Up to 7800", "PCIe Gen5 x16", "WiFi 6E", "3x M.2 Slots"]
+    "specs": ["LGA1700 Socket", "DDR5 Up to 7800", "PCIe Gen5 x16", "WiFi 6E", "5x M.2 Slots"]
   },
   {
     "id": 3,
-    "name": "B650M Pro",
+    "name": "MSI MAG B650 Tomahawk WiFi",
     "category": "Motherboards",
     "iconName": "motherboard",
-    "price": 149,
+    "price": 199,
     "rating": 4.6,
     "stock": 26,
     "description": "The value king of AM5 with all the essentials and room to grow.",
-    "specs": ["AM5 Socket", "Micro-ATX", "DDR5 Up to 6400", "PCIe Gen4 x16", "2x M.2 Slots"]
+    "specs": ["AM5 Socket", "ATX Form Factor", "DDR5 Up to 6400", "PCIe Gen4 x16", "3x M.2 Slots"]
   },
   {
     "id": 4,
-    "name": "B760 Plus",
+    "name": "MSI MAG B760 Tomahawk WiFi",
     "category": "Motherboards",
     "iconName": "motherboard",
-    "price": 139,
+    "price": 189,
     "rating": 4.5,
     "stock": 30,
     "description": "Solid LGA1700 board with great I/O for mainstream Intel builds.",
@@ -47,15 +47,15 @@
       "ATX Form Factor",
       "DDR5 Up to 7200",
       "PCIe Gen4 x16",
-      "2x M.2 Slots"
+      "3x M.2 Slots"
     ]
   },
   {
     "id": 5,
-    "name": "A620 Budget",
+    "name": "Gigabyte A620M Gaming X",
     "category": "Motherboards",
     "iconName": "motherboard",
-    "price": 89,
+    "price": 99,
     "rating": 4.4,
     "stock": 36,
     "description": "The cheapest way onto the AM5 platform with DDR5 support.",

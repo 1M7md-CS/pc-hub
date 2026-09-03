@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Vortex Mid-Tower",
+    "name": "Fractal Design North Mesh Mid-Tower",
     "category": "Cases",
     "iconName": "case",
-    "price": 129,
+    "price": 139,
     "badge": "Best Seller",
     "rating": 4.7,
     "stock": 26,
@@ -19,7 +19,7 @@
   },
   {
     "id": 2,
-    "name": "Phantom RGB Full-Tower",
+    "name": "NZXT H9 Flow Full-Tower",
     "category": "Cases",
     "iconName": "case",
     "price": 159,
@@ -36,7 +36,7 @@
   },
   {
     "id": 3,
-    "name": "Compact Mini-ITX",
+    "name": "Cooler Master NR200P Max Mini-ITX",
     "category": "Cases",
     "iconName": "case",
     "price": 109,
@@ -53,7 +53,7 @@
   },
   {
     "id": 4,
-    "name": "Airflow Mesh ATX",
+    "name": "Phanteks Eclipse P400A Mesh ATX",
     "category": "Cases",
     "iconName": "case",
     "price": 89,
@@ -70,20 +70,54 @@
   },
   {
     "id": 5,
-    "name": "Tempered Glass Showcase",
+    "name": "Lian Li O11 Dynamic EVO ATX",
     "category": "Cases",
     "iconName": "case",
-    "price": 179,
+    "price": 159,
     "badge": "New",
     "rating": 4.8,
-    "stock": 10,
+    "stock": 0,
     "description": "A dual-chamber glass case built to show off your masterpiece.",
     "specs": [
       "Dual-Chamber ATX",
       "Tempered Glass Everywhere",
       "Rear-Facing GPU Slot",
-      "Supports 360mm AIO",
+      "Supports 420mm AIO",
       "ARGB Controller"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Corsair 4000D Airflow Mid-Tower",
+    "category": "Cases",
+    "iconName": "case",
+    "price": 99,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "A clean, cable-friendly mid-tower with excellent airflow.",
+    "specs": [
+      "Mid-Tower ATX",
+      "High-Airflow Front",
+      "2x 120mm Fans",
+      "Supports 360mm AIO",
+      "RapidRoute Cable Management"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Fractal Design Meshify C Mid-Tower",
+    "category": "Cases",
+    "iconName": "case",
+    "price": 89,
+    "rating": 4.5,
+    "stock": 36,
+    "description": "Compact and breathable with signature angled mesh front.",
+    "specs": [
+      "Mid-Tower ATX",
+      "Angled Mesh Front",
+      "2x 120mm Fans",
+      "Supports 360mm AIO",
+      "Tempered Glass Panel"
     ]
   }
 ]

@@ -1,74 +1,74 @@
 [
   {
     "id": 1,
-    "name": "RGB Mechanical Keyboard",
+    "name": "Logitech G915 TKL Lightspeed Wireless Mechanical Keyboard",
     "category": "Accessories",
     "iconName": "keyboard",
-    "price": 119,
+    "price": 199,
     "badge": "Best Seller",
     "rating": 4.7,
     "stock": 44,
-    "description": "Hot-swappable switches, per-key RGB, and a premium aluminum body.",
+    "description": "Low-profile mechanical switches, RGB, and a premium aluminum body.",
     "specs": [
-      "Hot-Swappable Switches",
+      "Low-Profile Tactile Switches",
       "Per-Key RGB",
-      "PBT Keycaps",
+      "Dedicated Media Keys",
       "Aluminum Frame",
-      "USB-C / Wireless"
+      "Lightspeed Wireless"
     ]
   },
   {
     "id": 2,
-    "name": "Pro Gaming Mouse",
+    "name": "Razer DeathAdder V3 Pro Wireless Gaming Mouse",
     "category": "Accessories",
     "iconName": "mouse",
-    "price": 69,
+    "price": 149,
     "rating": 4.6,
     "stock": 58,
-    "description": "Featherweight 58g wireless mouse with a 4KHz polling rate.",
-    "specs": ["58g Lightweight", "26K DPI Sensor", "Wireless + USB-C", "4KHz Polling", "RGB Logo"]
+    "description": "Featherweight 63g wireless mouse with a pro-grade optical sensor.",
+    "specs": ["63g Lightweight", "30K DPI Sensor", "Wireless + USB-C", "4KHz Polling", "Focus Pro 30K"]
   },
   {
     "id": 3,
-    "name": "1440p 165Hz Monitor",
+    "name": "Dell S2721DGF 27-inch 165Hz QHD IPS Monitor",
     "category": "Accessories",
     "iconName": "monitor",
-    "price": 349,
+    "price": 329,
     "oldPrice": 399,
     "badge": "New",
     "rating": 4.8,
-    "stock": 16,
+    "stock": 0,
     "description": "Buttery-smooth QHD gaming with HDR and ultra-low response time.",
     "specs": ["27-inch QHD IPS", "165Hz Refresh Rate", "1ms Response", "HDR400", "Adaptive Sync"]
   },
   {
     "id": 4,
-    "name": "Gaming Headset",
+    "name": "HyperX Cloud II Wireless Gaming Headset",
     "category": "Accessories",
     "iconName": "headset",
-    "price": 99,
+    "price": 129,
     "rating": 4.5,
     "stock": 40,
     "description": "Surround sound, a crystal-clear mic, and all-day comfort.",
     "specs": [
       "7.1 Surround",
-      "50mm Drivers",
+      "53mm Drivers",
       "Detachable Mic",
       "Memory Foam Cushions",
-      "USB / 3.5mm"
+      "2.4GHz Wireless"
     ]
   },
   {
     "id": 5,
-    "name": "XL RGB Mouse Pad",
-    "category": "mouse-pad",
+    "name": "Razer Goliathus Chroma 3XL RGB Mouse Pad",
+    "category": "Accessories",
     "iconName": "mouse",
-    "price": 29,
+    "price": 49,
     "rating": 4.4,
     "stock": 90,
     "description": "A huge, smooth surface for keyboard and mouse with edge glow.",
     "specs": [
-      "900 x 400mm",
+      "930 x 400mm",
       "4mm Thickness",
       "Stitched Edges",
       "RGB Edge Lighting",
@@ -77,10 +77,10 @@
   },
   {
     "id": 6,
-    "name": "Wireless Controller",
+    "name": "Xbox Elite Wireless Controller Series 2 Core",
     "category": "Accessories",
     "iconName": "controller",
-    "price": 59,
+    "price": 129,
     "rating": 4.6,
     "stock": 32,
     "description": "Ergonomic wireless controller for PC gaming marathons.",
@@ -89,7 +89,7 @@
       "Hall Effect Sticks",
       "Programmable Paddles",
       "Rechargeable Battery",
-      "Bluetooth / 2.4GHz"
+      "Bluetooth / Xbox Wireless"
     ]
   }
 ]

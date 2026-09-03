@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Vortex VX-1 Ultimate",
+    "name": "Alienware Aurora R16 RTX 5080 Gaming PC",
     "category": "Pre-Built PCs",
     "iconName": "desktop",
     "price": 2899,
@@ -20,7 +20,7 @@
   },
   {
     "id": 2,
-    "name": "Phantom P-500",
+    "name": "Corsair Vengeance i7200 RTX 5070 Ti Gaming PC",
     "category": "Pre-Built PCs",
     "iconName": "desktop",
     "price": 1899,
@@ -37,7 +37,7 @@
   },
   {
     "id": 3,
-    "name": "Strike S-300",
+    "name": "MSI Aegis RS2 RTX 4070 Gaming PC",
     "category": "Pre-Built PCs",
     "iconName": "desktop",
     "price": 1249,
@@ -56,7 +56,7 @@
   },
   {
     "id": 4,
-    "name": "Nano N-150",
+    "name": "ASUS ROG G15CE RX 9070 Compact Gaming PC",
     "category": "Pre-Built PCs",
     "iconName": "desktop",
     "price": 849,
@@ -73,13 +73,13 @@
   },
   {
     "id": 5,
-    "name": "Titan T-900 Pro",
+    "name": "Origin PC Millennium RTX 5090 Workstation",
     "category": "Pre-Built PCs",
     "iconName": "desktop",
     "price": 4299,
     "badge": "New",
     "rating": 4.9,
-    "stock": 6,
+    "stock": 0,
     "description": "The ultimate workstation and 8K gaming rig. No compromises, no limits.",
     "specs": [
       "RTX 5090 Graphics",
@@ -87,6 +87,59 @@
       "128GB DDR5 RAM",
       "4TB Gen5 NVMe SSD",
       "1200W Titanium PSU"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "iBUYPOWER SlateMR RTX 4070 Super Gaming PC",
+    "category": "Pre-Built PCs",
+    "iconName": "desktop",
+    "price": 1599,
+    "rating": 4.5,
+    "stock": 15,
+    "description": "Ready-to-play 1440p gaming with a great balance of performance and value.",
+    "specs": [
+      "RTX 4070 Super Graphics",
+      "Ryzen 7 7700 CPU",
+      "32GB DDR5 RAM",
+      "1TB NVMe SSD",
+      "750W Gold PSU"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "GamingPC.com Titan RTX 5080 Creator PC",
+    "category": "Pre-Built PCs",
+    "iconName": "desktop",
+    "price": 2599,
+    "oldPrice": 2799,
+    "badge": "Creator Pick",
+    "rating": 4.7,
+    "stock": 9,
+    "description": "A creator-focused build tuned for video editing and 3D rendering.",
+    "specs": [
+      "RTX 5080 Graphics",
+      "Intel Core i9-14900K CPU",
+      "64GB DDR5 RAM",
+      "2TB Gen4 NVMe SSD",
+      "1000W Gold PSU"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "HP OMEN 40L RTX 4060 Gaming Desktop",
+    "category": "Pre-Built PCs",
+    "iconName": "desktop",
+    "price": 999,
+    "rating": 4.4,
+    "stock": 28,
+    "description": "Reliable 1080p gaming with room to upgrade down the road.",
+    "specs": [
+      "RTX 4060 Graphics",
+      "Intel Core i5-13400F CPU",
+      "16GB DDR5 RAM",
+      "1TB NVMe SSD",
+      "600W Bronze PSU"
     ]
   }
 ]

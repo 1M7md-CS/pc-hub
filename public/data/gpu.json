@@ -1,26 +1,26 @@
 [
   {
     "id": 1,
-    "name": "RTX 5080 Gamer",
+    "name": "ASUS ROG Strix GeForce RTX 5080 OC 16GB",
     "category": "Graphics Cards",
     "iconName": "gpu",
-    "price": 699,
-    "oldPrice": 999,
+    "price": 1099,
+    "oldPrice": 1199,
     "badge": "New",
     "rating": 4.9,
     "stock": 10,
     "description": "Next-gen raster and ray tracing performance for 4K and high-refresh gaming.",
     "specs": [
       "16GB GDDR7 VRAM",
-      "Ada-next Architecture",
+      "Blackwell Architecture",
       "DLSS 4 Support",
-      "3x Axial Fans",
+      "3x Axial-tech Fans",
       "2x HDMI, 3x DP"
     ]
   },
   {
     "id": 2,
-    "name": "RTX 5070 Ti",
+    "name": "MSI GeForce RTX 5070 Ti Gaming Trio 16GB",
     "category": "Graphics Cards",
     "iconName": "gpu",
     "price": 749,
@@ -31,22 +31,22 @@
   },
   {
     "id": 3,
-    "name": "RX 9070 XT",
+    "name": "Gigabyte Radeon RX 9070 XT Gaming OC 16GB",
     "category": "Graphics Cards",
     "iconName": "gpu",
-    "price": 649,
+    "price": 599,
     "rating": 4.6,
-    "stock": 20,
+    "stock": 0,
     "description": "AMD's ray tracing champion with superb raster value per dollar.",
     "specs": ["16GB GDDR6 VRAM", "RDNA 4 Architecture", "FSR 4 Support", "Dual-slot Cooler"]
   },
   {
     "id": 4,
-    "name": "RTX 4070 Super",
+    "name": "NVIDIA GeForce RTX 4070 Super Founders Edition",
     "category": "Graphics Cards",
     "iconName": "gpu",
-    "price": 384,
-    "oldPrice": 549,
+    "price": 599,
+    "oldPrice": 650,
     "badge": "Best Seller",
     "rating": 4.7,
     "stock": 25,
@@ -55,13 +55,58 @@
   },
   {
     "id": 5,
-    "name": "GTX 1660 Super",
+    "name": "ASUS Dual GeForce GTX 1660 SUPER EVO OC 6GB",
     "category": "Graphics Cards",
     "iconName": "gpu",
-    "price": 249,
+    "price": 229,
     "rating": 4.3,
     "stock": 40,
     "description": "Budget 1080p classic that still delivers solid frame rates today.",
     "specs": ["6GB GDDR6 VRAM", "Turing Architecture", "Single Fan Design", "1x HDMI, 1x DP"]
+  },
+  {
+    "id": 6,
+    "name": "MSI GeForce RTX 3060 Ventus 2X 12GB",
+    "category": "Graphics Cards",
+    "iconName": "gpu",
+    "price": 279,
+    "rating": 4.5,
+    "stock": 35,
+    "description": "Solid 1080p and entry 1440p performance with a huge 12GB buffer.",
+    "specs": ["12GB GDDR6 VRAM", "Ampere Architecture", "Dual Fan Design", "1x HDMI, 3x DP"]
+  },
+  {
+    "id": 7,
+    "name": "AMD Radeon RX 7600 8GB",
+    "category": "Graphics Cards",
+    "iconName": "gpu",
+    "price": 259,
+    "rating": 4.4,
+    "stock": 42,
+    "description": "Efficient and affordable 1080p gaming with excellent raster value.",
+    "specs": ["8GB GDDR6 VRAM", "RDNA 3 Architecture", "FSR 3 Support", "Dual Fan Design"]
+  },
+  {
+    "id": 8,
+    "name": "Intel Arc B580 12GB Limited Edition",
+    "category": "Graphics Cards",
+    "iconName": "gpu",
+    "price": 249,
+    "badge": "New",
+    "rating": 4.3,
+    "stock": 38,
+    "description": "Intel's comeback card with great value and smooth 1440p gaming.",
+    "specs": ["12GB GDDR6 VRAM", "Xe2 Architecture", "XeSS 2 Support", "Ray Tracing", "3x DP"]
+  },
+  {
+    "id": 9,
+    "name": "NVIDIA GeForce RTX 4060 Ti 16GB",
+    "category": "Graphics Cards",
+    "iconName": "gpu",
+    "price": 449,
+    "rating": 4.6,
+    "stock": 22,
+    "description": "Capable 1440p gaming with DLSS 3 and low power draw.",
+    "specs": ["16GB GDDR6 VRAM", "Ada Architecture", "DLSS 3 Support", "Dual Fan Design"]
   }
 ]
