@@ -126,3 +126,10 @@
 .product-add:hover {
   box-shadow: 0 0 0.9rem var(--glow);
 }
+
+.product-add.added {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--bg);
+  cursor: default;
+}

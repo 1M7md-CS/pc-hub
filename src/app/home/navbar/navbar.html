@@ -21,6 +21,9 @@
   <div class="nav-action">
     <a routerLink="/cart" class="cart">
       <app-icon name="cart" />
+      @if (cartCount() > 0) {
+        <span class="cart-badge">{{ cartCount() }}</span>
+      }
     </a>
 
     @if (isAuthenticated()) {

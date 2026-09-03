@@ -1,0 +1,76 @@
+<main class="cart-page">
+  @if (items().length > 0) {
+    <a class="back-link" routerLink="/home">
+      <app-icon name="arrow-left" />
+      <span>Back to home</span>
+    </a>
+  }
+
+  <h1 class="cart-title">Your cart</h1>
+
+  @if (items().length === 0) {
+    <div class="cart-empty">
+      <div class="icon-box">
+        <app-icon name="cart" />
+      </div>
+      <h2>Your cart is empty</h2>
+      <p>Browse our catalog and add some great tech to your build.</p>
+      <a class="cta-button" routerLink="/home">
+        <span>Start shopping</span>
+        <app-icon name="arrow-right" />
+      </a>
+    </div>
+  } @else {
+    <div class="cart-layout">
+      <ul class="cart-list">
+        @for (item of items(); track item.product.id) {
+          <li class="cart-item">
+            <div class="cart-item-icon icon-box">
+              <app-icon [name]="item.product.iconName" />
+            </div>
+
+            <div class="cart-item-info">
+              <span class="cart-item-category">{{ item.product.category }}</span>
+              <h3 class="cart-item-name">{{ item.product.name }}</h3>
+              <span class="cart-item-price">${{ item.product.price }}</span>
+            </div>
+
+            <div class="cart-item-actions">
+              <div class="cart-qty">
+                <button (click)="setQuantity(item.product.id, item.quantity - 1)" aria-label="Decrease quantity">-</button>
+                <input
+                  type="number"
+                  min="1"
+                  [value]="item.quantity"
+                  (change)="setQuantity(item.product.id, $any($event.target).valueAsNumber)"
+                />
+                <button (click)="setQuantity(item.product.id, item.quantity + 1)" aria-label="Increase quantity">+</button>
+              </div>
+              <button class="cart-remove" (click)="remove(item.product.id)">
+                <app-icon name="close" />
+              </button>
+            </div>
+          </li>
+        }
+      </ul>
+
+      <aside class="cart-summary">
+        <h3>Summary</h3>
+        <div class="summary-row">
+          <span>Items</span>
+          <span>{{ count() }}</span>
+        </div>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span>${{ total() }}</span>
+        </div>
+        <button class="cta-button wa-checkout" type="button" (click)="orderOnWhatsApp()">
+          <span>Order via WhatsApp</span>
+          <app-icon name="arrow-right" />
+        </button>
+        <a class="cart-continue" routerLink="/home">Continue shopping</a>
+        <button class="cart-clear" type="button" (click)="clear()">Clear cart</button>
+      </aside>
+    </div>
+  }
+</main>

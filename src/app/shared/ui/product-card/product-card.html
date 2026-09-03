@@ -32,9 +32,14 @@
         <span class="product-current-price">${{ product().price }}</span>
       </div>
 
-      <button class="product-add">
-        <app-icon name="plus" />
-        <span>Add to cart</span>
+      <button class="product-add" [class.added]="added()" (click)="addToCart()">
+        @if (added()) {
+          <app-icon name="check" />
+          <span>Added</span>
+        } @else {
+          <app-icon name="plus" />
+          <span>Add to cart</span>
+        }
       </button>
     </div>
   </div>

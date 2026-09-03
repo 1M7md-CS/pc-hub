@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Auth } from '../../services/auth';
+import { Cart } from '../../services/cart';
 import { Icon } from '../../shared/ui/icon/icon';
 
 @Component({
@@ -11,11 +12,13 @@ import { Icon } from '../../shared/ui/icon/icon';
 })
 export class Navbar {
   private auth = inject(Auth);
+  private cart = inject(Cart);
 
   readonly isMenuOpen = signal(false);
   readonly isDropdownOpen = signal(false);
   readonly user = this.auth.user;
   readonly isAuthenticated = this.auth.isAuthenticated;
+  readonly cartCount = this.cart.count;
 
   toggleMenu() {
     this.isDropdownOpen.set(false);
