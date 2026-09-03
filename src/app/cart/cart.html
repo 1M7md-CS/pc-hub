@@ -46,6 +46,7 @@
                   [value]="item.quantity"
                   (keydown)="blockInvalidKey($event, item.product.stock, $any($event.target).value)"
                   (input)="onQuantityInput(keyOf(item.product), $any($event.target).value)"
+                  (change)="commitQuantity(keyOf(item.product), $any($event.target).value)"
                 />
                 <button
                   (click)="setQuantity(keyOf(item.product), item.quantity + 1)"

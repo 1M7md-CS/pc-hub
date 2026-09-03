@@ -43,6 +43,11 @@ export class CartPage {
     this.setQuantity(key, parseInt(raw, 10));
   }
 
+  commitQuantity(key: string, raw: string) {
+    const value = raw === '' ? 1 : parseInt(raw, 10);
+    this.setQuantity(key, value);
+  }
+
   stockLevel(key: string) {
     return this.cartService.stockLevel(key);
   }
