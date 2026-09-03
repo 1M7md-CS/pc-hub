@@ -12,6 +12,6 @@ export const redirectIfAuthenticated: CanActivateFn = () => {
 export const requireAuthentication: CanActivateFn = () => {
   const auth = inject(Auth);
   const router = inject(Router);
-  if (!auth.isAuthenticated()) return router.parseUrl('/login');
+  if (!auth.isAuthenticated()) return router.parseUrl('/signin');
   return true;
 };

@@ -17,7 +17,7 @@ button {
 }
 
 .cart,
-.login {
+.signin {
   position: relative;
   display: grid;
   place-items: center;
@@ -46,8 +46,8 @@ button {
 
 .cart:hover,
 .cart:active,
-.login:hover,
-.login:active {
+.signin:hover,
+.signin:active {
   background: var(--icon-bg);
 }
 
@@ -58,7 +58,7 @@ button:active {
 
 button app-icon,
 .cart app-icon,
-.login app-icon {
+.signin app-icon {
   width: clamp(1.3rem, 2.5vw, 1.8rem);
   height: clamp(1.3rem, 2.5vw, 1.8rem);
 }

@@ -13,7 +13,7 @@ export class Auth {
   user = signal<User | null>(this.load());
   isAuthenticated = computed(() => this.user() !== null);
 
-  login({ email, password }: Credentials): AuthResult {
+  signin({ email, password }: Credentials): AuthResult {
     const users = this.getUsers();
     const found = users.find((u) => u.email === email);
     if (!found) return { ok: false, error: 'No account found with this email.' };

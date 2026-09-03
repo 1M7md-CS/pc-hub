@@ -47,10 +47,10 @@ export const routes: Routes = [
     title: 'Cart',
   },
   {
-    path: 'login',
+    path: 'signin',
     loadComponent: () => import('./auth-page/auth-page').then((m) => m.AuthPage),
     canActivate: [redirectIfAuthenticated],
-    title: 'Login',
+    title: 'Sign in',
   },
   {
     path: 'signup',

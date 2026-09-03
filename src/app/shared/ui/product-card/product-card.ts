@@ -21,7 +21,7 @@ export class ProductCard {
   addToCart() {
     if (this.added()) return;
     if (!this.auth.isAuthenticated()) {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/signin']);
       return;
     }
     this.cart.add(this.product());

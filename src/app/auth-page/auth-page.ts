@@ -17,7 +17,7 @@ export class AuthPage {
   private route = inject(ActivatedRoute);
   private destroyRef = inject(DestroyRef);
 
-  mode = signal<'login' | 'signup'>('login');
+  mode = signal<'signin' | 'signup'>('signin');
   status = signal<'idle' | 'sending' | 'error'>('idle');
   errorMessage = signal('');
 
@@ -27,29 +27,29 @@ export class AuthPage {
     password: new FormControl('', [Validators.required, Validators.minLength(6)]),
   });
 
-  title = computed(() => (this.mode() === 'login' ? 'Welcome back' : 'Create your account'));
+  title = computed(() => (this.mode() === 'signin' ? 'Welcome back' : 'Create your account'));
   subtitle = computed(() =>
-    this.mode() === 'login'
+    this.mode() === 'signin'
       ? 'Sign in to access your cart and builds.'
       : 'Join PcHub to track builds and deals.',
   );
-  submitLabel = computed(() => (this.mode() === 'login' ? 'Sign in' : 'Create account'));
+  submitLabel = computed(() => (this.mode() === 'signin' ? 'Sign in' : 'Create account'));
   switchPrefix = computed(() =>
-    this.mode() === 'login' ? 'New to PcHub?' : 'Already have an account?',
+    this.mode() === 'signin' ? 'New to PcHub?' : 'Already have an account?',
   );
-  switchLink = computed(() => (this.mode() === 'login' ? '/signup' : '/login'));
+  switchLink = computed(() => (this.mode() === 'signin' ? '/signup' : '/signin'));
   switchAction = computed(() =>
-    this.mode() === 'login' ? 'Create an account' : 'Sign in',
+    this.mode() === 'signin' ? 'Create an account' : 'Sign in',
   );
 
   constructor() {
     this.route.url.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((segments) => {
       const path = segments.map((s) => s.path).join('/');
-      this.mode.set(path === 'signup' ? 'signup' : 'login');
+      this.mode.set(path === 'signup' ? 'signup' : 'signin');
     });
 
     effect(() => {
-      if (this.mode() === 'login') {
+      if (this.mode() === 'signin') {
         this.form.get('name')?.clearValidators();
       } else {
         this.form.get('name')?.setValidators([Validators.required, Validators.maxLength(50)]);
@@ -81,7 +81,7 @@ export class AuthPage {
     const result =
       this.mode() === 'signup'
         ? this.auth.signup({ name: name!, email: email!, password: password! })
-        : this.auth.login({ email: email!, password: password! });
+        : this.auth.signin({ email: email!, password: password! });
 
     if (result.ok) {
       this.router.navigate(['/home']);
