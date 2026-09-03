@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "name": "360mm AIO Liquid Cooler",
+    "name": "Corsair iCUE H150i Elite 360mm AIO Liquid Cooler",
     "category": "Cooling",
     "iconName": "fan",
-    "price": 139,
+    "price": 159,
     "badge": "Best Seller",
     "rating": 4.8,
     "stock": 24,
@@ -19,33 +19,33 @@
   },
   {
     "id": 2,
-    "name": "240mm AIO Liquid Cooler",
+    "name": "NZXT Kraken 240 RGB 240mm AIO Liquid Cooler",
     "category": "Cooling",
     "iconName": "fan",
-    "price": 99,
+    "price": 119,
     "rating": 4.6,
-    "stock": 30,
+    "stock": 0,
     "description": "Compact liquid cooling that fits most cases and cases of chips.",
     "specs": [
       "240mm Radiator",
       "2x 120mm Fans",
       "Supports LGA1700 / AM5",
       "Low-Profile Pump",
-      "5-Year Warranty"
+      "6-Year Warranty"
     ]
   },
   {
     "id": 3,
-    "name": "High-End Air Cooler",
+    "name": "Noctua NH-D15 Chromax Black Air Cooler",
     "category": "Cooling",
     "iconName": "fan",
-    "price": 79,
+    "price": 109,
     "rating": 4.5,
     "stock": 34,
     "description": "Tower air cooling that rivals AIOs with zero pump failure risk.",
     "specs": [
       "Dual Tower Heatsink",
-      "2x 120mm Fans",
+      "2x 140mm Fans",
       "6 Heat Pipes",
       "Supports LGA1700 / AM5",
       "Silent Operation"
@@ -53,10 +53,10 @@
   },
   {
     "id": 4,
-    "name": "3-Pack RGB Fans",
+    "name": "Corsair LL120 RGB 3-Pack 120mm Fans",
     "category": "Cooling",
     "iconName": "fan",
-    "price": 49,
+    "price": 89,
     "rating": 4.4,
     "stock": 60,
     "description": "Daisy-chainable ARGB fans to light up your whole rig.",
@@ -64,7 +64,7 @@
   },
   {
     "id": 5,
-    "name": "140mm Fan 3-Pack",
+    "name": "Arctic P14 PWM PST 140mm Fan 3-Pack",
     "category": "Cooling",
     "iconName": "fan",
     "price": 39,

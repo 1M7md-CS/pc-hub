@@ -2,61 +2,61 @@
   {
     "title": "Pre-Built PCs",
     "link": "/products/pre-built-pcs",
-    "count": 40,
+    "count": 8,
     "iconName": "desktop"
   },
   {
     "title": "Graphics Cards",
     "link": "/products/gpu",
-    "count": 120,
+    "count": 9,
     "iconName": "gpu"
   },
   {
     "title": "Processors",
     "link": "/products/processors",
-    "count": 90,
+    "count": 7,
     "iconName": "processor"
   },
   {
     "title": "Memory",
     "link": "/products/ram",
-    "count": 150,
+    "count": 7,
     "iconName": "memory"
   },
   {
     "title": "Storage",
     "link": "/products/storage",
-    "count": 180,
+    "count": 6,
     "iconName": "storage"
   },
   {
     "title": "Power Supplies",
     "link": "/products/psu",
-    "count": 110,
+    "count": 7,
     "iconName": "bolt"
   },
   {
     "title": "Cases",
     "link": "/products/cases",
-    "count": 95,
+    "count": 7,
     "iconName": "case"
   },
   {
     "title": "Cooling",
     "link": "/products/cooling",
-    "count": 140,
+    "count": 5,
     "iconName": "fan"
   },
   {
     "title": "Motherboards",
     "link": "/products/motherboards",
-    "count": 130,
+    "count": 5,
     "iconName": "motherboard"
   },
   {
     "title": "Accessories",
     "link": "/products/accessories",
-    "count": 220,
+    "count": 6,
     "iconName": "mouse"
   }
 ]

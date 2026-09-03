@@ -1,64 +1,75 @@
 [
   {
     "id": 1,
-    "name": "2TB NVMe Gen4 SSD",
+    "name": "Samsung 990 PRO 2TB NVMe Gen4 SSD",
     "category": "Storage",
     "iconName": "storage",
-    "price": 159,
+    "price": 179,
     "badge": "Best Seller",
     "rating": 4.8,
     "stock": 32,
     "description": "Blazing fast game loading and file transfers with a huge capacity.",
-    "specs": ["2TB Capacity", "7,000 MB/s Read", "M.2 2280", "PCIe Gen4 x4", "5-Year Warranty"]
+    "specs": ["2TB Capacity", "7,450 MB/s Read", "M.2 2280", "PCIe Gen4 x4", "5-Year Warranty"]
   },
   {
     "id": 2,
-    "name": "1TB NVMe Gen4 SSD",
+    "name": "WD Black SN850X 1TB NVMe Gen4 SSD",
     "category": "Storage",
     "iconName": "storage",
-    "price": 89,
+    "price": 99,
     "rating": 4.7,
     "stock": 55,
     "description": "The perfect boot drive for fast startups and snappy games.",
-    "specs": ["1TB Capacity", "7,000 MB/s Read", "M.2 2280", "PCIe Gen4 x4", "5-Year Warranty"]
+    "specs": ["1TB Capacity", "7,300 MB/s Read", "M.2 2280", "PCIe Gen4 x4", "5-Year Warranty"]
   },
   {
     "id": 3,
-    "name": "4TB NVMe Gen4 SSD",
+    "name": "Samsung 990 PRO 4TB NVMe Gen4 SSD",
     "category": "Storage",
     "iconName": "storage",
-    "price": 289,
+    "price": 349,
     "rating": 4.8,
-    "stock": 12,
+    "stock": 0,
     "description": "Massive speed and capacity for your entire game library.",
     "specs": ["4TB Capacity", "7,450 MB/s Read", "M.2 2280", "PCIe Gen4 x4", "5-Year Warranty"]
   },
   {
     "id": 4,
-    "name": "2TB SATA SSD",
+    "name": "Crucial MX500 2TB SATA SSD",
     "category": "Storage",
     "iconName": "storage",
-    "price": 119,
+    "price": 129,
     "rating": 4.6,
     "stock": 28,
-    "description": "Big, quiet Storage for games and media on any platform.",
+    "description": "Big, quiet storage for games and media on any platform.",
     "specs": [
       "2TB Capacity",
       "560 MB/s Read",
       "2.5-inch Form Factor",
       "SATA III",
-      "3-Year Warranty"
+      "5-Year Warranty"
     ]
   },
   {
     "id": 5,
-    "name": "8TB 7200RPM HDD",
+    "name": "Seagate BarraCuda 8TB 7200RPM HDD",
     "category": "Storage",
     "iconName": "storage",
-    "price": 189,
+    "price": 149,
     "rating": 4.4,
     "stock": 15,
-    "description": "The budget bulk-Storage choice for archives and backups.",
+    "description": "The budget bulk-storage choice for archives and backups.",
     "specs": ["8TB Capacity", "7200 RPM", "3.5-inch Form Factor", "SATA III", "2-Year Warranty"]
+  },
+  {
+    "id": 6,
+    "name": "Western Digital Blue 1TB SATA SSD",
+    "category": "Storage",
+    "iconName": "storage",
+    "price": 59,
+    "rating": 4.5,
+    "stock": 60,
+    "description": "Reliable everyday SATA SSD for laptops and older builds.",
+    "specs": ["1TB Capacity", "560 MB/s Read", "2.5-inch Form Factor", "SATA III", "5-Year Warranty"]
   }
 ]

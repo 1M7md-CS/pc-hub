@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "1000W Platinum PSU",
+    "name": "Corsair HX1000 Platinum 1000W ATX 3.0 PSU",
     "category": "Power Supplies",
     "iconName": "bolt",
     "price": 199,
@@ -12,10 +12,10 @@
   },
   {
     "id": 2,
-    "name": "850W Gold PSU",
+    "name": "Corsair RM850x Shift 850W Gold PSU",
     "category": "Power Supplies",
     "iconName": "bolt",
-    "price": 129,
+    "price": 139,
     "badge": "Best Seller",
     "rating": 4.8,
     "stock": 34,
@@ -24,10 +24,10 @@
   },
   {
     "id": 3,
-    "name": "750W Gold PSU",
+    "name": "EVGA SuperNOVA 750 G6 Gold PSU",
     "category": "Power Supplies",
     "iconName": "bolt",
-    "price": 99,
+    "price": 109,
     "rating": 4.6,
     "stock": 40,
     "description": "Reliable power with clean rails for mid-range systems.",
@@ -35,11 +35,11 @@
   },
   {
     "id": 4,
-    "name": "650W Bronze PSU",
+    "name": "Corsair CX650 Bronze 650W PSU",
     "category": "Power Supplies",
     "iconName": "bolt",
-    "price": 69,
-    "oldPrice": 79,
+    "price": 79,
+    "oldPrice": 89,
     "rating": 4.5,
     "stock": 50,
     "description": "Budget-friendly power with stable, quiet operation.",
@@ -47,14 +47,36 @@
   },
   {
     "id": 5,
-    "name": "1200W Titanium PSU",
+    "name": "Seasonic Prime TX-1200 Titanium PSU",
     "category": "Power Supplies",
     "iconName": "bolt",
-    "price": 299,
+    "price": 329,
     "badge": "New",
     "rating": 4.9,
-    "stock": 8,
+    "stock": 0,
     "description": "Ultimate efficiency for extreme multi-GPU and workstation builds.",
     "specs": ["1200W Output", "80+ Titanium", "Fully Modular", "ATX 3.0", "12-Year Warranty"]
+  },
+  {
+    "id": 6,
+    "name": "be quiet! Pure Power 12 M 550W Gold PSU",
+    "category": "Power Supplies",
+    "iconName": "bolt",
+    "price": 79,
+    "rating": 4.5,
+    "stock": 44,
+    "description": "Whisper-quiet, efficient power for mainstream and office builds.",
+    "specs": ["550W Output", "80+ Gold", "Fully Modular", "ATX 3.0", "5-Year Warranty"]
+  },
+  {
+    "id": 7,
+    "name": "Corsair SF750 Platinum SFX PSU",
+    "category": "Power Supplies",
+    "iconName": "bolt",
+    "price": 179,
+    "rating": 4.8,
+    "stock": 12,
+    "description": "Premium small-form-factor power for ITX and compact builds.",
+    "specs": ["750W Output", "80+ Platinum", "Fully Modular", "SFX Form Factor", "7-Year Warranty"]
   }
 ]
