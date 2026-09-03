@@ -166,6 +166,29 @@
   color: var(--error);
 }
 
+.cart-stock-left {
+  color: var(--success);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cart-stock-left.low {
+  color: var(--warning);
+}
+
+.cart-qty button:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.cart-stock-warning {
+  color: var(--error);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
 .cart-remove app-icon {
   width: 1.1rem;
   height: 1.1rem;
