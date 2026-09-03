@@ -101,30 +101,13 @@ app-section-header {
   outline: none;
 }
 
-.submit-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 0.95rem 1rem;
-  border: 0.05rem solid var(--primary);
-  border-radius: 0.75rem;
-  background-color: var(--primary);
-  color: var(--text);
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 700;
-  cursor: pointer;
-  transition: transform var(--transition);
-}
-
-.submit-button:disabled {
+.cta-button:disabled {
   cursor: not-allowed;
   opacity: 0.6;
   transform: none;
 }
 
-.submit-button:hover {
+.cta-button:hover {
   transform: translateY(-0.1rem);
 }
 
