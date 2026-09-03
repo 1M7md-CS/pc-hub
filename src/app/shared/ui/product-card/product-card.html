@@ -9,10 +9,16 @@
   <div class="product-info">
     <div class="product-meta">
       <span class="product-category">{{ product().category }}</span>
-      <span class="product-rating">
-        <app-icon name="star" fill="currentColor" />
-
-        {{ product().rating }}
+      <span
+        class="product-stock"
+        [class.low]="product().stock > 0 && product().stock <= 5"
+        [class.out]="product().stock === 0"
+      >
+        @if (product().stock === 0) {
+          Out of stock
+        } @else {
+          In stock
+        }
       </span>
     </div>
 
@@ -32,8 +38,17 @@
         <span class="product-current-price">${{ product().price }}</span>
       </div>
 
-      <button class="product-add" [class.added]="added()" (click)="addToCart()">
-        @if (added()) {
+      <button
+        class="product-add"
+        [class.added]="added()"
+        [class.out-of-stock]="product().stock === 0"
+        [disabled]="product().stock === 0"
+        (click)="addToCart()"
+      >
+        @if (product().stock === 0) {
+          <app-icon name="close" />
+          <span>Out of stock</span>
+        } @else if (added()) {
           <app-icon name="check" />
           <span>Added</span>
         } @else {

@@ -50,6 +50,20 @@
   align-items: center;
 }
 
+.product-stock {
+  font-size: clamp(0.7rem, 1vw, 0.8rem);
+  font-weight: 600;
+  color: var(--success);
+}
+
+.product-stock.low {
+  color: var(--warning);
+}
+
+.product-stock.out {
+  color: var(--error);
+}
+
 .product-category {
   color: var(--primary);
   font-size: clamp(0.7rem, 1vw, 0.8rem);
@@ -132,4 +146,15 @@
   border-color: var(--primary);
   color: var(--bg);
   cursor: default;
+}
+
+.product-add.out-of-stock {
+  background: var(--bg);
+  border-color: var(--border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.product-add.out-of-stock:hover {
+  box-shadow: none;
 }
