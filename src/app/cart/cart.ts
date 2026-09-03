@@ -19,6 +19,18 @@ export class CartPage {
     this.cartService.setQuantity(id, quantity);
   }
 
+  stockLevel(id: number) {
+    return this.cartService.stockLevel(id);
+  }
+
+  atStockLimit(id: number) {
+    return this.cartService.atStockLimit(id);
+  }
+
+  hasOutOfStock() {
+    return this.cartService.hasOutOfStock();
+  }
+
   remove(id: number) {
     this.cartService.remove(id);
   }
@@ -28,6 +40,7 @@ export class CartPage {
   }
 
   orderOnWhatsApp() {
+    if (this.hasOutOfStock()) return;
     const itemLines = this.items().map(
       (item, index) =>
         `${index + 1}. ${item.product.name} (${item.product.category}) x${item.quantity} = $${item.product.price * item.quantity}`,
