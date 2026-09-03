@@ -23,13 +23,16 @@ export class ProductsService {
       ram: this.httpClient.get<Product[]>('data/ram.json'),
       storage: this.httpClient.get<Product[]>('data/storage.json'),
     }).pipe(
-      map(({ pre_built_pc, gpu, cpu, ram, storage }) => [
-        ...pre_built_pc.slice(0, 2),
-        ...gpu.slice(0, 2),
-        ...cpu.slice(0, 2),
-        ...ram.slice(0, 2),
-        ...storage.slice(0, 2),
-      ]),
+      map(({ pre_built_pc, gpu, cpu, ram, storage }) => {
+        const candidates = [
+          ...pre_built_pc.slice(0, 2),
+          ...gpu.slice(0, 2),
+          ...cpu.slice(0, 2),
+          ...ram.slice(0, 2),
+          ...storage.slice(0, 2),
+        ].filter((p) => p.stock > 0);
+        return this.shuffle(candidates);
+      }),
     );
   }
 
@@ -41,5 +44,14 @@ export class ProductsService {
 
   getProducts(slug: string) {
     return this.httpClient.get<Product[]>(`data/${slug}.json`);
+  }
+
+  private shuffle<T>(arr: T[]): T[] {
+    const copy = [...arr];
+    for (let i = copy.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
   }
 }
