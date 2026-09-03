@@ -12,6 +12,25 @@ export class Cart {
 
   count = computed(() => this.items().reduce((sum, i) => sum + i.quantity, 0));
   total = computed(() => this.items().reduce((sum, i) => sum + i.product.price * i.quantity, 0));
+  stockLeft = computed(() => {
+    const map = new Map<number, number>();
+    for (const item of this.items()) {
+      map.set(item.product.id, item.product.stock - item.quantity);
+    }
+    return map;
+  });
+
+  stockLevel(id: number): number {
+    return this.stockLeft().get(id) ?? 0;
+  }
+
+  atStockLimit(id: number): boolean {
+    return this.stockLevel(id) <= 0;
+  }
+
+  hasOutOfStock() {
+    return this.items().some((i) => i.product.stock <= 0);
+  }
 
   constructor() {
     effect(() => {
@@ -24,9 +43,11 @@ export class Cart {
   }
 
   add(product: Product) {
+    if (product.stock <= 0) return;
     this.items.update((items) => {
       const existing = items.find((i) => i.product.id === product.id);
       if (existing) {
+        if (existing.quantity >= product.stock) return items;
         return items.map((i) =>
           i.product.id === product.id ? { ...i, quantity: i.quantity + 1 } : i,
         );
@@ -42,7 +63,11 @@ export class Cart {
       return;
     }
     this.items.update((items) =>
-      items.map((i) => (i.product.id === id ? { ...i, quantity } : i)),
+      items.map((i) => {
+        if (i.product.id !== id) return i;
+        const clamped = Math.min(quantity, i.product.stock);
+        return { ...i, quantity: Math.max(1, clamped) };
+      }),
     );
     this.persist();
   }
