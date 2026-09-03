@@ -10,18 +10,6 @@ Built with **Angular 22**, **TypeScript**, and **Signals**.
 
 Deployed on GitHub Pages: https://1m7md-cs.github.io/pc-hub/
 
-## Features
-
-- Browse PC components, pre-built PCs, and monthly deals
-- Per-user accounts (sign in / sign up)
-- Per-user carts
-- Editable item quantities and live totals
-- Order your cart directly via WhatsApp
-- Authenticated cart & sign-in guards
-- Reactive forms with validation
-- Dynamic page titles & Open Graph metadata
-- Responsive UI with CSS theme variables
-
 ## Tech stack
 
 - Angular 22 (Signals, standalone components, control flow)
