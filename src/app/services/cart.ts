@@ -13,19 +13,27 @@ export class Cart {
   count = computed(() => this.items().reduce((sum, i) => sum + i.quantity, 0));
   total = computed(() => this.items().reduce((sum, i) => sum + i.product.price * i.quantity, 0));
   stockLeft = computed(() => {
-    const map = new Map<number, number>();
+    const map = new Map<string, number>();
     for (const item of this.items()) {
-      map.set(item.product.id, item.product.stock - item.quantity);
+      map.set(this.keyOf(item.product), item.product.stock - item.quantity);
     }
     return map;
   });
 
-  stockLevel(id: number): number {
-    return this.stockLeft().get(id) ?? 0;
+  keyOf(product: Product): string {
+    return `${product.id}::${product.category}`;
   }
 
-  atStockLimit(id: number): boolean {
-    return this.stockLevel(id) <= 0;
+  quantityInCart(product: Product): number {
+    return this.items().find((i) => this.keyOf(i.product) === this.keyOf(product))?.quantity ?? 0;
+  }
+
+  stockLevel(key: string): number {
+    return this.stockLeft().get(key) ?? 0;
+  }
+
+  atStockLimit(key: string): boolean {
+    return this.stockLevel(key) <= 0;
   }
 
   hasOutOfStock() {
@@ -44,12 +52,13 @@ export class Cart {
 
   add(product: Product) {
     if (product.stock <= 0) return;
+    const key = this.keyOf(product);
     this.items.update((items) => {
-      const existing = items.find((i) => i.product.id === product.id);
+      const existing = items.find((i) => this.keyOf(i.product) === key);
       if (existing) {
         if (existing.quantity >= product.stock) return items;
         return items.map((i) =>
-          i.product.id === product.id ? { ...i, quantity: i.quantity + 1 } : i,
+          this.keyOf(i.product) === key ? { ...i, quantity: i.quantity + 1 } : i,
         );
       }
       return [...items, { product, quantity: 1 }];
@@ -57,14 +66,14 @@ export class Cart {
     this.persist();
   }
 
-  setQuantity(id: number, quantity: number) {
+  setQuantity(key: string, quantity: number) {
     if (quantity <= 0) {
-      this.remove(id);
+      this.remove(key);
       return;
     }
     this.items.update((items) =>
       items.map((i) => {
-        if (i.product.id !== id) return i;
+        if (this.keyOf(i.product) !== key) return i;
         const clamped = Math.min(quantity, i.product.stock);
         return { ...i, quantity: Math.max(1, clamped) };
       }),
@@ -72,8 +81,8 @@ export class Cart {
     this.persist();
   }
 
-  remove(id: number) {
-    this.items.update((items) => items.filter((i) => i.product.id !== id));
+  remove(key: string) {
+    this.items.update((items) => items.filter((i) => this.keyOf(i.product) !== key));
     this.persist();
   }
 
