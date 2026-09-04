@@ -80,10 +80,6 @@
     color var(--transition);
 }
 
-.hero-content .cta-btn:hover span {
-  color: var(--accent);
-}
-
 .hero-content .cta-btn:hover app-icon {
   transform: translateY(0.2rem);
 }
