@@ -12,19 +12,21 @@ html {
 }
 
 :root {
-  --primary: #ff7849;
-  --accent: #ffc2ad;
-  --bg: #202124;
-  --icon-bg: #b8ff3d1a;
-  --surface: #2a2c30;
-  --text: #fafafa;
-  --text-muted: #b0b2b6;
-  --border: #414349;
-  --icon-border: #b8ff3d33;
-  --glow: rgba(184, 255, 61, 0.3);
-  --success: #2ecc71;
-  --warning: #f1c40f;
-  --error: #bd2626;
+  --primary: #f06b3c;
+  --accent: #5ba8d4;
+  --bg: #191b1f;
+  --surface: #24272c;
+  --surface-hover: #2d3137;
+  --text: #f4f1eb;
+  --text-muted: #969ba3;
+  --border: #393e45;
+  --border-light: #474d55;
+  --icon-bg: rgba(91, 168, 212, 0.1);
+  --icon-border: rgba(91, 168, 212, 0.24);
+  --glow: rgba(240, 107, 60, 0.25);
+  --success: #69a879;
+  --warning: #d5a34e;
+  --error: #c85b55;
   --transition: 0.3s ease;
 }
 
