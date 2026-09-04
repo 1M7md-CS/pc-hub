@@ -24,28 +24,18 @@ export class CartPage {
     this.cartService.setQuantity(key, quantity);
   }
 
-  blockInvalidKey(event: KeyboardEvent, stock: number, current: string) {
-    const isDigit = /^[0-9]$/.test(event.key);
-    if (event.key.length === 1 && !isDigit) {
-      event.preventDefault();
-      return;
-    }
-    if (isDigit) {
-      const next = parseInt(current + event.key, 10);
-      if (next > stock) {
-        event.preventDefault();
-      }
-    }
+  onQuantityInput(key: string, raw: string) {
+    if (raw !== '') this.setQuantity(key, parseInt(raw, 10));
   }
 
-  onQuantityInput(key: string, raw: string) {
-    if (raw === '') return;
-    this.setQuantity(key, parseInt(raw, 10));
+  blockNonDigit(event: KeyboardEvent) {
+    if (event.key.length === 1 && !/^[0-9]$/.test(event.key)) {
+      event.preventDefault();
+    }
   }
 
   commitQuantity(key: string, raw: string) {
-    const value = raw === '' ? 1 : parseInt(raw, 10);
-    this.setQuantity(key, value);
+    this.setQuantity(key, raw === '' ? 1 : parseInt(raw, 10));
   }
 
   stockLevel(key: string) {

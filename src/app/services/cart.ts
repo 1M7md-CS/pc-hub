@@ -67,15 +67,14 @@ export class Cart {
   }
 
   setQuantity(key: string, quantity: number) {
-    if (quantity <= 0) {
+    if (!Number.isFinite(quantity) || quantity <= 0) {
       this.remove(key);
       return;
     }
     this.items.update((items) =>
       items.map((i) => {
         if (this.keyOf(i.product) !== key) return i;
-        const clamped = Math.min(Math.floor(quantity), i.product.stock);
-        return { ...i, quantity: Math.max(1, clamped) };
+        return { ...i, quantity: Math.min(Math.floor(quantity), i.product.stock) };
       }),
     );
     this.persist();

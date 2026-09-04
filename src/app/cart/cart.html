@@ -44,7 +44,7 @@
                   step="1"
                   [max]="item.product.stock"
                   [value]="item.quantity"
-                  (keydown)="blockInvalidKey($event, item.product.stock, $any($event.target).value)"
+                  (keydown)="blockNonDigit($event)"
                   (input)="onQuantityInput(keyOf(item.product), $any($event.target).value)"
                   (change)="commitQuantity(keyOf(item.product), $any($event.target).value)"
                 />
