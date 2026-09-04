@@ -1,5 +1,6 @@
 .cart-page {
-  max-width: 75rem;
+  max-width: 85rem;
+  min-height: 100vh;
   margin: 0 auto;
   padding: clamp(2rem, 6vw, 3rem) clamp(1rem, 5vw, 3rem);
 }
