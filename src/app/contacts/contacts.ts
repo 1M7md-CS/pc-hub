@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject, signal } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { timer } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 import { Icon } from '../shared/ui/icon/icon';
 import { SectionHeader } from '../shared/ui/section-header/section-header';
 
@@ -14,6 +14,7 @@ import { SectionHeader } from '../shared/ui/section-header/section-header';
 })
 export class Contacts {
   private httpClient = inject(HttpClient);
+  private resetTimer?: Subscription;
 
   status = signal<'idle' | 'success' | 'error' | 'sending' | 'invalid'>('idle');
 
@@ -39,9 +40,7 @@ export class Contacts {
     if (this.contactsForm.invalid) {
       this.contactsForm.markAllAsTouched();
       this.status.set('invalid');
-      timer(5000).subscribe(() => {
-        this.status.set('idle');
-      });
+      this.scheduleReset();
 
       return;
     }
@@ -52,19 +51,20 @@ export class Contacts {
       next: () => {
         this.status.set('success');
         this.contactsForm.reset();
-
-        timer(5000).subscribe(() => {
-          this.status.set('idle');
-        });
+        this.scheduleReset();
       },
 
       error: () => {
         this.status.set('error');
-
-        timer(5000).subscribe(() => {
-          this.status.set('idle');
-        });
+        this.scheduleReset();
       },
+    });
+  }
+
+  private scheduleReset() {
+    this.resetTimer?.unsubscribe();
+    this.resetTimer = timer(5000).subscribe(() => {
+      this.status.set('idle');
     });
   }
 }
